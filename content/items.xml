@@ -1,0 +1,115 @@
+<items gfxroot="gfx/items/" version="1">
+	
+	<active gfx="999.png" maxcharges="0" name="Blessing" />
+	<active gfx="998.png" maxcharges="0" name="Unholy" />
+
+	<passive gfx="997.png" name="Pisces EX" />
+	<passive gfx="996.png" devilprice="2" name="Aquarius EX" />
+	<passive gfx="995.png" devilprice="2" name="Capricon EX" />
+	<passive gfx="994.png" name="Sagittarius EX" />
+	<passive gfx="993.png" name="Scorpio EX" />
+	<passive gfx="992.png" devilprice="2" name="Libra EX" />
+	<passive gfx="991.png" name="Virgo EX" />
+	<passive gfx="990.png" name="Leo EX" />
+	<passive gfx="989.png" devilprice="2" name="Cancer EX" />
+	<passive gfx="988.png" name="Gemini EX" />
+	<passive gfx="987.png" name="Taurus EX" />
+	<passive gfx="986.png" name="Aries EX" />
+	<active gfx="985.png" name="Bit Coin" />
+	<passive gfx="984.png" name="777" coins="7" keys="7" bombs="7" />
+	<active gfx="983.png" name="Religiosity"  />
+
+	<active gfx="982.png" name="Greed" />
+	<passive gfx="981.png" devilprice="2" cache="damage speed" name="It Hurts!" />
+	<passive gfx="980.png" devilprice="1" cache="damage speed" name="Blood Oath" />
+	<passive gfx="979.png" name="Solar" />
+	<active gfx="978.png" name="No!" />
+	<passive gfx="977.png" cache="speed" name="Socks" />
+
+	<passive gfx="976.png" name="dkasptldk" />
+	<passive gfx="975.png" name="qmffkdlsem" />
+	<passive gfx="974.png" name="vlrdjq" />
+
+	<active gfx="973.png" name="UnBlessing" />
+	<active gfx="972.png" name="Cleaner" />
+	<passive gfx="971.png" cache="speed" name="Venus" />
+
+	<passive gfx="970.png" cache="speed" name="Uranus" />
+	<passive gfx="969.png" cache="speed" name="Terra" />
+	<passive gfx="968.png" name="Mercurius" cache="speed" />
+	<passive gfx="967.png" name="Luna" />
+
+	<passive gfx="966.png" cache="damage" name="Corvus" />
+	<passive gfx="965.png" devilprice="2" name="Cygnus" />
+	<passive gfx="964.png" soulhearts="6" devilprice="2" name="Cetus" />
+	<passive gfx="963.png" devilprice="2" name="Pavo" />
+	<passive gfx="962.png" devilprice="1" name="Belial EX" />
+
+	<active gfx="961.png" name="Master Key" />
+
+	<active gfx="960.png" cache="damage" name="Hell Mode" />
+	<active gfx="959.png" cache="damage" name="Easy Mode" />
+
+	<passive gfx="958.png" name="H.C Rhongomyniad Spear" />
+	<passive gfx="957.png" name="BFFS! EX" />
+	<active gfx="956.png" name="Pachinko" />
+	<passive gfx="955.png" description="Margot's Love" name="Saturn" />
+	<passive gfx="954.png" cache="range" name="Ashley Too" />
+	<active gfx="953.png" name="Rank-Up-Magic Launch of The Phantom Knights" />
+	<passive gfx="952.png" cache="damage" name="Icarus's Wing" />
+	<active gfx="951.png" maxcharges="12" name="Left Foot" />
+	<passive gfx="950.png" devilprice="2" name="Amon EX" />
+	<passive gfx="949.png" name="Violeta" />
+	<passive gfx="948.png" cache="damage" name="Prometheus" />
+	<passive gfx="947.png" name="Monstrance" />
+
+	<passive gfx="946.png" name="Macao Left" />
+	<passive gfx="945.png" name="Macao Right" />
+
+	<passive gfx="944.png" cache="damage tearflag" name="Spectrum Tear" />
+	<passive gfx="943.png" cache="damage" name="Dove's Book" />
+
+	<passive gfx="942.png" name="Clover 4" />
+	<passive gfx="941.png" name="Clover 7" />
+	<passive gfx="940.png" cache="damage" name="Amazing Chaos Scroll" />
+	<passive gfx="939.png" cache="tearflag" name="Parasitoid EX" />
+	<passive gfx="938.png" name="Rank-Up-Magic Astral Force" />
+	<passive gfx="937.png" name="Reincarnation" />
+
+	<passive gfx="936.png" name="Rank-Up-Magic The Seventh One" />
+	<passive gfx="935.png" name="Rank-Up-Magic Limited Barian's Force" />
+
+	<passive gfx="934.png" cache="damage" name="Absolute Guppy" />
+	<active gfx="933.png" name="Rank-Up-Magic Death Double Force" />
+	<passive gfx="932.png" name="Rank-Up-Magic Soul Shave Force" />
+
+	<active gfx="931.png" name="Chaos Card" />
+	<passive gfx="930.png" name="Cherry" />
+
+	<passive gfx="929.png" name="Blood Trail" />
+	<passive gfx="928.png" name="Rank-Up-Magic Raid Force" />
+
+	<passive gfx="927.png" cache="damage" name="Chubby!" />
+
+	<active gfx="926.png" cache="damage" name="Power Bond" />
+	<active gfx="925.png" cache="damage" name="Limiter Removal" />
+	<passive gfx="924.png" cache="damage luck" name="Sharp Eyes" />
+	<active gfx="923.png" cache="damage" name="Death Note" />
+	<active gfx="922.png" name="Rank-Up-Magic Quick Chaos" />
+
+	<passive gfx="921.png" cache="damage tearflag" name="Guppy's Delirium" />
+	<passive gfx="920.png" cache="damage" name="Galactic Medal Of Valor" />
+	<passive gfx="919.png" coins="-99" bombs="-99" keys="-99" cache="damage" name="Spirit Circuits" />
+	<passive gfx="918.png" cache="damage" name="Ra-Harakhte" />
+	<passive gfx="917.png" name="Anonymous" />
+	<passive gfx="916.png" name="Clepsydre" />
+	<passive gfx="915.png" description="The True Draco" name="Master Peace,True Dracoslaying King" />
+	<passive gfx="914.png" description="The True Draco" name="Artifact Sanctum" />
+
+	<!-- Custom Trinket #1 -->
+	<trinket cache="damageflag" gfx="Bloody Bandage.png" name="Bloody Bandage" />
+
+	<trinket gfx="Soul Penny.png" name="Soul Penny" />
+
+
+</items>

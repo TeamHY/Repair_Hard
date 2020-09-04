@@ -1,0 +1,23 @@
+<entities anm2root="gfx/" version="5">
+	<entity anm2path="017.007_capdevil.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="BumStatue" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="7" shutdoors="false">
+	<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+    <entity anm2path="017.008_MacaoLeft.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="MacaoLeft" numGridCollisionPoints="0" shadowSize="24" stageHP="0" variant="8" shutdoors="false">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="017.009_MacaoRight.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="MacaoRight" numGridCollisionPoints="0" shadowSize="24" stageHP="0" variant="9" shutdoors="false">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+
+	<entity id="287" variant="0" subtype="20" name="Conscivit" baseHP="50000" stageHP="0" boss="1" champion="1" bossID="501" collisionDamage="4" collisionMass="9999" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="42" portrait="134" anm2path="godmode_final_conscivit.anm2">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+
+	<entity anm2path="godmode_final_lostsoul.anm2" subtype="20" reroll="false" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="259" name="Lost Soul" numGridCollisionPoints="0" shutdoors="false" shadowSize="16" variant="0" portrait="121">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+
+
+
+
+</entities>
