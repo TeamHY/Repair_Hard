@@ -94,7 +94,7 @@ function RepairMod:OnCache(player, cacheFlag)
         	player.Damage = player.Damage * HellDamage
         end
         if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Lamb") then
-			player.Damage = player.Damage * 1.2
+			player.Damage = player.Damage * 1.5
 		end
     if player:GetData()._BCvar ~= nil then
 			player.Damage = player.Damage * player:GetData()._BCmult

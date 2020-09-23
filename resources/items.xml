@@ -103,7 +103,7 @@
 	<active description="Reusable pill generator" gfx="Collectibles_102_MomsBottleOfPills.png" id="102" maxcharges="3" name="Mom's Bottle of Pills" />
 	<passive cache="tearcolor tearflag" description="Poison damage" gfx="Collectibles_103_TheCommonCold.png" id="103" name="The Common Cold" />
 	<passive achievement="31" cache="tearcolor tearflag" description="Split shot" gfx="Collectibles_104_TheParasite.png" id="104" devilprice="2" name="The Parasite" />
-	<active achievement="29" description="Reroll your destiny " gfx="Collectibles_105_Dice.png" id="105" maxcharges="6" name="The D6" special="false" />
+	<active achievement="29" description="Reroll your destiny " gfx="Collectibles_105_Dice.png" id="105" maxcharges="3" name="The D6" special="false" />
 	<passive achievement="28" bombs="5" description="Blast damage" gfx="Collectibles_106_MrMega.png" id="106" name="Mr. Mega" />
     <active cache="familiars" description="Cut and run" gfx="Collectibles_107_PinkingShears.png" id="107" maxcharges="6" name="The Pinking Shears" />
 	<passive description="Damage resistance" gfx="Collectibles_108_TheWafer.png" id="108" name="The Wafer" />

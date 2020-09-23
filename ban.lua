@@ -1,5 +1,6 @@
 function RepairMod:BanItem(newstart)
     local player = Isaac.GetPlayer(0)
+    player:DropTrinket(Isaac.GetFreeNearPosition(player.Position, 50),false) --현재 들고있는 부적 드랍
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_PAY_TO_WIN)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
     --[[if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_ISAAC then

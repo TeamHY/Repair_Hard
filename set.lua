@@ -22,7 +22,7 @@ function RepairMod:SetCheck()
 	end
 	if player:HasPlayerForm(PlayerForm.PLAYERFORM_BOB) == true and setVar[5] == 0 then
 		player:AddCollectible(375,0,true)
-		player:AddCollectible(273,0,true)
+		player:AddCollectible(220,0,true)
 		player:AddCollectible(273,0,true)
 		player:AddCollectible(273,0,true)
 		setVar[5] = 1

@@ -117,8 +117,8 @@ function RepairMod:GivePick()
 		Collectible212 = player:GetCollectibleNum(212)
 		Save()
 	end
-	if player:GetData()._sancVar ~= nil then
-      if (Game():GetFrameCount()-player:GetData()._sancTime)%(15*180) == 0 and Game():GetFrameCount()~= player:GetData()._sancTime then --먹은직후 30초마다 서큐 소환
+	if player:GetData()._sancVar ~= nil then --아티팩트 신지
+      if (Game():GetFrameCount()-player:GetData()._sancTime)%(30*180) == 0 and Game():GetFrameCount()~= player:GetData()._sancTime then --먹은직후 30초마다 서큐 소환
          player:AddCollectible(417,0,true)
       end
    end
@@ -148,7 +148,7 @@ function RepairMod:VarChange()
 	if player:HasCollectible(art_sanc_item) and player:GetData()._sancVar == nil then
 		player:GetData()._sancTime = Game():GetFrameCount()
 		player:GetData()._sancVar = true
-
+		Save()
 	end
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.VarChange)
@@ -560,7 +560,7 @@ function RepairMod:UseItem(itemname,rng)
 		player:RemoveCollectible(quickchaos_item)
 		Save()
 		return true
-	elseif itemname == bit_coin_item then
+		elseif itemname == bit_coin_item then
 		if player:GetData()._BCvar == nil then
 			player:GetData()._BCvar = 0
 		end
@@ -581,6 +581,7 @@ function RepairMod:UseItem(itemname,rng)
 			player:RemoveCollectible(bit_coin_item)
 			player:GetData()._BCvar = 0
 		end
+		Save()
 
 		return true
 	elseif itemname == pachinko_item then
@@ -601,6 +602,7 @@ function RepairMod:UseItem(itemname,rng)
 			player:RemoveCollectible(pachinko_item)
 			player:GetData()._PCvar = 0
 		end
+		Save()
 
 		return true
 	elseif itemname == rank_phan_item then
@@ -613,6 +615,7 @@ function RepairMod:UseItem(itemname,rng)
 		player:GetData()._PHmult = delay
 
 		player:RemoveCollectible(rank_phan_item)
+		Save()
 
 		return true
 	end
