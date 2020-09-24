@@ -9,6 +9,6 @@ function HasPassive(id)
 	end
 end
 
-function Random(entity, min, max)
+function rangeRandom(entity, min, max)
 	return entity:GetDropRNG():RandomInt(max-min+1)+min
 end
