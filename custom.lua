@@ -233,6 +233,21 @@ function RepairMod:ChangeStat()
 			end
 		end
 	end
+
+	if player:HasCollectible(rank_phan_item) and player:GetData()._PHvar == nil then
+		if player:GetData()._PHmult == nil then
+			player:GetData()._PHmult = 0
+		end
+
+		local delay = (player:GetNumCoins()-(player:GetNumCoins()%10))/10
+		player:AddCoins(-10*delay)
+		player:GetData()._PHmult = delay
+
+		player:GetData()._PHvar = true
+
+		player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
+		player:EvaluateItems()
+	end
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.ChangeStat)
 
@@ -261,6 +276,12 @@ function RepairMod:HitSpawn(dmg_target, dmg_amount, dmg_source, dmg_dealer)
 	if player:HasCollectible(summangguppy_item) and dmg_target:IsVulnerableEnemy() then
 		if dmg_dealer.Type == EntityType.ENTITY_TEAR then
 			Isaac.Spawn(3, 43, 5, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
+		end
+	end
+
+	if player:HasCollectible(gal_item) and dmg_target:IsVulnerableEnemy() and dmg_target:IsBoss() then
+		if dmg_dealer.Type == EntityType.ENTITY_TEAR or dmg_dealer.Type == EntityType.ENTITY_LASER or dmg_dealer.Type == EntityType.ENTITY_KNIFE then
+			dmg_target:TakeDamage(dmg_amount*0.3, 0, EntityRef(player), 1)
 		end
 	end
 end
@@ -602,19 +623,6 @@ function RepairMod:UseItem(itemname,rng)
 			player:RemoveCollectible(pachinko_item)
 			player:GetData()._PCvar = 0
 		end
-		Save()
-
-		return true
-	elseif itemname == rank_phan_item then
-		if player:GetData()._PHmult == nil then
-			player:GetData()._PHmult = 0
-		end
-
-		local delay = (player:GetNumCoins()-(player:GetNumCoins()%10))/10
-		player:AddCoins(-10*delay)
-		player:GetData()._PHmult = delay
-
-		player:RemoveCollectible(rank_phan_item)
 		Save()
 
 		return true

@@ -37,9 +37,6 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(spect_item) then
 			player.Damage = player.Damage * 0.5
 		end
-		if player:HasCollectible(gal_item) then
-			player.Damage = player.Damage * 1.3
-		end
 		if player:HasCollectible(spi_item) then
 			player.Damage = player.Damage * 1.25
 		end
@@ -184,11 +181,15 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(540) then
 			player.MaxFireDelay = player.MaxFireDelay - 1
 		end
+		if player:HasCollectible(gal_item) then
+			player.MaxFireDelay = player.MaxFireDelay - 1
+		end
+    if player:GetData()._PHvar ~= nil then
+      player.MaxFireDelay = player.MaxFireDelay - player:GetData()._PHmult
+    end
 	end
 
-  if player:GetData()._PHmult ~= nil then
-    player.MaxFireDelay = player.MaxFireDelay - player:GetData()._PHmult
-  end
+
 
 	if (cacheFlag == CacheFlag.CACHE_TEARFLAG) then
 		if player:HasCollectible(spect_item) then

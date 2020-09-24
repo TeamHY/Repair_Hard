@@ -1,7 +1,7 @@
 function RepairMod:SetCheck()
 	local player = Isaac.GetPlayer(0); --player에 플레이어 선언
 	entities = Isaac.GetRoomEntities()
-	
+
 	if player:HasPlayerForm(PlayerForm.PLAYERFORM_GUPPY) == true and setVar[1] == 0 then
 		setVar[1] = 1
 		Save()

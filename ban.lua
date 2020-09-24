@@ -228,3 +228,10 @@ function RepairMod:BanItem(newstart)
     player:TryRemoveCollectibleCostume(380, false) --페이투플레이
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, RepairMod.BanItem)
+
+function RepairMod:MidasCharAbillity(entity, damage, damageFlag, damageSource, DamageCountdownFrames)
+  local player = Isaac.GetPlayer(0)
+  player:AddCoins(Random(player,1,5)*-1)
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.MidasCharAbillity, EntityType.ENTITY_PLAYER)

@@ -1,5 +1,6 @@
 RepairMod = RegisterMod("RepairMod",1)
 init = require "init"
+func = require "func"
 ban = require "ban"
 setitem = require "set"
 zodiac = require "zodiac"
@@ -88,11 +89,11 @@ end
 function RepairMod:PostUpdate()
 	local player = Isaac.GetPlayer(0);
 	local room = Game():GetRoom()
-	if (Game():GetLevel():GetStage() < 4 and Game():GetLevel():GetCurses() ~= 0) or (Game():GetLevel():GetCurses() == LevelCurse.CURSE_OF_DARKNESS and prometheusVar == false) or (Game():GetLevel():GetCurses() == LevelCurse.CURSE_OF_THE_UNKNOWN) then --2미만 
+	if (Game():GetLevel():GetStage() < 4 and Game():GetLevel():GetCurses() ~= 0) or (Game():GetLevel():GetCurses() == LevelCurse.CURSE_OF_DARKNESS and prometheusVar == false) or (Game():GetLevel():GetCurses() == LevelCurse.CURSE_OF_THE_UNKNOWN) then --2미만
 	  Game():GetLevel():RemoveCurses() --입장 후 저주제거
 	end
 	player.LaserColor = Color(1,1,1,0.3,0,0,0); --눈물 투명도
-	
+
 	if hpMaxLimit == 0 and player:GetPlayerType() ~= PlayerType.PLAYER_KEEPER then
 		if Game().Difficulty < Difficulty.DIFFICULTY_GREED then
 			if Game():GetLevel():GetStage() >= 9 or hardModeVar == 1 then
@@ -137,7 +138,7 @@ function RepairMod:PostUpdate()
          player:AddKeys(-1)
       end
    end
-   
+
 	if Game():GetFrameCount() % 1800 == 0 then
 		if setVar[3] == 1 then
 			player:UseCard(12)
@@ -212,7 +213,7 @@ end
 function RepairMod:VoidRemove()
 	if Game().Difficulty < Difficulty.DIFFICULTY_GREED then
 		local room = Game():GetRoom()
-		
+
 		if Game():GetLevel():GetStage() ~= 9 then
 			for i=1, room:GetGridSize() do
 				local gridEnt = room:GetGridEntity(i)
@@ -279,19 +280,19 @@ function RepairMod:HardModeStatue()
 	local banCheck = false
 	local diffCheck = false
 	local banType = {}
-	
+
 	if Game().Difficulty < Difficulty.DIFFICULTY_GREED then
 		banType = {18,39,29,22,16,12,10,15,407,212,412,74,75,76,78,213,287,35,81,55,260,92,98,18,13,86,38,299,293,68,14,252,61,25,16,84,311,62,231}
 	else
 		banType = {18,39,29,22,16,12,10,15,407,212,412,74,75,76,78,213,287,35,81,55,260,92,98,18,13,86,38,299,293,68,14,252,61,25,16,84,311,62,231}
 	end
-	
+
 	if violetaVar == true then
 		banType[#banType+1] = 274
 		banType[#banType+1] = 412
 		banType[#banType+1] = 406
 	end
-	
+
 	if hardModeVar ~= 0 then -- 헬모드 썼으면
 		diffCheck = true
 	elseif Game().Difficulty < Difficulty.DIFFICULTY_GREED and Game():GetLevel():GetStage() > 9 then -- 그리디어 아니고 9스테이지 이상
@@ -299,7 +300,7 @@ function RepairMod:HardModeStatue()
 	elseif Game().Difficulty >= Difficulty.DIFFICULTY_GREED and Game():GetLevel():GetStage() > 2 then -- 그리디어고 2스테이지 이상
 		diffCheck = true
 	end
-	
+
 	if diffCheck == true then
 		for i = 1, #entities do
 			if entities[i]:IsVulnerableEnemy() then
