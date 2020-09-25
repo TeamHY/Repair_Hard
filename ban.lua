@@ -231,7 +231,9 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, RepairMod.BanItem)
 
 function RepairMod:MidasCharAbillity(entity, damage, damageFlag, damageSource, DamageCountdownFrames)
   local player = Isaac.GetPlayer(0)
-  player:AddCoins(rangeRandom(player,1,5)*-1)
+  if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Midas") then
+    player:AddCoins(rangeRandom(player,1,5)*-1)
+  end
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.MidasCharAbillity, EntityType.ENTITY_PLAYER)
