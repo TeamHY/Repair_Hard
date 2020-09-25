@@ -597,141 +597,174 @@
 	<Pool Name="shop">
       <Item Id="1" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="3" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="11" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="4" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="10" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="14" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="16" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="19" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="20" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="21" Weight="0.25" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="22" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="23" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="24" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="25" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="26" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="27" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="32" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="33" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="34" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="42" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="44" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="53" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="55" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="46" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="48" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="63" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="64" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="70" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="72" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="73" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="74" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="75" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="78" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="76" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="84" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="85" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="87" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="91" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="94" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="98" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="101" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="116" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="119" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="127" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="131" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="139" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="140" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="150" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="132" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="145" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="148" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="156" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="164" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="161" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="173" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="178" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="184" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="188" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="189" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="192" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="195" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="199" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="203" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="207" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="223" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="227" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="232" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="233" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="241" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="242" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="246" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="247" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="248" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="249" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="250" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="251" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="252" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="266" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="264" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="268" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="271" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="273" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="278" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="287" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="289" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="291" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="297" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="303" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="308" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="324" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="329" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="332" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="337" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="343" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="347" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="350" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="348" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="355" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="356" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="362" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="369" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="375" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="376" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="389" Weight="0.687" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="380" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="381" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="389" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="396" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="406" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="414" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="419" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="423" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="425" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="431" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="436" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="439" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="443" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="445" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="451" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="454" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="455" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="466" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="458" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="463" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="469" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="470" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="475" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="476" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="479" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="485" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="483" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="486" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="489" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="491" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="485" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="487" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="490" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="492" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="496" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="498" Weight="0.25" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="496" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="498" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="500" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="515" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="520" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="521" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="519" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="523" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="530" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="534" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="526" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="534" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="535" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="536" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="538" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="542" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+
+      <Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Bit Coin" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="777" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Religiosity" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="No!" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="No!" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Socks" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Venus" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Terra" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mercurius" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Luna" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Luna" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="BFFS! EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Pachinko" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Saturn" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-
-
-      <Item Name="Amazing Chaos Scroll" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 7" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 4" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Prometheus" Weight="2" DecreaseBy="1" RemoveOn="0"/>      <Item Name="Left Foot" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Icarus's Wing" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-
-      <Item Name="Left Foot" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Ashley Too" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Astral Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic The Seventh One" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Death Double Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Ashley Too" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Icarus's Wing" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Left Foot" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Violeta" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Prometheus" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Monstrance" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 4" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 7" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Amazing Chaos Scroll" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Astral Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic The Seventh One" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Death Double Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Chaos Card" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Raid Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Power Bond" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Limiter Removal" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Quick Chaos" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Ra-Harakhte" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Raid Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Chubby!" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Power Bond" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Limiter Removal" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Sharp Eyes" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Death Note" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Quick Chaos" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spirit Circuits" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Anonymous" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Clepsydre" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Master Peace,True Dracoslaying King" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="777" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-
-
-
-
-
-
-
-
+      <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -739,12 +772,11 @@
 	</Pool>
 	<Pool Name="boss">
       <Item Id="1" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="7" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="12" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="12" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="14" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="27" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="29" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="32" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="70" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -758,7 +790,7 @@
       <Item Id="138" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="140" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="141" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="143" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="143" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="154" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="165" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="179" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -771,7 +803,7 @@
       <Item Id="197" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="198" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="207" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="208" Weight="5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="208" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="226" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="240" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="254" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -781,7 +813,7 @@
       <Item Id="297" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="320" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="337" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="337" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="340" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="341" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="342" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -792,7 +824,7 @@
       <Item Id="381" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="390" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="438" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="454" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="454" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="458" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="515" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="526" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -801,16 +833,25 @@
       <Item Id="541" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="547" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
-      <Item Name="Chubby!" Weight="3" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Socks" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Bit Coin" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="777" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="It Hurts" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Blood Oath" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Socks" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Pachinko" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Icarus's Wing" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Prometheus" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 4" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 7" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Astral Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic The Seventh One" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Death Double Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Raid Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Sharp Eyes" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Galactic Medal Of Valor" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spirit Circuits" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
 
-      <Item Name="Rank-Up-Magic Quick Chaos" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Death Double Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Astral Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Raid Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic The Seventh One" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -914,9 +955,9 @@
       <Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Scorpio EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Capricon EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Aquarius EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Cancer EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Cygnus" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Aquarius EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Cancer EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Cygnus" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Pavo" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Belial EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Uranus" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
@@ -925,30 +966,45 @@
       <Item Name="Amon EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
 
-      <Item Name="Amazing Chaos Scroll" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 7" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 4" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Prometheus" Weight="2" DecreaseBy="1" RemoveOn="0"/>      
-      <Item Name="Icarus's Wing" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic The Seventh One" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Absolute Guppy" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Blood Trail" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Sharp Eyes" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Death Note" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Galactic Medal Of Valor" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Spirit Circuits" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Violeta" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Spectrum Tear" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Parasitoid EX" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Dove's Book" Weight="0.287" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Guppy's Delirium" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Master Peace,True Dracoslaying King" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Monstrance" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Corvus" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Bit Coin" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Bit Coin" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Icarus's Wing" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Violeta" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Prometheus" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Monstrance" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spectrum Tear" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Dove's Book" Weight="0.2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 4" Weight="4" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 7" Weight="4" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Amazing Chaos Scroll" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Parasitoid EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Astral Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic The Seventh One" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Absolute Guppy" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Death Double Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Chaos Card" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Blood Trail" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Raid Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Chubby!" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Sharp Eyes" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Power Bond" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Limiter Removal" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Death Note" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Quick Chaos" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Guppy's Delirium" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spirit Circuits" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Anonymous" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clepsydre" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+
+
+
+
+
 
 
 
@@ -1023,7 +1079,7 @@
 
 
       <Item Name="Pisces EX" Weight="0.2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Aquarius EX" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Capricon EX" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Sagittarius EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Libra EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
@@ -1032,10 +1088,10 @@
       <Item Name="Gemini EX" Weight="0.2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Aries EX" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Uranus" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Cygnus" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Pavo" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Cetus" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Amon EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Amon EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 
       <Item Name="Amazing Chaos Scroll" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Prometheus" Weight="2" DecreaseBy="1" RemoveOn="0"/>      
@@ -1048,10 +1104,9 @@
       <Item Name="Spectrum Tear" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Parasitoid EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Dove's Book" Weight="0.8" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Absolute Guppy" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Guppy's Delirium" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Absolute Guppy" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Guppy's Delirium" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Monstrance" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
@@ -1073,12 +1128,11 @@
 	</Pool>
 	<Pool Name="secret">
       <Item Id="1" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="7" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="12" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="12" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="14" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="27" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="29" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="32" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="70" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1092,12 +1146,13 @@
       <Item Id="138" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="140" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="141" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="143" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="143" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="154" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="165" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="179" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="183" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="189" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="190" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="193" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="194" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="195" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1105,7 +1160,7 @@
       <Item Id="197" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="198" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="207" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="208" Weight="5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="208" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="226" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="240" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="254" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1115,7 +1170,7 @@
       <Item Id="297" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="320" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="337" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="337" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="340" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="341" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="342" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1126,7 +1181,7 @@
       <Item Id="381" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="390" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="438" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="454" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="454" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="458" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="515" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="526" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1135,16 +1190,24 @@
       <Item Id="541" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="547" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
-      <Item Name="Chubby!" Weight="3" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Socks" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-
-      <Item Name="Rank-Up-Magic Quick Chaos" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Death Double Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Astral Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Raid Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic The Seventh One" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Bit Coin" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="777" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="It Hurts" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Blood Oath" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Socks" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Pachinko" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Icarus's Wing" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Prometheus" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 4" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 7" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Astral Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic The Seventh One" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Death Double Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Raid Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Sharp Eyes" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Galactic Medal Of Valor" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spirit Circuits" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
 
 
 	</Pool>
@@ -1249,133 +1312,174 @@
 	<Pool Name="goldenChest">
       <Item Id="1" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="3" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="11" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="4" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="10" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="14" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="16" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="19" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="20" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="21" Weight="0.25" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="22" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="23" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="24" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="25" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="26" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="27" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="32" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="33" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="34" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="42" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="44" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="53" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="55" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="46" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="48" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="63" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="64" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="70" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="72" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="73" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="74" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="75" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="78" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="76" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="84" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="85" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="87" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="91" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="94" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="98" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="101" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="116" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="119" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="127" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="131" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="139" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="140" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="150" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="132" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="145" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="148" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="156" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="164" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="161" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="173" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="178" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="184" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="188" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="189" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="192" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="195" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="199" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="203" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="207" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="223" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="227" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="232" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="233" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="241" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="242" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="246" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="247" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="248" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="249" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="250" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="251" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="252" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="266" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="264" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="268" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="271" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="273" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="278" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="287" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="289" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="291" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="297" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="303" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="308" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="324" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="329" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="332" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="337" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="343" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="347" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="350" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="348" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="355" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="356" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="362" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="369" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="375" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="376" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="389" Weight="0.687" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="380" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="381" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="389" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="396" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="406" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="414" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="419" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="423" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="425" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="431" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="436" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="439" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="443" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="445" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="451" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="454" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="455" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="466" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="458" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="463" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="469" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="470" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="475" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="476" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="479" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="485" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="483" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="486" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="489" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="491" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="485" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="487" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="490" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="492" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="496" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="498" Weight="0.25" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="496" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="498" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="500" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="515" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="520" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="521" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="519" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="523" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="530" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="534" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="526" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="534" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="535" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="536" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="538" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="542" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+
+      <Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Bit Coin" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="777" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Religiosity" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="No!" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="No!" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Socks" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Venus" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Terra" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mercurius" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Luna" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Luna" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="BFFS! EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Pachinko" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Saturn" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-
-
-      <Item Name="Amazing Chaos Scroll" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 7" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 4" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Prometheus" Weight="2" DecreaseBy="1" RemoveOn="0"/>      <Item Name="Left Foot" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Icarus's Wing" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-
-      <Item Name="Left Foot" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Ashley Too" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Astral Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic The Seventh One" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Death Double Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Ashley Too" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Icarus's Wing" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Left Foot" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Violeta" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Prometheus" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Monstrance" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 4" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 7" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Amazing Chaos Scroll" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Astral Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic The Seventh One" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Death Double Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Chaos Card" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Raid Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Power Bond" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Limiter Removal" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Quick Chaos" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Ra-Harakhte" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Raid Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Chubby!" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Power Bond" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Limiter Removal" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Sharp Eyes" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Death Note" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Quick Chaos" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spirit Circuits" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Anonymous" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Clepsydre" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Master Peace,True Dracoslaying King" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="777" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1413,12 +1517,11 @@
 	</Pool>
 	<Pool Name="beggar">
       <Item Id="1" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="7" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="12" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="12" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="14" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="27" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="29" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="32" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="51" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="70" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1432,7 +1535,7 @@
       <Item Id="138" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="140" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="141" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="143" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="143" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="154" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="165" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="179" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1445,7 +1548,7 @@
       <Item Id="197" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="198" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="207" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="208" Weight="5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="208" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="226" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="240" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="254" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1455,7 +1558,7 @@
       <Item Id="297" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="320" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="337" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="337" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="340" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="341" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="342" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1466,7 +1569,7 @@
       <Item Id="381" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="390" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="438" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="454" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="454" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="458" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="515" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="526" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1475,16 +1578,24 @@
       <Item Id="541" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="547" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
-      <Item Name="Chubby!" Weight="3" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Socks" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-
-      <Item Name="Rank-Up-Magic Quick Chaos" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Death Double Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Astral Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Raid Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic The Seventh One" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Bit Coin" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="777" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="It Hurts" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Blood Oath" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Socks" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Pachinko" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Icarus's Wing" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Prometheus" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 4" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 7" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Astral Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic The Seventh One" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Death Double Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Raid Force" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Sharp Eyes" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Galactic Medal Of Valor" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spirit Circuits" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
 
 	</Pool>
 
@@ -1582,9 +1693,9 @@
       <Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Scorpio EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Capricon EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Aquarius EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Cancer EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Cygnus" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Aquarius EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Cancer EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Cygnus" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Pavo" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Belial EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Uranus" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
@@ -1593,30 +1704,40 @@
       <Item Name="Amon EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
 
-      <Item Name="Amazing Chaos Scroll" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 7" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 4" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Prometheus" Weight="2" DecreaseBy="1" RemoveOn="0"/>      
-      <Item Name="Icarus's Wing" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic The Seventh One" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Absolute Guppy" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Blood Trail" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Sharp Eyes" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Death Note" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Galactic Medal Of Valor" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Spirit Circuits" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Violeta" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Spectrum Tear" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Parasitoid EX" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Dove's Book" Weight="0.287" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Guppy's Delirium" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Master Peace,True Dracoslaying King" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Monstrance" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Corvus" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Bit Coin" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Bit Coin" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Icarus's Wing" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Violeta" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Prometheus" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Monstrance" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spectrum Tear" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Dove's Book" Weight="0.2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 4" Weight="4" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 7" Weight="4" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Amazing Chaos Scroll" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Parasitoid EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Astral Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic The Seventh One" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Absolute Guppy" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Death Double Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Chaos Card" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Blood Trail" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Raid Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Chubby!" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Sharp Eyes" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Power Bond" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Limiter Removal" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Death Note" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Quick Chaos" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Guppy's Delirium" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spirit Circuits" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Anonymous" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clepsydre" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1717,9 +1838,9 @@
       <Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Scorpio EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Capricon EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Aquarius EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Cancer EX" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Cygnus" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Aquarius EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Cancer EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Cygnus" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Pavo" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Belial EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Uranus" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
@@ -1728,30 +1849,40 @@
       <Item Name="Amon EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
 
-      <Item Name="Amazing Chaos Scroll" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 7" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Clover 4" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Prometheus" Weight="2" DecreaseBy="1" RemoveOn="0"/>      
-      <Item Name="Icarus's Wing" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic The Seventh One" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Absolute Guppy" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Blood Trail" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Sharp Eyes" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Death Note" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Galactic Medal Of Valor" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Spirit Circuits" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Violeta" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Spectrum Tear" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Parasitoid EX" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Dove's Book" Weight="0.287" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Guppy's Delirium" Weight="0.51" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Master Peace,True Dracoslaying King" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Monstrance" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Corvus" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Bit Coin" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Bit Coin" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Icarus's Wing" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Violeta" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Prometheus" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Monstrance" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spectrum Tear" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Dove's Book" Weight="0.2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 4" Weight="4" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clover 7" Weight="4" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Amazing Chaos Scroll" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Parasitoid EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Astral Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic The Seventh One" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Limited Barian's Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Absolute Guppy" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Death Double Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Soul Shave Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Chaos Card" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Blood Trail" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Raid Force" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Chubby!" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Sharp Eyes" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Power Bond" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Limiter Removal" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Death Note" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Rank-Up-Magic Quick Chaos" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Guppy's Delirium" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Galactic Medal Of Valor" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Spirit Circuits" Weight="3" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Anonymous" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Clepsydre" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1815,7 +1946,7 @@
 
 
       <Item Name="Pisces EX" Weight="0.2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Aquarius EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Aquarius EX" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Capricon EX" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Sagittarius EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Libra EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
@@ -1824,10 +1955,10 @@
       <Item Name="Gemini EX" Weight="0.2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Aries EX" Weight="0.3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Uranus" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Cygnus" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Cygnus" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Pavo" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Cetus" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Amon EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Amon EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
 
       <Item Name="Amazing Chaos Scroll" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Prometheus" Weight="2" DecreaseBy="1" RemoveOn="0"/>      
@@ -1840,10 +1971,9 @@
       <Item Name="Spectrum Tear" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Parasitoid EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Dove's Book" Weight="0.8" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Absolute Guppy" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Guppy's Delirium" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Absolute Guppy" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Guppy's Delirium" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Monstrance" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 

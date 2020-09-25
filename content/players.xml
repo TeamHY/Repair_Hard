@@ -1,6 +1,6 @@
 <players bigportraitroot="gfx/ui/stage/" nameimageroot="gfx/ui/boss/" portraitroot="gfx/ui/boss/" root="gfx/characters/costumes/">
 
-	<player bigportrait="PlayerPortraitBig_Delirious_Spirit.png" keys="1" armor="16" items="327,328,414,510,20" bombs="1" name="The Delirious Spirit" nameimage="PlayerName_Delirious_Spirit.png" portrait="PlayerPortrait_Delirious_Spirit.png" skin="character_delirious_spirit.png" skinColor="-1"/>
+	<player bigportrait="PlayerPortraitBig_Delirious_Spirit.png" keys="1" armor="16" items="277,414,510,20" bombs="1" name="The Delirious Spirit" nameimage="PlayerName_Delirious_Spirit.png" portrait="PlayerPortrait_Delirious_Spirit.png" skin="character_delirious_spirit.png" skinColor="-1"/>
 
 	<player armor="2" bigportrait="PlayerPortraitBig_Hush_Child.png" hp="4" items="308,414" bombs="1" name="Hush Child" nameimage="PlayerName_Hush_Child.png" portrait="PlayerPortrait_Hush_Child.png" skin="character_Hush_Child.png" skinColor="-1"/>
 

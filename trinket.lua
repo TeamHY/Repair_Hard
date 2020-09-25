@@ -37,6 +37,11 @@ function RepairMod:onNewLevel()
 			Isaac.Spawn(5, 300, 18, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
 		end
 	end
+	if player:HasTrinket(5) then
+		if player:GetTrinketRNG(5):RandomInt(10) < (5 + player.Luck) then --0부터 9 / 1 + 럭 미만
+			Isaac.Spawn(5, 100, 208, Isaac.GetFreeNearPosition(player.Position, 75), Vector(0, 0), player)
+		end
+	end
 end
 
 function RepairMod:EnterRoom()

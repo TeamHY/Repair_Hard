@@ -38,7 +38,7 @@ function RepairMod:OnCache(player, cacheFlag)
 			player.Damage = player.Damage * 0.5
 		end
 		if player:HasCollectible(spi_item) then
-			player.Damage = player.Damage * 1.25
+			player.Damage = player.Damage * 1.4
 		end
 		if player:HasCollectible(ra_H_item) then
 			player.Damage = player.Damage * 0.65

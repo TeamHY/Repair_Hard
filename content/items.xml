@@ -1,5 +1,5 @@
 <items gfxroot="gfx/items/" version="1">
-
+	
 	<active gfx="999.png" maxcharges="0" name="Blessing" />
 	<active gfx="998.png" maxcharges="0" name="Unholy" />
 
@@ -57,7 +57,7 @@
 	<passive gfx="954.png" cache="range" name="Ashley Too" />
 	<passive gfx="953.png" name="Rank-Up-Magic Launch of The Phantom Knights" />
 	<passive gfx="952.png" cache="damage" name="Icarus's Wing" />
-	<active gfx="951.png" maxcharges="12" name="Left Foot" />
+	<active gfx="951.png" maxcharges="6" name="Left Foot" />
 	<passive gfx="950.png" devilprice="2" name="Amon EX" />
 	<passive gfx="949.png" name="Violeta" />
 	<passive gfx="948.png" cache="damage" name="Prometheus" />
@@ -98,7 +98,7 @@
 	<active gfx="922.png" name="Rank-Up-Magic Quick Chaos" />
 
 	<passive gfx="921.png" cache="damage tearflag" name="Guppy's Delirium" />
-	<passive gfx="920.png" cache="firedelay" name="Galactic Medal Of Valor" />
+	<passive gfx="920.png" cache="damage firedelay" name="Galactic Medal Of Valor" />
 	<passive gfx="919.png" coins="-99" bombs="-99" keys="-99" cache="damage" name="Spirit Circuits" />
 	<passive gfx="918.png" cache="damage" name="Ra-Harakhte" />
 	<passive gfx="917.png" name="Anonymous" />
