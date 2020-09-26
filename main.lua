@@ -331,6 +331,7 @@ function RepairMod:HardModeStatue()
 end
 
 function Save()
+	local player = Isaac.GetPlayer(0);
 	local data = {}
 	data.HolyWaterHit = HolyWaterHit
 	data.inf1_Hit = inf1_Hit
@@ -352,6 +353,11 @@ function Save()
 	data.Collectible212 = Collectible212
 	data.CollectibleSummang = CollectibleSummang
 	data.Trinket33 = Trinket33
+
+	for key,value in pairs(player:GetData()) do
+		data[key] = value
+	end
+
 	local encoded = JSON.encode(data)
 	if encoded ~= nil and #encoded > 0 then
 		RepairMod:SaveData(encoded)
@@ -359,6 +365,7 @@ function Save()
 end
 
 function Load()
+	local player = Isaac.GetPlayer(0);
 	local raw = RepairMod:LoadData()
 	if #raw ~= 0 then
 		local data = JSON.decode(raw)
@@ -422,6 +429,12 @@ function Load()
 		if data.Trinket33 ~= nil then
 			data.Trinket33 = Trinket33
 		end
+
+		for key,value in pairs(data) do
+			if key:sub(1,1) == "_" then
+				player:GetData()[key] = value
+			end
+		end
 	end
 end
 
@@ -446,6 +459,10 @@ function RepairMod:prePickUpColl(pickup,entity,low)
    end
 end
 
+function RepairMod:AutoSave(contable)
+	Save()
+end
+
 RepairMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, RepairMod.NewStart)
 RepairMod:AddCallback(ModCallbacks.MC_NPC_UPDATE, RepairMod.Megasatan_add, 275)
 RepairMod:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, RepairMod.CurseRemove)
@@ -457,3 +474,4 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_LASER_UPDATE, RepairMod.onLaserUpdate
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.VoidRemove)
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.HardModeStatue)
 RepairMod:AddCallback(ModCallbacks.MC_PRE_PICKUP_COLLISION, RepairMod.prePickUpColl)
+RepairMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, RepairMod.AutoSave)
