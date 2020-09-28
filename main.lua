@@ -11,6 +11,8 @@ trinket = require "trinket"
 pills = require "pills"
 stat = require "stat"
 seed = require "seed"
+extra = require "extracard"
+eid = require "eid"
 JSON = require "json"
 
 function RepairMod:NewStart(save)
