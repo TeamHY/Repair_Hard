@@ -26,8 +26,8 @@ function RepairMod:NewStart(save)
 		player:UseActiveItem(479, false, true, false, false) --흡수
 		]]
 		if Game().Difficulty ~= Difficulty.DIFFICULTY_GREEDIER then
-			Isaac.Spawn(5, 100, Isaac.GetItemIdByName("Hell Mode"), Vector(160,400), Vector(0, 0), player)
-			Isaac.Spawn(5, 100, Isaac.GetItemIdByName("Easy Mode"), Vector(480,400), Vector(0, 0), player)
+			Isaac.Spawn(5, 100, Isaac.GetItemIdByName("Hell Mode"), Vector(200,400), Vector(0, 0), player)
+			Isaac.Spawn(5, 100, Isaac.GetItemIdByName("Easy Mode"), Vector(440,400), Vector(0, 0), player)
 		end
 		setVar = {0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 		HolyWaterHit = 0
