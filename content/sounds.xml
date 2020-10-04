@@ -1,0 +1,5 @@
+<sounds root="sfx/">
+	<sound name="urCrack">
+		<sample weight="1" path="Crack.wav" />
+	</sound>
+</sounds>

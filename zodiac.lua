@@ -215,9 +215,6 @@ function RepairMod:onTear(tear)
 			end
 		end
 	end
-	if player:HasCollectible(ura_item) then
-		tear.TearFlags = tear.TearFlags|TearFlags.TEAR_FREEZE
-	end
 	if player:HasCollectible(ter_item) then
 		tear.TearFlags = tear.TearFlags|TearFlags.TEAR_ACID
 	end
@@ -266,11 +263,6 @@ function RepairMod:NpcHit(dmg_target, dmg_amount, dmg_source, dmg_dealer)
 	local entities = Isaac.GetRoomEntities()
     local flag = false
 
-	if player:HasCollectible(ura_item) and dmg_target:IsVulnerableEnemy() then
-		if dmg_dealer.Type == EntityType.ENTITY_TEAR and dmg_target:ToNPC():IsBoss() == false then
-			dmg_target:Kill()
-		end
-	end
 
 	if player:HasCollectible(aqr_item) and dmg_target:IsVulnerableEnemy() then
 		if dmg_dealer.Type == EntityType.ENTITY_TEAR or dmg_source & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or dmg_dealer.Type == EntityType.ENTITY_KNIFE then
@@ -334,3 +326,134 @@ RepairMod:AddCallback(ModCallbacks.MC_USE_ITEM, RepairMod.UseItem)]]
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_RENDER, RepairMod.Render);]]
+
+function RepairMod:hitDetect(dmg_target, dmg_amount, dmg_source, dmg_dealer)
+    local player = Isaac.GetPlayer(0)
+
+
+	if player:HasCollectible(ura_item) and dmg_target:IsVulnerableEnemy() then
+		if dmg_dealer.Type == EntityType.ENTITY_TEAR or dmg_source & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or dmg_dealer.Type == EntityType.ENTITY_KNIFE then
+			if dmg_target:ToNPC():IsBoss() then
+				dmg_target:AddSlowing(EntityRef(player),90,30,Color(1,1,1,0.75,36,177,216))
+			else
+				dmg_target:GetData().UrHit = true
+			end
+		end
+	end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.hitDetect)
+
+function RepairMod:uranusCrack(player)
+
+  sfxManager = SFXManager()
+  room = Game():GetRoom()
+  entities = Isaac.GetRoomEntities()
+
+  if player:HasCollectible(ura_item) then
+
+      for i = 1, #entities do
+
+        if(entities[i]:IsVulnerableEnemy() and entities[i]:GetData().UrHit ~= nil) then
+          local UrEnt = Isaac.Spawn(1000, 980, 0, entities[i].Position, Vector(0, 0), player)
+          UrEnt:GetSprite():Load(entities[i]:GetSprite():GetFilename(), true)
+          UrEnt:GetSprite():SetFrame(entities[i]:GetSprite():GetDefaultAnimation(),entities[i]:GetSprite():GetFrame())
+          UrEnt:GetSprite().Scale = entities[i]:GetSprite().Scale
+          UrEnt.Size = entities[i].Size
+          UrEnt:GetSprite().Color = Color(1,1,1,1,36,177,216)
+          sfxManager:Play(Isaac.GetSoundIdByName("urCrack"),1,0,false,1)
+
+          entities[i]:Remove()
+        end
+
+        if(entities[i].Type == 1000 and entities[i].Variant == 980 and entities[i]:GetData().urVar == nil and (player.Position - entities[i].Position):Length() < player.Size + entities[i].Size ) then
+          entities[i]:GetData().urVar = true
+          entities[i]:GetData().plVec = player:GetMovementInput()
+        end
+
+        if(entities[i]:GetData().urVar ~= nil) then
+
+          if entities[i]:GetData().plVec:Length() < 1 then
+            entities[i]:GetData().plVec = Vector(1,0):Rotated(math.random(360))
+          end
+
+          for j = 1, #entities do
+            if ( ((entities[j].Position - entities[i].Position):Length() < entities[j].Size + entities[i].Size) and entities[j]:IsVulnerableEnemy()) then
+              TearSeperate(entities[i])
+            end
+          end
+
+          if(not room:IsPositionInRoom(entities[i].Position,20)) then
+            TearSeperate(entities[i])
+          end
+
+          if (entities[i]:GetData().urTime == Game():GetFrameCount()) then
+
+            newPos = entities[i].Position + (entities[i]:GetData().plVec) * (15)
+
+            if(room:GetGridEntityFromPos(newPos) ~= nil) then
+              if(room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCK or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCKB  or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCKT  or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCK_BOMB  or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCK_ALT  or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_LOCK  or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_TNT  or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_POOP   or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_WALL   or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_STATUE   or
+                room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCK_SS) then
+                TearSeperate(entities[i])
+              end
+            end
+
+            entities[i].Position = newPos
+            entities[i]:GetData().urVar = true
+          end
+
+          if entities[i]:GetData().urVar then
+            entities[i]:GetData().urTime = Game():GetFrameCount() + 1
+            entities[i]:GetData().urVar = false
+          end
+        end
+
+      end
+  end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE  , RepairMod.uranusCrack)
+
+function RepairMod:onTear(tear)
+	local player = Isaac.GetPlayer(0)
+	local entities = Isaac.GetRoomEntities()
+  local sprite = tear:GetSprite()
+
+  if sprite:GetFilename() == "gfx/002.000_Tear.anm2" and player:HasCollectible(ura_item) then
+      sprite:ReplaceSpritesheet(0,"gfx/uranusTear.png")
+      sprite.Rotation = tear.Rotation
+      sprite:LoadGraphics()
+
+      sprite.Rotation = tear.Velocity:GetAngleDegrees()
+
+  end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR , RepairMod.onTear)
+
+function TearSeperate(entity)
+  player = Isaac.GetPlayer(0)
+
+  entity:Remove()
+  local ranRot = math.random(35)
+  for k = 1, 10 do
+    local splashTear = Isaac.Spawn(2, 0, 0, entity.Position, Vector(15,0):Rotated(36*k + ranRot), player)
+    local sprite = splashTear:GetSprite()
+    if sprite:GetFilename() == "gfx/002.000_Tear.anm2" then
+        sprite:ReplaceSpritesheet(0,"gfx/uranusTear.png")
+        sprite:LoadGraphics()
+
+        sprite.Rotation = 36*k + ranRot
+    end
+  end
+  sfxManager:Play(Isaac.GetSoundIdByName("urCrack"),1,0,false,1)
+end

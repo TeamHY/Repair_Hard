@@ -335,6 +335,7 @@ end
 function Save()
 	local player = Isaac.GetPlayer(0);
 	local data = {}
+	
 	data.HolyWaterHit = HolyWaterHit
 	data.inf1_Hit = inf1_Hit
 	data.lun_Get = lun_Get
