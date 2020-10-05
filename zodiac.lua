@@ -417,6 +417,9 @@ function RepairMod:uranusCrack(player)
           end
         end
 
+
+
+
       end
   end
 end
@@ -429,16 +432,34 @@ function RepairMod:onTear(tear)
   local sprite = tear:GetSprite()
 
   if sprite:GetFilename() == "gfx/002.000_Tear.anm2" and player:HasCollectible(ura_item) then
-      sprite:ReplaceSpritesheet(0,"gfx/uranusTear.png")
-      sprite.Rotation = tear.Rotation
-      sprite:LoadGraphics()
-
-      sprite.Rotation = tear.Velocity:GetAngleDegrees()
-
+		tear:GetData().treplace = true
   end
+
+
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR , RepairMod.onTear)
+
+function RepairMod:urTear(player)
+
+	entities = Isaac.GetRoomEntities()
+
+	for i=1, #entities do
+
+		if entities[i]:GetData().treplace ~= nil then
+			sprite = entities[i]:GetSprite()
+
+			sprite:ReplaceSpritesheet(0,"gfx/uranusTear.png")
+			sprite.Rotation = entities[i].Velocity:GetAngleDegrees()
+			sprite:LoadGraphics()
+
+
+		end
+
+	end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE  , RepairMod.urTear)
 
 function TearSeperate(entity)
   player = Isaac.GetPlayer(0)
