@@ -1,16 +1,16 @@
 RepairMod = RegisterMod("RepairMod",1)
-init = require "init"
-func = require "func"
-ban = require "ban"
-setitem = require "set"
-zodiac = require "zodiac"
-greed = require "greed"
-recall = require "recall"
-custom = require "custom"
-trinket = require "trinket"
-pills = require "pills"
-stat = require "stat"
-seed = require "seed"
+init = require "scripts.init"
+func = require "scripts.func"
+ban = require "scripts.ban"
+setitem = require "scripts.set"
+zodiac = require "scripts.zodiac"
+greed = require "scripts.greed"
+recall = require "scripts.recall"
+custom = require "scripts.custom"
+trinket = require "scripts.trinket"
+pills = require "scripts.pills"
+stat = require "scripts.stat"
+seed = require "scripts.seed"
 extra = require "extracard"
 eid = require "eid"
 JSON = require "json"
@@ -335,7 +335,7 @@ end
 function Save()
 	local player = Isaac.GetPlayer(0);
 	local data = {}
-	
+
 	data.HolyWaterHit = HolyWaterHit
 	data.inf1_Hit = inf1_Hit
 	data.lun_Get = lun_Get

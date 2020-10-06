@@ -1,5 +1,5 @@
 <items gfxroot="gfx/items/" version="1">
-	
+
 	<active gfx="999.png" maxcharges="0" name="Blessing" />
 	<active gfx="998.png" maxcharges="0" name="Unholy" />
 
@@ -105,6 +105,8 @@
 	<passive gfx="916.png" name="Clepsydre" />
 	<passive gfx="915.png" description="The True Draco" name="Master Peace,True Dracoslaying King" />
 	<passive gfx="914.png" description="The True Draco" name="Artifact Sanctum" />
+
+	<passive gfx="collectibles_053x_OculusRift.png" description="It's not a Blackhole!" name="Oculus Rift" />
 
 	<!-- Custom Trinket #1 -->
 	<trinket cache="damageflag" gfx="Bloody Bandage.png" name="Bloody Bandage" />

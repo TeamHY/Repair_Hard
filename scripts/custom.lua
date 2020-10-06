@@ -1,3 +1,6 @@
+
+ocul = require "scripts.customs.oculus"
+
 function RepairMod:GiveItem()
 	local player = Isaac.GetPlayer(0)
 	if player:HasCollectible(start_item) then
