@@ -131,7 +131,7 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE  , RepairMod.OculusE)
 function RepairMod:OculusI(tear)
   player = Isaac.GetPlayer(0)
 
-  if player:HasCollectible(ocu_item) and (tLuck(13)) then
+  if player:HasCollectible(ocu_item) and (tLuck(9)) then
     tear:GetData().ocuTear = true
     tear:SetColor(Color(0,0,0,1,0,0,0), -1, 1, false, true)
   end
