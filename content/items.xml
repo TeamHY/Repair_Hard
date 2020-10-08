@@ -104,9 +104,13 @@
 	<passive gfx="917.png" name="Anonymous" />
 	<passive gfx="916.png" name="Clepsydre" />
 	<passive gfx="915.png" description="The True Draco" name="Master Peace,True Dracoslaying King" />
-	<passive gfx="914.png" description="The True Draco" name="Artifact Sanctum" />
+	<passive gfx="914.png" name="Artifact Sanctum" />
 
-	<passive gfx="collectibles_053x_OculusRift.png" description="It's not a Blackhole!" name="Oculus Rift" />
+	<passive gfx="913.png" cache="damage" description="It's not a Blackhole!" name="Oculus Rift" />
+	<passive gfx="912.png" name="Rank-Up-Magic Raptor's Force" />
+	<passive gfx="911.png" name="Rank-Up-Magic Revolution Force" />
+	<passive gfx="910.png" name="Rank-Up-Magic Cipher Ascension" />
+	<passive gfx="909.png" name="PLATINUM BULLETS" />
 
 	<!-- Custom Trinket #1 -->
 	<trinket cache="damageflag" gfx="Bloody Bandage.png" name="Bloody Bandage" />

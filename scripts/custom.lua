@@ -74,8 +74,14 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.GiveItem)
 
 function RepairMod:RemoveItem()
 	local player = Isaac.GetPlayer(0)
-	local removeFly = {20, 82, 159, 179, 184, 185, 409}
+	local removeFly = {20, 82, 159, 179, 184, 185}
 	if player:HasCollectible(icar_item) then
+		Game():GetItemPool():RemoveCollectible(20);
+		Game():GetItemPool():RemoveCollectible(82);
+		Game():GetItemPool():RemoveCollectible(159);
+		Game():GetItemPool():RemoveCollectible(179);
+		Game():GetItemPool():RemoveCollectible(184);
+		Game():GetItemPool():RemoveCollectible(185);
 		for i=1, #removeFly do
 			if player:HasCollectible(removeFly[i]) then
 				player:RemoveCollectible(removeFly[i])
@@ -168,6 +174,11 @@ function RepairMod:MasperP()
       while player:GetCollectibleNum(534)<1 do
          player:AddCollectible(534,0,true)
       end
+        Game():GetItemPool():RemoveCollectible(139);
+   		Game():GetItemPool():RemoveCollectible(416);
+   		Game():GetItemPool():RemoveCollectible(454);
+   		Game():GetItemPool():RemoveCollectible(458);
+   		Game():GetItemPool():RemoveCollectible(534);
    end
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.MasperP)
@@ -601,7 +612,7 @@ function RepairMod:UseItem(itemname,rng)
 			player:GetData()._BCmult = player:GetData()._BCmult/1.3
 		end
 
-		if player:GetData()._BCvar == 3 then
+		if player:GetData()._BCvar == 5 then
 			player:RemoveCollectible(bit_coin_item)
 			player:GetData()._BCvar = 0
 		end
@@ -622,7 +633,7 @@ function RepairMod:UseItem(itemname,rng)
 			player:AddCoins(-player:GetNumCoins())
 		end
 
-		if player:GetData()._PCvar == 3 then
+		if player:GetData()._PCvar == 5 then
 			player:RemoveCollectible(pachinko_item)
 			player:GetData()._PCvar = 0
 		end

@@ -16,6 +16,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(violeta_item) then
 			player.Damage = player.Damage * 1.1
 		end
+		if player:HasCollectible(ocu_item) then
+			player.Damage = player.Damage + 1
+		end
 		if player:HasCollectible(doveb_item) then
 			player.Damage = player.Damage + 9.99
 		end

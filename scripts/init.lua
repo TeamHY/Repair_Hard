@@ -47,6 +47,10 @@ bit_coin_item = Isaac.GetItemIdByName("Bit Coin")
 pachinko_item = Isaac.GetItemIdByName("Pachinko")
 rank_phan_item = Isaac.GetItemIdByName("Rank-Up-Magic Launch of The Phantom Knights")
 art_sanc_item = Isaac.GetItemIdByName("Artifact Sanctum")
+rum_raptor = Isaac.GetItemIdByName("Rank-Up-Magic Raptor's Force") --3분마다 부적 소환 + 스멜터 발동
+rum_revolution = Isaac.GetItemIdByName("Rank-Up-Magic Revolution Force") --3분마다 보스방 아이템 소환
+rum_cipher = Isaac.GetItemIdByName("Rank-Up-Magic Cipher Ascension") --3분마다 챔피언 벨트 소환
+gun_platinum = Isaac.GetItemIdByName("PLATINUM BULLETS") --액티브, 사용 시 공격력 5% 증가
 --reincarnation_item = Isaac.GetItemIdByName("Reincarnation")
 
 -- 조디악
@@ -77,6 +81,7 @@ psc_item = Isaac.GetItemIdByName("Pisces EX")
 bel_item = Isaac.GetItemIdByName("Belial EX")
 amon_item = Isaac.GetItemIdByName("Amon EX")
 
+
 ocu_item = Isaac.GetItemIdByName("Oculus Rift")
 
 aricooldown = 0
@@ -84,8 +89,8 @@ roomseedisold = 0
 roomiscleared = 1
 
 -- 기본 옵션
-attackType = {68,114,118,152,168,395,533,559}
-familiarType = {8,67,95,99,100,113,163,167,174,268,322,361,390}
+attackType = {68,114,118,168,329,395,533,559}
+familiarType = {8,67,95,99,100,113,163,167,174,268,322,360,361,390,417}
 setVar = {0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 HolyWaterHit = 0
 randomAttack = 0
