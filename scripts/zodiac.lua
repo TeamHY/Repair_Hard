@@ -126,7 +126,6 @@ function RepairMod:OnUpdate()
 		if entities[i]:GetData().CorvusVar ~= nil and entities[i]:GetData().Splitted == nil and entities[i]:ToNPC().ParentNPC == nil and entities[i].Type ~= EntityType.ENTITY_SWARM then
 			if entities[i]:GetData().Splits == nil and entities[i]:GetData().CorvusVar+1 < Game():GetFrameCount() then
 					local OrgHP = entities[i].HitPoints
-					Isaac.DebugString(tostring(OrgHP))
 					entities[i]:Remove()
 					if entities[i]:ToNPC().ChildNPC ~= nil then
 						entities[i]:ToNPC().ChildNPC:Kill()
