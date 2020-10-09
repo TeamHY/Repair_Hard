@@ -123,6 +123,26 @@ function RepairMod:OnUpdate()
 			end
 		end
 
+		if entities[i]:GetData().CorvusVar ~= nil and entities[i]:GetData().Splitted == nil and entities[i]:ToNPC().ParentNPC == nil and entities[i].Type ~= EntityType.ENTITY_SWARM then
+			if entities[i]:GetData().Splits == nil and entities[i]:GetData().CorvusVar+1 < Game():GetFrameCount() then
+					local OrgHP = entities[i].HitPoints
+					Isaac.DebugString(tostring(OrgHP))
+					entities[i]:Remove()
+					if entities[i]:ToNPC().ChildNPC ~= nil then
+						entities[i]:ToNPC().ChildNPC:Kill()
+					end
+					entities[i]:GetData().Splitted = true
+					local spl = Isaac.Spawn(entities[i].Type, entities[i].Variant, entities[i].SubType, Isaac.GetFreeNearPosition(entities[i].Position, 1), Vector(-5,0), nil)
+					spl:GetData().Splits = 1
+					spl:ToNPC().Scale = spl:ToNPC().Scale / 1.4
+					spl.HitPoints = OrgHP / 3 --HP 조정
+					local spl = Isaac.Spawn(entities[i].Type, entities[i].Variant, entities[i].SubType, Isaac.GetFreeNearPosition(entities[i].Position, 1), Vector(5,0), nil)
+					spl:GetData().Splits = 1
+					spl:ToNPC().Scale = spl:ToNPC().Scale / 1.4
+					spl.HitPoints = OrgHP / 3 --HP 조정
+			end
+		end
+
 		if player:HasCollectible(tau_item) and player:HasFullHearts() and entities[i].Type == 5 and entities[i].Variant == 10 then
 			if ((player.Position.X - entities[i].Position.X)^2 + (player.Position.Y - entities[i].Position.Y)^2)^0.5 <= 30 then
 				if entities[i].SubType == 1 then
@@ -278,24 +298,7 @@ function RepairMod:NpcHit(dmg_target, dmg_amount, dmg_source, dmg_dealer)
 
 	if player:HasCollectible(cor_item) and dmg_target:IsVulnerableEnemy() and not dmg_target:ToNPC():IsBoss() then
 		if dmg_dealer.Type == EntityType.ENTITY_TEAR or dmg_source & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or dmg_dealer.Type == EntityType.ENTITY_KNIFE then
-			if dmg_target:GetData().Splitted == nil and dmg_target:ToNPC().ParentNPC == nil and dmg_target.Type ~= EntityType.ENTITY_SWARM then
-				if dmg_target:GetData().Splits == nil then
-					local OrgHP = dmg_target.HitPoints
-					dmg_target:Remove()
-					if dmg_target:ToNPC().ChildNPC ~= nil then
-						dmg_target:ToNPC().ChildNPC:Kill()
-					end
-					dmg_target:GetData().Splitted = true
-					local spl = Isaac.Spawn(dmg_target.Type, dmg_target.Variant, dmg_target.SubType, Isaac.GetFreeNearPosition(dmg_target.Position, 1), Vector(-5,0), nil)
-					spl:GetData().Splits = 1
-					spl:ToNPC().Scale = spl:ToNPC().Scale / 1.4
-					spl.HitPoints = OrgHP / 3 --HP 조정
-					local spl = Isaac.Spawn(dmg_target.Type, dmg_target.Variant, dmg_target.SubType, Isaac.GetFreeNearPosition(dmg_target.Position, 1), Vector(5,0), nil)
-					spl:GetData().Splits = 1
-					spl:ToNPC().Scale = spl:ToNPC().Scale / 1.4
-					spl.HitPoints = OrgHP / 3 --HP 조정
-				end
-			end
+			dmg_target:GetData().CorvusVar = Game():GetFrameCount()
 		end
 	end
 
@@ -311,6 +314,8 @@ function RepairMod:NpcHit(dmg_target, dmg_amount, dmg_source, dmg_dealer)
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.NpcHit)
+
+
 
 --[[function RepairMod:UseItem(collectible, rng)
 	local player = Isaac.GetPlayer(0)
