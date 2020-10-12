@@ -1,13 +1,3 @@
-function getFlag(arr, currentFlag) -- 눈물 상태 함수
-    number = currentFlag;
-
-    for i = 1, #arr do
-        number = number | 2^(arr[i] - 1);
-    end
-
-    return number;
-end
-
 function RepairMod:OnCache(player, cacheFlag)
 	if cacheFlag == CacheFlag.CACHE_DAMAGE then
 		if player:HasCollectible(prometheus_item) then
@@ -192,17 +182,15 @@ function RepairMod:OnCache(player, cacheFlag)
     end
 	end
 
-
-
 	if (cacheFlag == CacheFlag.CACHE_TEARFLAG) then
 		if player:HasCollectible(spect_item) then
-			player.TearFlags = getFlag({38}, player.TearFlags);
+			player.TearFlags = player.TearFlags|TearFlags.TEAR_LIGHT_FROM_HEAVEN
 		end
 		if player:HasCollectible(toid100_item) then
-			player.TearFlags = getFlag({48}, player.TearFlags);
+			player.TearFlags = player.TearFlags|TearFlags.TEAR_EGG
 		end
 		if player:HasCollectible(329) then
-			player.TearFlags = getFlag({3}, player.TearFlags);
+			player.TearFlags = player.TearFlags|TearFlags.TEAR_HOMING
 		end
 	end
 end
