@@ -58,7 +58,7 @@
 	<passive gfx="953.png" name="Rank-Up-Magic Launch of The Phantom Knights" />
 	<passive gfx="952.png" cache="damage" name="Icarus's Wing" />
 	<active gfx="951.png" maxcharges="6" name="Left Foot" />
-	<passive gfx="950.png" devilprice="2" name="Amon EX" />
+	<passive gfx="950.png" devilprice="2" cache="damage" name="Amon EX" />
 	<passive gfx="949.png" name="Violeta" />
 	<passive gfx="948.png" cache="damage" name="Prometheus" />
 	<passive gfx="947.png" name="Monstrance" />

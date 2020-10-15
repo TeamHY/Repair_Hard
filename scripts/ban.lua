@@ -3,6 +3,7 @@ function RepairMod:BanItem(newstart)
     player:DropTrinket(Isaac.GetFreeNearPosition(player.Position, 50),false) --현재 들고있는 부적 드랍
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_PAY_TO_WIN)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
+    Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_NO)
     --[[if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_ISAAC then
     end]]
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_MAGDALENA then
@@ -13,12 +14,10 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(vir_item);
     end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_CAIN then
-        Game():GetItemPool():RemoveCollectible(46);
-        Game():GetItemPool():RemoveCollectible(150);
-        Game():GetItemPool():RemoveCollectible(355);
-        Game():GetItemPool():RemoveCollectible(443);
-        Game():GetItemPool():RemoveCollectible(455);
-        Game():GetItemPool():RemoveCollectible(496);
+        Game():GetItemPool():RemoveCollectible(23);
+    else
+        Game():GetItemPool():RemoveCollectible(188);
+        Game():GetItemPool():RemoveCollectible(319);
     end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_JUDAS then
         Game():GetItemPool():RemoveCollectible(10);

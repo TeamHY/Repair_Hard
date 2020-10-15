@@ -21,11 +21,6 @@ function RepairMod:Recall()
       end
    end
 
-   if player:HasCollectible(68)==true then
-      while player:GetCollectibleNum(115)<1 do
-         player:AddCollectible(115,0,true)
-      end
-   end
    if player:HasCollectible(newStageClicker_item)==true then
       while player:GetCollectibleNum(238)<1 do
          player:AddCollectible(238,0,true)
@@ -34,6 +29,16 @@ function RepairMod:Recall()
    if player:HasCollectible(538)==true then
       while player:GetCollectibleNum(538)<2 do
          player:AddCollectible(538,0,true)
+      end
+   end
+   if player:HasCollectible(319)==true then
+      while player:GetCollectibleNum(245)<1 do
+         player:AddCollectible(245,0,true)
+      end
+   end
+   if player:HasCollectible(52)==true then
+      while player:GetCollectibleNum(220)<1 do
+         player:AddCollectible(220,0,true)
       end
    end
 end

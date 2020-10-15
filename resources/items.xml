@@ -156,7 +156,7 @@
 	<familiar description="Plop!" gfx="Collectibles_155_ThePeeper.png" id="155" name="The Peeper" />
 	<passive description="Item martyr" gfx="Collectibles_156_Habit.png" id="156" name="Habit" />
 	<passive achievement="54" cache="damage" description="RAGE!" gfx="Collectibles_157_BloodyLust.png" id="157" name="Bloody Lust" />
-	<active description="I see my future" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="6" name="Crystal Ball" />
+	<active description="I see my future" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="12" name="Crystal Ball" />
 	<passive cache="flying tearflag tearcolor" description="Scary" devilprice="2" gfx="Collectibles_159_SpiritOfTheNight.png" blackhearts="4" id="159" name="Spirit of the Night" />
 	<active cooldown="75" description="Holy white death" gfx="Collectibles_160_CrackTheSky.png" id="160" maxcharges="3" name="Crack the Sky" />
 	<passive description="Eternal life?" gfx="Collectibles_161_Ankh.png" id="161" name="Ankh" />
@@ -173,7 +173,7 @@
 	<familiar achievement="53" description="My fate protects me" gfx="Collectibles_172_SacrificialDagger.png" devilprice="1" id="172" name="Sacrificial Dagger" />
 	<passive description="You feel blessed" gfx="Collectibles_173_Mitre.png" id="173" name="Mitre" />
 	<familiar description="Random buddy" gfx="Collectibles_174_RainbowBaby.png" id="174" name="Rainbow Baby" />
-	<active achievement="58" description="Opens all doors..." gfx="Collectibles_175_DadsKey.png" id="175" maxcharges="1" name="Dad's Key" />
+	<active achievement="58" description="Opens all doors..." gfx="Collectibles_175_DadsKey.png" id="175" maxcharges="2" name="Dad's Key" />
 	<passive cache="shotspeed" description="HP up" gfx="Collectibles_176_StemCells.png" hearts="2" id="176" maxhearts="2" name="Stem Cells" />
 	<active cooldown="30" description="Gamble 24/7" gfx="Collectibles_177_PortableSlot.png" id="177" maxcharges="0" coins="15" name="Portable Slot" />
 	<familiar description="Splash!" gfx="Collectibles_178_HolyWater.png" id="178" name="Holy Water" />
@@ -186,7 +186,7 @@
 	<passive cache="flying tearflag tearcolor" description="Flight + spectral tears" gfx="Collectibles_185_DeadDove.png" id="185" name="Dead Dove" />
 	<active achievement="56" description="Mass enemy damage at a cost" gfx="Collectibles_186_BloodRights.png" id="186" maxcharges="0" name="Blood Rights" />
 	<familiar achievement="65" description="Swing it" gfx="Collectibles_187_GuppysHairball.png" id="187" name="Guppy's Hairball" />
-	<familiar achievement="51" description="Mirrored buddy" gfx="Collectibles_188_Abel.png" id="188" name="Abel" />
+	<familiar achievement="51" cache="damage" description="Mirrored buddy" gfx="Collectibles_188_Abel.png" id="188" name="Abel" />
 	<passive achievement="63" cache="firedelay damage speed range" description="All stats up" gfx="Collectibles_189_SMBSuperFan.png" hearts="99" id="189" maxhearts="2" name="SMB Super Fan" />
 	<passive bombs="99" description="99 bombs" gfx="Collectibles_190_Pyro.png" id="190" name="Pyro" />
 	<passive description="Rainbow tears" gfx="Collectibles_191_3DollarBill.png" id="191" name="3 Dollar Bill" />
@@ -202,7 +202,7 @@
 	<passive cache="tearcolor" description="Charm tears" gfx="collectibles_200_momseyeshadow.png" id="200" name="Mom's Eyeshadow" />
 	<passive cache="damage" description="Concussive tears" gfx="collectibles_201_ironbar.png" id="201" name="Iron Bar" />
 	<passive description="Golden touch" gfx="collectibles_202_midastouch.png" id="202" name="Midas' Touch" />
-	<passive description="1+1 free 4Evar" gfx="collectibles_203_humblingbundle.png" id="203" name="Humbleing Bundle" />
+	<passive description="1+1 free 4Evar" gfx="collectibles_203_humblingbundle.png" id="203" coins="20" bombs="20" keys="20" name="Humbleing Bundle" />
 	<passive description="Filled with goodies" gfx="collectibles_204_fannypack.png" id="204" name="Fanny Pack" />
 	<passive description="Charge with blood" gfx="collectibles_205_sharpplug.png" id="205" name="Sharp Plug" />
 	<familiar achievement="107" cache="damage firedelay" description="An out-of-body experience" gfx="collectibles_206_guillotine.png" id="206" name="Guillotine" />
