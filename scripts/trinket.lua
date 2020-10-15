@@ -1,5 +1,6 @@
 TRINKET_Bloody_Bandage = Isaac.GetTrinketIdByName("Bloody Bandage")
 sopenny_tri = Isaac.GetTrinketIdByName("Soul Penny")
+eye_of_god = Isaac.GetTrinketIdByName("Eye of God")
 
 pennyVar = 0
 
@@ -93,6 +94,11 @@ function RepairMod:ShootTear(tear)
 	if player:HasTrinket(127) then
 		if player:GetTrinketRNG(127):RandomInt(20) < (10 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			tear.TearFlags = tear.TearFlags|TearFlags.TEAR_HOMING
+		end
+	end
+	if player:HasTrinket(eye_of_god) then
+		if player:GetTrinketRNG(eye_of_god):RandomInt(20) < (20 + player.Luck) then --0부터 9 / 1 + 럭 미만
+			tear.TearFlags = tear.TearFlags|TearFlags.TEAR_GLOW
 		end
 	end
 end

@@ -116,6 +116,7 @@
 	<trinket cache="damageflag" gfx="Bloody Bandage.png" name="Bloody Bandage" />
 
 	<trinket gfx="Soul Penny.png" name="Soul Penny" />
+	<trinket gfx="Eye of God.png" cache="tearflag" name="Eye of God" />
 
 
 </items>
