@@ -22,7 +22,7 @@
 	<active gfx="982.png" name="Greed" />
 	<passive gfx="981.png" devilprice="2" cache="damage speed" name="It Hurts!" />
 	<passive gfx="980.png" devilprice="1" cache="damage speed" name="Blood Oath" />
-	<passive gfx="979.png" name="Solar" />
+	<passive gfx="979.png" cache="damage" name="Solar" />
 	<active gfx="978.png" name="No!" />
 	<passive gfx="977.png" cache="speed" name="Socks" />
 

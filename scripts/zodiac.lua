@@ -86,6 +86,9 @@ function RepairMod:OnUpdate()
 			if entities[i]:IsVulnerableEnemy() and player:HasCollectible(leo_item) then
 				entities[i]:AddFreeze(EntityRef(player),150)
 			end
+			if entities[i]:IsVulnerableEnemy() and player:HasCollectible(302) then
+				entities[i]:AddFreeze(EntityRef(player),75)
+			end
 		end
 		roomiscleared = 1
 	end

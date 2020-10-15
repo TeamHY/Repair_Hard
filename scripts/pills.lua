@@ -73,7 +73,7 @@ function RepairMod:usePillOrigin(pills)
 		end
 	elseif pills == PillEffect.PILLEFFECT_PUBERTY then
 		randomVar = player:GetPillRNG(PillEffect.PILLEFFECT_PUBERTY):RandomInt(100)+1
-		if randomVar <= 40 then
+		if randomVar <= 50 then
 			player:UseActiveItem(297,false,true,false,false)
 		end
 	elseif pills == PillEffect.PILLEFFECT_BAD_TRIP then

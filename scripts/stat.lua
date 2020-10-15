@@ -30,6 +30,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(summangguppy_item) then
 			player.Damage = player.Damage * 0.75
 		end
+		if player:HasCollectible(sol_item) then
+			player.Damage = player.Damage * 0.65
+		end
 		if player:HasCollectible(spect_item) then
 			player.Damage = player.Damage * 0.5
 		end
@@ -199,6 +202,9 @@ function RepairMod:OnCache(player, cacheFlag)
 			player.TearFlags = player.TearFlags|TearFlags.TEAR_HOMING
 		end
 		if player:HasCollectible(68) then
+			player.TearFlags = player.TearFlags|TearFlags.TEAR_PIERCING
+		end
+		if player:HasCollectible(cor_item) then
 			player.TearFlags = player.TearFlags|TearFlags.TEAR_PIERCING
 		end
 	end
