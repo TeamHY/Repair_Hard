@@ -157,7 +157,7 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE  , RepairMod.OculusS)
 
 function tLuck(max)
   player = Isaac.GetPlayer(0)
-  if( player:GetDropRNG():RandomInt(math.max(max-math.max(0,player.Luck),0)) == 0 ) then
+  if( player:GetDropRNG():RandomInt(math.max(max-math.max(0,math.floor(player.Luck)),0)) == 0 ) then
     return true
   else
     return false
