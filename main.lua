@@ -102,11 +102,23 @@ function RepairMod:PostUpdate()
 				while player:GetMaxHearts() > 2 do
 					player:AddMaxHearts(-1);
 				end
-				while player:GetSoulHearts() > 8 do
-					player:AddSoulHearts(-1);
+				if Isaac.GetPlayer(0):GetPlayerType() ~= PlayerType.PLAYER_JUDAS then
+					while player:GetSoulHearts() > 8 do
+						player:AddSoulHearts(-1);
+					end
+				else
+					while player:GetSoulHearts() > 6 do
+						player:AddSoulHearts(-1);
+					end
 				end
-				while player:GetBoneHearts() > 0 do
-					player:AddBoneHearts(-1)
+				if Isaac.GetPlayer(0):GetPlayerType() ~= PlayerType.PLAYER_THEFORGOTTEN then
+					while player:GetBoneHearts() > 0 do
+						player:AddBoneHearts(-1)
+					end
+				else
+					while player:GetBoneHearts() > 6 do
+						player:AddBoneHearts(-1)
+					end
 				end
 			end
 		else

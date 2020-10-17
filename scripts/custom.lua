@@ -75,12 +75,12 @@ function RepairMod:RemoveItem()
 	local player = Isaac.GetPlayer(0)
 	local removeFly = {20, 82, 159, 179, 184, 185}
 	if player:HasCollectible(icar_item) then
-		Game():GetItemPool():RemoveCollectible(20);
-		Game():GetItemPool():RemoveCollectible(82);
-		Game():GetItemPool():RemoveCollectible(159);
-		Game():GetItemPool():RemoveCollectible(179);
-		Game():GetItemPool():RemoveCollectible(184);
-		Game():GetItemPool():RemoveCollectible(185);
+		Game():GetItemPool():RemoveCollectible(20)
+		Game():GetItemPool():RemoveCollectible(82)
+		Game():GetItemPool():RemoveCollectible(159)
+		Game():GetItemPool():RemoveCollectible(179)
+		Game():GetItemPool():RemoveCollectible(184)
+		Game():GetItemPool():RemoveCollectible(185)
 		for i=1, #removeFly do
 			if player:HasCollectible(removeFly[i]) then
 				player:RemoveCollectible(removeFly[i])
@@ -143,9 +143,9 @@ function RepairMod:VarChange()
 
 	if player:HasCollectible(prometheus_item) then
 		if prometheusVar == false then
-			Game():GetItemPool():RemoveCollectible(260);
+			Game():GetItemPool():RemoveCollectible(260)
 			while player:GetCollectibleNum(260) > 0 do
-				player:RemoveCollectible(260);
+				player:RemoveCollectible(260)
 			end
 			prometheusVar = true
 		end
@@ -157,6 +157,29 @@ function RepairMod:VarChange()
 		player:GetData()._sancTime = Game():GetFrameCount()
 		player:GetData()._sancVar = true
 		Save()
+	end
+	if player:HasCollectible(gun_platinum) and player:GetData()._platinumRoomCheck ~= nil then
+		if player:GetData()._platinumRoomCheck == true and Game():GetRoom():IsClear() == true then
+			if player:GetData()._platinumVar == nil then
+				player:GetData()._platinumVar = 1
+			else
+				player:GetData()._platinumVar = player:GetData()._platinumVar + 1
+			end
+			Isaac.ConsoleOutput(player:GetData()._platinumVar .. "\n")
+			player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+			player:EvaluateItems()
+			player:GetData()._platinumRoomCheck = false
+		end
+	end
+	if player:HasCollectible(304) then
+		if player:GetData()._libraVar == nil then
+			player:GetData()._libraTime = Game():GetFrameCount()
+			player:GetData()._libraVar = 0
+		elseif player:GetData()._libraTime - Game():GetFrameCount() % 30 == 0 then
+			player:GetData()._libraVar = player:GetData()._libraVar + 1
+		end
+		player:AddCacheFlags(CacheFlag.CACHE_RANGE)
+		player:EvaluateItems()
 	end
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.VarChange)
@@ -173,11 +196,11 @@ function RepairMod:MasperP()
       while player:GetCollectibleNum(534)<1 do
          player:AddCollectible(534,0,true)
       end
-        Game():GetItemPool():RemoveCollectible(139);
-   		Game():GetItemPool():RemoveCollectible(416);
-   		Game():GetItemPool():RemoveCollectible(454);
-   		Game():GetItemPool():RemoveCollectible(458);
-   		Game():GetItemPool():RemoveCollectible(534);
+        Game():GetItemPool():RemoveCollectible(139)
+   		Game():GetItemPool():RemoveCollectible(416)
+   		Game():GetItemPool():RemoveCollectible(454)
+   		Game():GetItemPool():RemoveCollectible(458)
+   		Game():GetItemPool():RemoveCollectible(534)
    end
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.MasperP)
@@ -413,15 +436,25 @@ function RepairMod:onNewLevel()
 	if player:HasCollectible(newStageClicker_item) then
 		player:UseActiveItem(482,false,true,false,false)
 	end
-	if player:HasTrinket(TrinketType.TRINKET_GOLDEN_HORSE_SHOE) then
-		Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_TREASURE, true, player:GetCollectibleRNG(Isaac.GetItemIdByName("Blessing")):GetSeed()), Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
-	end
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_LEVEL, RepairMod.onNewLevel)
 
+function RepairMod:EnterRoom()
+	local player = Isaac.GetPlayer(0)
+	if player:HasCollectible(gun_platinum) then
+		if Game():GetRoom():IsClear() == false then
+			player:GetData()._platinumRoomCheck = true
+		else
+			player:GetData()._platinumRoomCheck = false
+		end
+	end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, RepairMod.EnterRoom)
+
 function RepairMod:UseItem(itemname,rng)
-	local player = Isaac.GetPlayer(0);
+	local player = Isaac.GetPlayer(0)
 	if itemname == Isaac.GetItemIdByName("Blessing") then
 		if player:GetNumCoins() >= 30 then
 			player:AddCoins(-30)

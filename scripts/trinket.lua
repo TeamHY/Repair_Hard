@@ -47,6 +47,9 @@ end
 
 function RepairMod:EnterRoom()
 	local player = Isaac.GetPlayer(0)
+	if player:HasTrinket(TrinketType.TRINKET_GOLDEN_HORSE_SHOE) then
+		Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_TREASURE, true, player:GetCollectibleRNG(Isaac.GetItemIdByName("Blessing")):GetSeed()), Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
+	end
 	if player:HasTrinket(29) then
 		if player:GetTrinketRNG(29):RandomInt(2) < (1 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			Isaac.Spawn(3, 43, 0, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
@@ -127,7 +130,7 @@ function RepairMod:onHit(entity,amt,flags,src,i_frames)
 end
 RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.onHit, EntityType.ENTITY_PLAYER)
 
-function RepairMod:SoulPennyFunc()
+function RepairMod:TrinketPostUpdate()
 	local player = Isaac.GetPlayer(0)
 	if player:HasTrinket(sopenny_tri) then
 		if player:GetNumCoins() > pennyVar and player:GetTrinketRNG(sopenny_tri):RandomInt(4) == 3 then
@@ -139,5 +142,5 @@ end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_LEVEL, RepairMod.onNewLevel)
 RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, RepairMod.EnterRoom)
-RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.SoulPennyFunc)
+RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.TrinketPostUpdate)
 RepairMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, RepairMod.ShootTear)

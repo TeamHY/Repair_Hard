@@ -12,6 +12,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(doveb_item) then
 			player.Damage = player.Damage + 9.99
 		end
+		if player:GetData()._platinumVar ~= nil then
+			player.Damage = player.Damage + player:GetData()._platinumVar
+		end
 		if player:HasCollectible(oath_item) then
 			player.Damage = player.Damage + (1.8 - (player:GetHearts() * 0.09))
 		end
@@ -84,18 +87,13 @@ function RepairMod:OnCache(player, cacheFlag)
 		if LudoVar > 0 then
 			player.Damage = player.Damage*(LudoVar*2.0)
 		end
-		if Game().Difficulty >= Difficulty.DIFFICULTY_GREED then -- 그리드 모드면
-			if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-				player.Damage = player.Damage*1
-			end
-		end
 	    if hardModeVar == 1 then
         	player.Damage = player.Damage * HellDamage
         end
         if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Lamb") then
 			player.Damage = player.Damage * 1.5
 		end
-    if player:GetData()._BCvar ~= nil then
+    	if player:GetData()._BCvar ~= nil then
 			player.Damage = player.Damage * player:GetData()._BCmult
 		end
 	end
@@ -140,6 +138,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		end
 		if player:HasCollectible(229) then
 			player.TearHeight = player.TearHeight * 1.2
+		end
+		if player:GetData()._libraVar ~= nil then
+			player.TearHeight = player.TearHeight - player:GetData()._libraVar
 		end
 	end
 

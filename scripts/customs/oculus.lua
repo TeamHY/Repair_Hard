@@ -153,7 +153,7 @@ function RepairMod:OculusS(player)
   end
 end
 
-RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE  , RepairMod.OculusS)
+RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.OculusS)
 
 function tLuck(max)
   player = Isaac.GetPlayer(0)
