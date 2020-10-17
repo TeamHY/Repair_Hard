@@ -73,31 +73,31 @@ function RepairMod:ShootTear(tear)
 	local player = Isaac.GetPlayer(0)
 	if player:HasTrinket(31) then
 		if player:GetTrinketRNG(31):RandomInt(10) < (3 + player.Luck) then --0부터 9 / 1 + 럭 미만
-			tear.TearFlags = player.TearFlags|TearFlags.TEAR_PIERCING
+			tear.TearFlags = tear.TearFlags|TearFlags.TEAR_PIERCING
 		end
 	end
 	if player:HasTrinket(95) then
 		if player:GetTrinketRNG(95):RandomInt(100) < (1 + player.Luck) then --0부터 9 / 1 + 럭 미만
-			tear.TearFlags = player.TearFlags|TearFlags.TEAR_HORN
+			tear.TearFlags = tear.TearFlags|TearFlags.TEAR_HORN
 		end
 	end
 	if player:HasTrinket(99) then
 		if player:GetTrinketRNG(99):RandomInt(20) < (4 + player.Luck) then --0부터 9 / 1 + 럭 미만
-			tear.TearFlags = player.TearFlags|TearFlags.TEAR_BOUNCE
+			tear.TearFlags = tear.TearFlags|TearFlags.TEAR_BOUNCE
 		end
 	end
 	if player:HasTrinket(125) then
 		if player:GetTrinketRNG(125):RandomInt(20) < (4 + player.Luck) then --0부터 9 / 1 + 럭 미만
-			tear.TearFlags = player.TearFlags|TearFlags.TEAR_JACOBS
+			tear.TearFlags = tear.TearFlags|TearFlags.TEAR_JACOBS
 		end
 	end
 	if player:HasTrinket(127) then
 		if player:GetTrinketRNG(127):RandomInt(20) < (10 + player.Luck) then --0부터 9 / 1 + 럭 미만
-			tear.TearFlags = player.TearFlags|TearFlags.TEAR_HOMING
+			tear.TearFlags = tear.TearFlags|TearFlags.TEAR_HOMING
 		end
 	end
 	if player:HasTrinket(eye_of_god) then
-		if player:GetTrinketRNG(eye_of_god):RandomInt(20) < (20 + player.Luck) then --0부터 9 / 1 + 럭 미만
+		if player:GetTrinketRNG(eye_of_god):RandomInt(20) < (5 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			player.TearFlags = player.TearFlags|TearFlags.TEAR_GLOW
 		end
 	end
