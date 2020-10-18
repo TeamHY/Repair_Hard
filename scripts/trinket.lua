@@ -6,6 +6,9 @@ pennyVar = 0
 
 function RepairMod:onNewLevel()
 	local player = Isaac.GetPlayer(0)
+	if player:HasTrinket(TrinketType.TRINKET_GOLDEN_HORSE_SHOE) then
+		Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_TREASURE, true, player:GetCollectibleRNG(Isaac.GetItemIdByName("Blessing")):GetSeed()), Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
+	end
 	if player:HasTrinket(18) then
 		if player:GetTrinketRNG(18):RandomInt(2) < (1 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			if (Game():GetLevel():GetAngelRoomChance() < 1) then
@@ -47,9 +50,6 @@ end
 
 function RepairMod:EnterRoom()
 	local player = Isaac.GetPlayer(0)
-	if player:HasTrinket(TrinketType.TRINKET_GOLDEN_HORSE_SHOE) then
-		Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_TREASURE, true, player:GetCollectibleRNG(Isaac.GetItemIdByName("Blessing")):GetSeed()), Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
-	end
 	if player:HasTrinket(29) then
 		if player:GetTrinketRNG(29):RandomInt(2) < (1 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			Isaac.Spawn(3, 43, 0, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
