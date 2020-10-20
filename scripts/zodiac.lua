@@ -357,7 +357,7 @@ function RepairMod:uranusCrack(player)
   room = Game():GetRoom()
   entities = Isaac.GetRoomEntities()
 
-  if player:HasCollectible(ura_item) then
+  --if player:HasCollectible(ura_item) then
 
       for i = 1, #entities do
 
@@ -428,7 +428,7 @@ function RepairMod:uranusCrack(player)
 
 
       end
-  end
+  --end
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE  , RepairMod.uranusCrack)

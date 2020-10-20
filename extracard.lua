@@ -150,131 +150,75 @@ end
 --the cold - slows all enemies in the room (spider bite effect) with revelations, can freeze some enemies
 local coldIsActive = false
 local clearColdTimer = 0
+
 function RepairMod:useCold(card)
-	local player = piber20HelperMod:getPlayerUsingItem()
 
-	--play card sound
-	SFXManager():Play(SoundEffect.SOUND_DEATH_CARD, 1, 0, false, 1)
 
-	--get effects ready
-	local color = Color(1, 1, 1, 1, 50, 40, 50)
-	local strength = 2.5
-	local legnth = 300
+	player = piber20HelperMod:getPlayerUsingItem()
 
-	--do revelations snow overlay
-	if not RepairMod.OriginalCold then
-		if REVEL then
-			local inGlacier = false
-			if StageSystem then
-				if StageSystem.GetCurrentStage() == REVEL.STAGE.Glacier.Id then
-					inGlacier = true
-				end
-			end
-			if StageAPI then
-				if REVEL.STAGE.Glacier:IsStage() then
-					inGlacier = true
-				end
-			end
-			if not inGlacier then
-				if not coldIsActive then
-					REVEL.OVERLAY.Glacier3.Sprite.Color = Color(1,1,1,0,0,0,0)
-					REVEL.OVERLAY.Glacier4.Sprite.Color = Color(1,1,1,0,0,0,0)
-					REVEL.OVERLAY.Glacier5.Sprite.Color = Color(1,1,1,0,0,0,0)
-				end
-				coldIsActive = true
-				clearColdTimer = 860
-			end
-		end
-		color = Color(1, 1, 1, 1, 0, 90, 150)
-		strength = 3.5
-		legnth = 450
+	level = Game():GetLevel()
+	CurRoom = level:GetCurrentRoomIndex()
+	entities = Isaac.GetRoomEntities()
+
+	if player:GetData()._coldCount == nil then
+		player:GetData()._coldCount = 3
+	else
+		player:GetData()._coldCount = player:GetData()._coldCount + 3
 	end
 
-	--get the room entities
-	for _, entity in pairs(Isaac.GetRoomEntities()) do --get all the entities
-		--make sure it's an enemy
-		if entity:IsVulnerableEnemy() then
-			--slow all the enemies
-			entity:AddSlowing(EntityRef(player), legnth, strength, color)
-
-			if not RepairMod.OriginalCold then
-				local type = entity.Type
-				local variant = entity.Variant
-				local doMorph = false
-
-				--remove flame from flaming enemies
-				if type == EntityType.ENTITY_GAPER and variant == 2 then
-					variant = 0
-					doMorph = true
-				elseif type == EntityType.ENTITY_FATTY and variant == 2 then
-					variant = 0
-					doMorph = true
-				elseif type == EntityType.ENTITY_FLAMINGHOPPER then
-					type = EntityType.ENTITY_HOPPER
-					doMorph = true
-				end
-
-				if _G.revel then
-					--change enemies into frosty versions from revelations
-					if type == EntityType.ENTITY_GAPER then
-						type = Isaac.GetEntityTypeByName("Frosty Gaper")
-						variant = Isaac.GetEntityVariantByName("Frosty Gaper")
-						SFXManager():Play(REVEL.SFX.MINT_GUM_FREEZE, 1, 0, false, 1)
-						doMorph = true
-					elseif type == EntityType.ENTITY_HORF and variant == 0 then
-						type = Isaac.GetEntityTypeByName("Frosty Horf")
-						variant = Isaac.GetEntityVariantByName("Frosty Horf")
-						SFXManager():Play(REVEL.SFX.MINT_GUM_FREEZE, 1, 0, false, 1)
-						doMorph = true
-					elseif (type == EntityType.ENTITY_HOPPER or type == EntityType.ENTITY_FLAMINGHOPPER) and variant == 0 then
-						type = Isaac.GetEntityTypeByName("Frosty Hopper")
-						variant = Isaac.GetEntityVariantByName("Frosty Hopper")
-						SFXManager():Play(REVEL.SFX.MINT_GUM_FREEZE, 1, 0, false, 1)
-						doMorph = true
-					elseif (type == Isaac.GetEntityTypeByName("Drifty") and variant == Isaac.GetEntityVariantByName("Drifty")) or (type == Isaac.GetEntityTypeByName("Pucker") and variant == Isaac.GetEntityVariantByName("Pucker")) then
-						type = Isaac.GetEntityTypeByName("Drifty Ice")
-						variant = Isaac.GetEntityVariantByName("Drifty Ice")
-						SFXManager():Play(REVEL.SFX.MINT_GUM_FREEZE, 1, 0, false, 1)
-						doMorph = true
-					elseif (type == EntityType.ENTITY_CLOTTY and variant == 2) then
-						type = Isaac.GetEntityTypeByName("Frosty I.Blob")
-						variant = Isaac.GetEntityVariantByName("Frosty I.Blob")
-						SFXManager():Play(REVEL.SFX.MINT_GUM_FREEZE, 1, 0, false, 1)
-						doMorph = true
-					elseif AlphabirthAndRevelationsConvergenceMod then
-						if Isaac.GetEntityTypeByName("Lobotomy") ~= 0 then
-							if (type == Isaac.GetEntityTypeByName("Lobotomy") and variant == Isaac.GetEntityVariantByName("Lobotomy")) then
-								type = Isaac.GetEntityTypeByName("Frosty Lobotomy")
-								variant = Isaac.GetEntityVariantByName("Frosty Lobotomy")
-								SFXManager():Play(REVEL.SFX.MINT_GUM_FREEZE, 1, 0, false, 1)
-								doMorph = true
-							end
+	if not level:GetRoomByIdx(CurRoom).Clear then
+				for i = 1, #entities do
+					if entities[i]:IsVulnerableEnemy() and entities[i].Type ~= 33 then
+						if entities[i]:ToNPC():IsBoss() then
+							entities[i]:AddSlowing(EntityRef(player),90,30,Color(1,1,1,0.75,36,177,216))
+						else
+							entities[i]:GetData().UrHit = true
 						end
 					end
 				end
-
-				if doMorph then
-					local position = entity.Position
-					local velocity = entity.Velocity
-					local spawner = entity.SpawnerEntity
-					local maxHealth = entity.MaxHitPoints
-					local health = entity.HitPoints
-					entity:Remove()
-					local newEntity = Game():Spawn(type, variant, position, velocity, spawner, 0, piber20HelperMod:getRNGNext())
-					newEntity:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
-					newEntity.MaxHitPoints = maxHealth
-					newEntity.HitPoints = health
-					newEntity:AddSlowing(EntityRef(player), legnth, strength, color)
-				end
-			end
-		end
+				player:GetData()._coldCount = player:GetData()._coldCount-1
 	end
+
+
+
 end
 RepairMod:AddCallback(ModCallbacks.MC_USE_CARD, RepairMod.useCold, LostCardsCardType.CARD_COLD)
+
+function RepairMod:ColdEffect()
+	local player = piber20HelperMod:getPlayerUsingItem()
+	local level = Game():GetLevel()
+	local CurRoom = level:GetCurrentRoomIndex()
+
+	local	entities = Isaac.GetRoomEntities()
+
+	if player:GetData()._coldCount ~= nil and not level:GetRoomByIdx(CurRoom).Clear then
+		if player:GetData()._coldCount > 0 then
+
+				for i = 1, #entities do
+					if entities[i]:IsVulnerableEnemy() and entities[i].Type ~= 33 then
+						if entities[i]:ToNPC():IsBoss() then
+							entities[i]:AddSlowing(EntityRef(player),90,30,Color(1,1,1,0.75,36,177,216))
+						else
+							entities[i]:GetData().UrHit = true
+						end
+					end
+				end
+				player:GetData()._coldCount = player:GetData()._coldCount-1
+
+		end
+	end
+
+
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, RepairMod.ColdEffect)
+
 
 --the servant - gives random familiar for the room (basically the effect of the monster manual item)
 function RepairMod:useServant(card)
 	local player = piber20HelperMod:getPlayerUsingItem()
+	player:UseActiveItem(CollectibleType.COLLECTIBLE_MONSTER_MANUAL, false, true, false, false)
+	player:UseActiveItem(CollectibleType.COLLECTIBLE_MONSTER_MANUAL, false, true, false, false)
 	player:UseActiveItem(CollectibleType.COLLECTIBLE_MONSTER_MANUAL, false, true, false, false)
 end
 RepairMod:AddCallback(ModCallbacks.MC_USE_CARD, RepairMod.useServant, LostCardsCardType.CARD_SERVANT)

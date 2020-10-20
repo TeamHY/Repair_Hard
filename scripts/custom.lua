@@ -348,19 +348,55 @@ end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.Mission)
 
-function RepairMod:Sol()
+function RepairMod:SolUpdate()
 	local player = Isaac.GetPlayer(0)
-	if player:HasCollectible(sol_item) then
-		local entities = Isaac.GetRoomEntities()
-		for i = 1, #entities do
-			if entities[i]:IsVulnerableEnemy() and entities[i]:ToNPC():IsBoss() and entities[i]:HasMortalDamage() then
-				Game():GetLevel():ShowMap()
-			end
+	local level = Game():GetLevel()
+
+	rooms = level:GetRooms()
+
+
+
+		for i=0,rooms.Size - 1 do
+			local roomDesc = rooms:Get(i)
+			local roomIndex = roomDesc.SafeGridIndex
+				if roomDesc.Data then
+					if (roomDesc.Data.Type == RoomType.ROOM_BOSS and roomDesc.Clear and player:GetData()._solEffectVar ~= nil) then
+						level:ShowMap()
+						player:GetData()._solEffectVar = nil
+					end
+				end
 		end
-	end
+
 end
 
-RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.Sol)
+RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.SolUpdate)
+
+function RepairMod:SolNewLevel()
+	local player = Isaac.GetPlayer(0)
+	local level = Game():GetLevel()
+
+		rooms = level:GetRooms()
+
+	if player:HasCollectible(sol_item) then
+
+		for i=0,rooms.Size - 1 do
+			local roomDesc = rooms:Get(i)
+			local roomIndex = roomDesc.SafeGridIndex
+				if roomDesc.Data then
+					if roomDesc.Data.Type == RoomType.ROOM_BOSS then
+						local rRoom = level:GetRoomByIdx(roomIndex)
+				    rRoom.DisplayFlags = 7
+					end
+				end
+		end
+		level:UpdateVisibility()
+
+		player:GetData()._solEffectVar = true
+	end
+
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_LEVEL, RepairMod.SolNewLevel)
 
 function RepairMod:Monstrance()
     local player = Isaac.GetPlayer(0)
