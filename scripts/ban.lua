@@ -89,6 +89,7 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(332);
         Game():GetItemPool():RemoveCollectible(482);
         Game():GetItemPool():RemoveCollectible(487);
+        Game():GetItemPool():RemoveCollectible(527);
     end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_LAZARUS2 then
         Game():GetItemPool():RemoveCollectible(108);

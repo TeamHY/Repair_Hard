@@ -161,9 +161,9 @@ function RepairMod:VarChange()
 	if player:HasCollectible(gun_platinum) and player:GetData()._platinumRoomCheck ~= nil then
 		if player:GetData()._platinumRoomCheck == true and Game():GetRoom():IsClear() == true then
 			if player:GetData()._platinumVar == nil then
-				player:GetData()._platinumVar = 1
+				player:GetData()._platinumVar = 0.1
 			else
-				player:GetData()._platinumVar = player:GetData()._platinumVar + 1
+				player:GetData()._platinumVar = player:GetData()._platinumVar + 0.1
 			end
 			Isaac.ConsoleOutput(player:GetData()._platinumVar .. "\n")
 			player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
@@ -176,7 +176,7 @@ function RepairMod:VarChange()
 			player:GetData()._libraTime = Game():GetFrameCount()
 			player:GetData()._libraVar = 0
 		elseif player:GetData()._libraTime - Game():GetFrameCount() % 30 == 0 then
-			player:GetData()._libraVar = player:GetData()._libraVar + 1
+			player:GetData()._libraVar = player:GetData()._libraVar + 0.2
 		end
 		player:AddCacheFlags(CacheFlag.CACHE_RANGE)
 		player:EvaluateItems()

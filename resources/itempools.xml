@@ -573,6 +573,7 @@
       <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -767,6 +768,7 @@
       <Item Name="Clepsydre" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1005,6 +1007,7 @@
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1116,6 +1119,7 @@
       <Item Name="Monstrance" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="PLATINUM BULLETS" Weight="2" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1487,6 +1491,7 @@
       <Item Name="Clepsydre" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1748,6 +1753,7 @@
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1896,6 +1902,7 @@
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1990,6 +1997,7 @@
       <Item Name="Monstrance" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="PLATINUM BULLETS" Weight="2" DecreaseBy="1" RemoveOn="0"/>
 
 
 
