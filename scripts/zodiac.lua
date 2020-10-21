@@ -485,3 +485,116 @@ function TearSeperate(entity)
   end
   sfxManager:Play(Isaac.GetSoundIdByName("urCrack"),1,0,false,1)
 end
+
+
+
+
+
+
+
+
+
+local Replace = false
+
+function RepairMod:MarsNewStage()
+	local player = Isaac.GetPlayer(0)
+
+	if player:HasCollectible(mars_item) then
+		Replace = true
+	end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, RepairMod.MarsNewStage)
+
+function RepairMod:MarsStageUpdate()
+		local room = Game():GetRoom()
+		if Replace then
+			local level = Game():GetLevel()
+			local CurRoom = level:GetCurrentRoomIndex()
+      rooms = level:GetRooms()
+
+      local rCurseRoomIndex = level:QueryRoomTypeIndex(RoomType.ROOM_CURSE, false, RNG())
+      local rCurseRoom = level:GetRoomByIdx(rCurseRoomIndex)
+      local baseCurseroomData = rCurseRoom.Data
+
+
+			--if baseCurseroomData ~= nil then
+        if baseCurseroomData.Type == RoomType.ROOM_CURSE then
+
+
+          rCurseRoom.DisplayFlags = 7
+
+          local EndRooms = {}
+
+          for i=0,169 do
+    				local roomCount = level:GetRoomByIdx(i)
+  					if i ~= 84 and EndRoomCheck(i) then
+              table.insert(EndRooms,roomCount)
+  					end
+  				end
+
+            if #EndRooms ~= 0 then
+              for i=1, #EndRooms do
+                Isaac.DebugString(tostring(EndRooms[i].SafeGridIndex))
+              end
+              local rngIndex = math.random(1,#EndRooms)
+              EndRooms[rngIndex].Data = baseCurseroomData
+              EndRooms[rngIndex].DisplayFlags = 7
+            end
+        end
+			--end
+
+      level:UpdateVisibility()
+			Replace = nil
+    end
+
+
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, RepairMod.MarsStageUpdate)
+
+function EndRoomCheck(index)
+  local level = Game():GetLevel()
+  local CurrentRoom = level:GetRoomByIdx(index)
+
+  if CurrentRoom.Data ~= nil then
+      if CurrentRoom.Data.Type == RoomType.ROOM_DEFAULT and CurrentRoom.Data.Shape == RoomShape.ROOMSHAPE_1x1 then
+        local nearbyCount = 0
+
+        if (index == 71 or index == 83 or index == 85 or index == 97) then
+          return false
+        end
+
+        if (index%13 ~= 0 and level:GetRoomByIdx(index-1).Data ~= nil) then
+          if (level:GetRoomByIdx(index-1).Data.Type ~= RoomType.ROOM_SECRET) then
+            nearbyCount = nearbyCount+1
+          end
+        end
+
+        if (index%13 ~= 12 and level:GetRoomByIdx(index+1).Data ~= nil) then
+          if (level:GetRoomByIdx(index+1).Data.Type ~= RoomType.ROOM_SECRET) then
+            nearbyCount = nearbyCount+1
+          end
+        end
+
+        if (index >= 13 and level:GetRoomByIdx(index-13).Data ~= nil) then
+          if (level:GetRoomByIdx(index-13).Data.Type ~= RoomType.ROOM_SECRET) then
+            nearbyCount = nearbyCount+1
+          end
+        end
+
+        if (index <= 155 and level:GetRoomByIdx(index+13).Data ~= nil) then
+          if (level:GetRoomByIdx(index+13).Data.Type ~= RoomType.ROOM_SECRET) then
+            nearbyCount = nearbyCount+1
+          end
+        end
+
+        if (nearbyCount <= 1) then
+          return true
+        else
+          return false
+        end
+
+      end
+  end
+end
