@@ -342,7 +342,7 @@ function RepairMod:hitDetect(dmg_target, dmg_amount, dmg_source, dmg_dealer)
 		if dmg_dealer.Type == EntityType.ENTITY_TEAR or dmg_source & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or dmg_dealer.Type == EntityType.ENTITY_KNIFE then
 			if dmg_target:ToNPC():IsBoss() then
 				dmg_target:AddSlowing(EntityRef(player),90,30,Color(1,1,1,0.75,36,177,216))
-			else
+			elseif not (dmg_target.Type == 260 and dmg_target.Variant == 10) then
 				dmg_target:GetData().UrHit = true
 			end
 		end
