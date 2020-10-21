@@ -183,6 +183,7 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(636);
         Game():GetItemPool():RemoveCollectible(637);
         Game():GetItemPool():RemoveCollectible(638);
+        Game():GetItemPool():RemoveCollectible(643);
     end
     if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Hush Child") then
         Game():GetItemPool():RemoveCollectible(161);

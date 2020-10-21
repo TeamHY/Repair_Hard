@@ -33,9 +33,6 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(summangguppy_item) then
 			player.Damage = player.Damage * 0.75
 		end
-		if player:HasCollectible(sol_item) then
-			player.Damage = player.Damage * 0.65
-		end
 		if player:HasCollectible(spect_item) then
 			player.Damage = player.Damage * 0.5
 		end
@@ -91,7 +88,7 @@ function RepairMod:OnCache(player, cacheFlag)
         	player.Damage = player.Damage * HellDamage
         end
         if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Lamb") then
-			player.Damage = player.Damage * 1.5
+			player.Damage = player.Damage * 1.25
 		end
     	if player:GetData()._BCvar ~= nil then
 			player.Damage = player.Damage * player:GetData()._BCmult

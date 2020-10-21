@@ -60,6 +60,7 @@ ter_item = Isaac.GetItemIdByName("Terra")
 mer_item = Isaac.GetItemIdByName("Mercurius")
 lun_item = Isaac.GetItemIdByName("Luna")
 sat_item = Isaac.GetItemIdByName("Saturn")
+mars_item = Isaac.GetItemIdByName("Mars")
 
 cor_item = Isaac.GetItemIdByName("Corvus")
 cyg_item = Isaac.GetItemIdByName("Cygnus")

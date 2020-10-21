@@ -176,7 +176,7 @@ function RepairMod:VarChange()
 			player:GetData()._libraTime = Game():GetFrameCount()
 			player:GetData()._libraVar = 0
 		elseif player:GetData()._libraTime - Game():GetFrameCount() % 30 == 0 then
-			player:GetData()._libraVar = player:GetData()._libraVar + 0.2
+			player:GetData()._libraVar = player:GetData()._libraVar + 0.1
 		end
 		player:AddCacheFlags(CacheFlag.CACHE_RANGE)
 		player:EvaluateItems()
