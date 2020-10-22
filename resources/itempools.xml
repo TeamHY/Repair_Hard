@@ -534,7 +534,7 @@
       <Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Belial EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="H.C Rhongomyniad Spear" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="BFFS! EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="BFFS! EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Saturn" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Amon EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
 
@@ -574,6 +574,7 @@
       <Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -738,7 +739,7 @@
       <Item Name="Terra" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mercurius" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Luna" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="BFFS! EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="BFFS! EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Pachinko" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Saturn" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Ashley Too" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -770,6 +771,7 @@
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1250,6 +1252,7 @@
           <Item Name="Aquarius EX" Weight="0.101" DecreaseBy="1" RemoveOn="0"/>
           <Item Name="Leo EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
           <Item Name="Cancer EX" Weight="0.101" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1462,7 +1465,7 @@
       <Item Name="Terra" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mercurius" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Luna" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="BFFS! EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="BFFS! EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Pachinko" Weight="3" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Saturn" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Ashley Too" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1494,6 +1497,7 @@
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -2538,7 +2542,7 @@
       <Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Belial EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="H.C Rhongomyniad Spear" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="BFFS! EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="BFFS! EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Saturn" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Amon EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
 
@@ -3117,7 +3121,7 @@
       <Item Name="Taurus EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Belial EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="H.C Rhongomyniad Spear" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="BFFS! EX" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="BFFS! EX" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Saturn" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Amon EX" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
 
