@@ -110,6 +110,7 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(161);
         Game():GetItemPool():RemoveCollectible(223);
         Game():GetItemPool():RemoveCollectible(227);
+        Game():GetItemPool():RemoveCollectible(278);
         Game():GetItemPool():RemoveCollectible(292);
         Game():GetItemPool():RemoveCollectible(311);
         Game():GetItemPool():RemoveCollectible(332);
@@ -199,7 +200,9 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(152);
         Game():GetItemPool():RemoveCollectible(168);
         Game():GetItemPool():RemoveCollectible(199);
+        Game():GetItemPool():RemoveCollectible(329);
         Game():GetItemPool():RemoveCollectible(395);
+        Game():GetItemPool():RemoveCollectible(531);
         Game():GetItemPool():RemoveCollectible(533);
         Game():GetItemPool():RemoveCollectible(580);
         Game():GetItemPool():RemoveCollectible(sco_item);

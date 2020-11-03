@@ -103,7 +103,7 @@ function RepairMod:PostUpdate()
 					player:AddMaxHearts(-1);
 				end
 				if Isaac.GetPlayer(0):GetPlayerType() ~= PlayerType.PLAYER_JUDAS then
-					while player:GetSoulHearts() > 8 do
+					while player:GetSoulHearts() > 6 do
 						player:AddSoulHearts(-1);
 					end
 				else
@@ -126,7 +126,7 @@ function RepairMod:PostUpdate()
 				while player:GetMaxHearts() > 2 do
 					player:AddMaxHearts(-1)
 				end
-				while player:GetSoulHearts() > 8 do
+				while player:GetSoulHearts() > 6 do
 					player:AddSoulHearts(-1)
 				end
 			end

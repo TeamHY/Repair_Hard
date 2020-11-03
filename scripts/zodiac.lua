@@ -180,7 +180,7 @@ function RepairMod:OnUpdate()
 		end
 	end
 
-	if Game():GetFrameCount()%1350 == 0 then
+	if Game():GetFrameCount()%1200 == 0 then
 		if player:HasCollectible(cor_item) then
 			Isaac.Spawn(3, 15, 0, Isaac.GetFreeNearPosition(player.Position, 5), Vector(0, 0), player)
 		end

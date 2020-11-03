@@ -111,7 +111,7 @@ function RepairMod:ShootTear(tear)
 	end
 	if player:HasTrinket(eye_of_god) and player:HasCollectible(331) == false then
 		player.TearFlags = player.TearFlags&~TearFlags.TEAR_GLOW
-		if player:GetTrinketRNG(eye_of_god):RandomInt(20) < (5 + player.Luck) then --0부터 9 / 1 + 럭 미만
+		if player:GetTrinketRNG(eye_of_god):RandomInt(20) < (1 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			player.TearFlags = player.TearFlags|TearFlags.TEAR_GLOW
 		end
 	end
