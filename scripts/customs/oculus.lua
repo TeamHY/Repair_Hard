@@ -99,7 +99,7 @@ function RepairMod:OculusA(player)
   end
 end
 
-RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE  , RepairMod.OculusA)
+RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.OculusA)
 
 function RepairMod:OculusE(player)
   entities = Isaac.GetRoomEntities()

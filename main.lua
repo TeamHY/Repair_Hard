@@ -291,21 +291,8 @@ RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.onDamage, Entit
 function RepairMod:HardModeStatue()
 	local player = Isaac.GetPlayer(0);
 	local entities = Isaac.GetRoomEntities();
-	local banCheck = false
 	local diffCheck = false
-	local banType = {}
-
-	if Game().Difficulty < Difficulty.DIFFICULTY_GREED then
-		banType = {18,39,29,22,16,12,10,15,407,212,412,74,75,76,78,213,287,35,81,55,260,92,98,18,13,86,38,299,293,68,14,252,61,25,16,84,311,62,231}
-	else
-		banType = {18,39,29,22,16,12,10,15,407,212,412,74,75,76,78,213,287,35,81,55,260,92,98,18,13,86,38,299,293,68,14,252,61,25,16,84,311,62,231}
-	end
-
-	if violetaVar == true then
-		banType[#banType+1] = 274
-		banType[#banType+1] = 412
-		banType[#banType+1] = 406
-	end
+	local ChampVar = 0
 
 	if hardModeVar ~= 0 then -- 헬모드 썼으면
 		diffCheck = true
@@ -317,32 +304,33 @@ function RepairMod:HardModeStatue()
 
 	if diffCheck == true then
 		for i = 1, #entities do
+			if violetaVar == true and (entities[i].Type == 274 or entities[i].Type == 412 or entities[i].Type == 406) then
+				break
+			end
 			if entities[i]:IsVulnerableEnemy() then
-				if not entities[i]:ToNPC():IsChampion() then
-					for j = 1, #banType do
-						if entities[i].Type == banType[j] then
-							banCheck = true
-							break
-						end
+				if entities[i]:GetData().changeVar == nil then
+					repeat
+						ChampVar = entities[i]:GetDropRNG():RandomInt(24)
+					until ChampVar ~= 6
+					Isaac.ConsoleOutput(ChampVar .. "\n")
+					entities[i]:ToNPC():Morph(entities[i].Type, entities[i].Variant, entities[i].SubType, ChampVar)
+					if entities[i].Type == 274 then
+						entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.2)
+					elseif entities[i].Type == 275 then
+						entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.25)
+					else
+						entities[i].HitPoints = entities[i].MaxHitPoints
 					end
-					if banCheck == false then
-						if Game():GetLevel():GetCurrentRoom():GetBossID() ~= 55 or entities[i].Type == 274 or entities[i].Type == 275 then
-							entities[i]:ToNPC():MakeChampion(Game():GetSeeds():GetNextSeed())
-							if player:HasCollectible(gun_item) then
-								if entities[i].Type == 274 then
-									entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.2)
-								end
-								if entities[i].Type == 275 then
-									entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.25)
-								end
-							end
-						end
-					end
+					entities[i]:GetData().changeVar = true
+				else
+					break
 				end
 			end
 		end
 	end
 end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.HardModeStatue)
 
 function Save()
 	local player = Isaac.GetPlayer(0);
@@ -487,6 +475,5 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_TEAR_RENDER, RepairMod.onTearRender)
 RepairMod:AddCallback(ModCallbacks.MC_POST_EFFECT_RENDER, RepairMod.onEffectRender)
 RepairMod:AddCallback(ModCallbacks.MC_POST_LASER_UPDATE, RepairMod.onLaserUpdate)
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.VoidRemove)
-RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.HardModeStatue)
 RepairMod:AddCallback(ModCallbacks.MC_PRE_PICKUP_COLLISION, RepairMod.prePickUpColl)
 RepairMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, RepairMod.AutoSave)

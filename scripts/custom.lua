@@ -165,7 +165,7 @@ function RepairMod:VarChange()
 			else
 				player:GetData()._platinumVar = player:GetData()._platinumVar + 0.1
 			end
-			Isaac.ConsoleOutput(player:GetData()._platinumVar .. "\n")
+			--Isaac.ConsoleOutput(player:GetData()._platinumVar .. "\n")
 			player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
 			player:EvaluateItems()
 			player:GetData()._platinumRoomCheck = false
