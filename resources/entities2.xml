@@ -362,7 +362,7 @@
 	<entity anm2path="003.089_Censer.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Censer" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="89">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="003.090_Key Bum.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Key Bum" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="90">
+	<entity anm2path="003.090_Key Bum.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1.15" id="3" name="Key Bum" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="90">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="003.091_Rune Bag.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Rune Bag" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="91">

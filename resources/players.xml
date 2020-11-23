@@ -17,7 +17,7 @@
           portrait="PlayerPortrait_03_Cain.png" 
           bigportrait="PlayerPortraitBig_03_Cain.png" skinColor="-1" />
 
-	<player id="3" name="Judas" skin="Character_004_Judas.png" costume="9" hp="0" coins="3" black="0" bombs="1" items="7,34,414"
+	<player id="3" name="Judas" skin="Character_004_Judas.png" costume="9" hp="0" coins="3" black="1" bombs="1" items="7,34,414"
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_04_Judas.png" 
           bigportrait="PlayerPortraitBig_04_Judas.png" skinColor="-1" />
