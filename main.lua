@@ -310,7 +310,7 @@ function RepairMod:HardModeStatue()
 						repeat
 							ChampVar = entities[i]:GetDropRNG():RandomInt(24)
 						until ChampVar ~= 6
-						Isaac.ConsoleOutput(ChampVar .. "\n")
+						--Isaac.ConsoleOutput(ChampVar .. "\n")
 						entities[i]:ToNPC():Morph(entities[i].Type, entities[i].Variant, entities[i].SubType, ChampVar)
 						entities[i].HitPoints = entities[i].MaxHitPoints
 						if player:HasCollectible(gun_item) then
