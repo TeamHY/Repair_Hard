@@ -304,26 +304,26 @@ function RepairMod:HardModeStatue()
 
 	if diffCheck == true then
 		for i = 1, #entities do
-			if violetaVar == true and (entities[i].Type == 274 or entities[i].Type == 412 or entities[i].Type == 406) then
-				break
-			end
-			if entities[i]:IsVulnerableEnemy() then
-				if entities[i]:GetData().changeVar == nil then
-					repeat
-						ChampVar = entities[i]:GetDropRNG():RandomInt(24)
-					until ChampVar ~= 6
-					Isaac.ConsoleOutput(ChampVar .. "\n")
-					entities[i]:ToNPC():Morph(entities[i].Type, entities[i].Variant, entities[i].SubType, ChampVar)
-					if entities[i].Type == 274 then
-						entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.2)
-					elseif entities[i].Type == 275 then
-						entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.25)
-					else
+			if violetaVar == false or (entities[i].Type == 274 and entities[i].Type == 412 or entities[i].Type == 406) then
+				if entities[i]:IsVulnerableEnemy() then
+					if entities[i]:GetData().changeVar == nil then
+						repeat
+							ChampVar = entities[i]:GetDropRNG():RandomInt(24)
+						until ChampVar ~= 6
+						Isaac.ConsoleOutput(ChampVar .. "\n")
+						entities[i]:ToNPC():Morph(entities[i].Type, entities[i].Variant, entities[i].SubType, ChampVar)
 						entities[i].HitPoints = entities[i].MaxHitPoints
+						if player:HasCollectible(gun_item) then
+							if entities[i].Type == 274 then
+								entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.2)
+							elseif entities[i].Type == 275 then
+								entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.25)
+							end
+						end
+						entities[i]:GetData().changeVar = true
+					else
+						break
 					end
-					entities[i]:GetData().changeVar = true
-				else
-					break
 				end
 			end
 		end
