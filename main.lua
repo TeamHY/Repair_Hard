@@ -301,7 +301,6 @@ function RepairMod:HardModeStatue()
 	elseif Game().Difficulty >= Difficulty.DIFFICULTY_GREED and Game():GetLevel():GetStage() > 2 then -- 그리디어고 2스테이지 이상
 		diffCheck = true
 	end
-	diffCheck = true
 
 	if diffCheck == true then
 		for i = 1, #entities do
