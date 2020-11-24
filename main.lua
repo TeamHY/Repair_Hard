@@ -301,16 +301,23 @@ function RepairMod:HardModeStatue()
 	elseif Game().Difficulty >= Difficulty.DIFFICULTY_GREED and Game():GetLevel():GetStage() > 2 then -- 그리디어고 2스테이지 이상
 		diffCheck = true
 	end
+	diffCheck = true
 
 	if diffCheck == true then
 		for i = 1, #entities do
 			if violetaVar == false or (entities[i].Type == 274 and entities[i].Type == 412 or entities[i].Type == 406) then
 				if entities[i]:IsVulnerableEnemy() then
 					if entities[i]:GetData().changeVar == nil then
-						repeat
-							ChampVar = entities[i]:GetDropRNG():RandomInt(24)
-						until ChampVar ~= 6
-						--Isaac.ConsoleOutput(ChampVar .. "\n")
+						if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_MAGDALENA or
+						Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_JUDAS or
+						Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_LAZARUS or
+						Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("The Delirious Spirit") then
+							ChampVar = 19
+						else
+							repeat
+								ChampVar = entities[i]:GetDropRNG():RandomInt(24)
+							until ChampVar ~= 6
+						end
 						entities[i]:ToNPC():Morph(entities[i].Type, entities[i].Variant, entities[i].SubType, ChampVar)
 						entities[i].HitPoints = entities[i].MaxHitPoints
 						if player:HasCollectible(gun_item) then

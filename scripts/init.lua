@@ -82,7 +82,6 @@ psc_item = Isaac.GetItemIdByName("Pisces EX")
 bel_item = Isaac.GetItemIdByName("Belial EX")
 amon_item = Isaac.GetItemIdByName("Amon EX")
 
-
 ocu_item = Isaac.GetItemIdByName("Oculus Rift")
 
 aricooldown = 0
