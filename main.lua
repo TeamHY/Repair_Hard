@@ -29,6 +29,7 @@ function RepairMod:NewStart(save)
 			Isaac.Spawn(5, 100, Isaac.GetItemIdByName("Hell Mode"), Vector(200,400), Vector(0, 0), player)
 			Isaac.Spawn(5, 100, Isaac.GetItemIdByName("Easy Mode"), Vector(440,400), Vector(0, 0), player)
 		end
+		player:GetData()._startPlayer = Isaac.GetPlayer(0):GetPlayerType()
 		setVar = {0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 		HolyWaterHit = 0
 		randomAttack = 0
@@ -293,6 +294,7 @@ function RepairMod:HardModeStatue()
 	local entities = Isaac.GetRoomEntities();
 	local diffCheck = false
 	local ChampVar = 0
+	local banType = {18,39,29,22,16,12,10,15,407,212,412,74,75,76,78,213,287,35,81,55,260,92,98,18,13,86,38,299,293,68,14,252,61,25,16,84,311,62,231}
 
 	if hardModeVar ~= 0 then -- 헬모드 썼으면
 		diffCheck = true
@@ -302,34 +304,44 @@ function RepairMod:HardModeStatue()
 		diffCheck = true
 	end
 
+	if violetaVar == true then
+		banType[#banType+1] = 274
+		banType[#banType+1] = 406
+	end
+
 	if diffCheck == true then
 		for i = 1, #entities do
-			if violetaVar == false or (entities[i].Type == 274 and entities[i].Type == 412 or entities[i].Type == 406) then
-				if entities[i]:IsVulnerableEnemy() then
-					if entities[i]:GetData().changeVar == nil then
-						if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_MAGDALENA or
-						Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_JUDAS or
-						Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_LAZARUS or
-						Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("The Delirious Spirit") then
-							ChampVar = 19
+			if entities[i]:IsVulnerableEnemy() then
+				if entities[i]:GetData().changeVar == nil then
+					for j = 1, #banType do
+						if entities[i].Type == banType[j] then
+							ChampVar = -1
+							break
 						else
 							repeat
 								ChampVar = entities[i]:GetDropRNG():RandomInt(24)
 							until ChampVar ~= 6
 						end
-						entities[i]:ToNPC():Morph(entities[i].Type, entities[i].Variant, entities[i].SubType, ChampVar)
-						entities[i].HitPoints = entities[i].MaxHitPoints
-						if player:HasCollectible(gun_item) then
-							if entities[i].Type == 274 then
-								entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.2)
-							elseif entities[i].Type == 275 then
-								entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.25)
-							end
-						end
-						entities[i]:GetData().changeVar = true
-					else
-						break
 					end
+					if ChampVar ~= -1 and (player:GetData()._startPlayer == PlayerType.PLAYER_MAGDALENA or
+					player:GetData()._startPlayer == PlayerType.PLAYER_JUDAS or
+					player:GetData()._startPlayer == PlayerType.PLAYER_LAZARUS or
+					player:GetData()._startPlayer == Isaac.GetPlayerTypeByName("The Delirious Spirit") or
+					player:GetData()._startPlayer == Isaac.GetPlayerTypeByName("Lucifer")) then
+						ChampVar = 19
+					end
+					entities[i]:ToNPC():Morph(entities[i].Type, entities[i].Variant, entities[i].SubType, ChampVar)
+					entities[i].HitPoints = entities[i].MaxHitPoints
+					if player:HasCollectible(gun_item) then
+						if entities[i].Type == 274 then
+							entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.2)
+						elseif entities[i].Type == 275 then
+							entities[i].HitPoints = entities[i].HitPoints - (entities[i].MaxHitPoints*0.25)
+						end
+					end
+					entities[i]:GetData().changeVar = true
+				else
+					break
 				end
 			end
 		end
