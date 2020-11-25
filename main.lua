@@ -294,7 +294,12 @@ function RepairMod:HardModeStatue()
 	local entities = Isaac.GetRoomEntities();
 	local diffCheck = false
 	local ChampVar = 0
-	local banType = {18,39,29,22,16,12,10,15,407,212,74,75,76,78,213,287,35,81,55,260,92,98,18,13,86,38,299,293,68,14,252,61,25,16,84,311,62,231}
+	local banType = {407,212,293,62}
+
+	if violetaVar == true then
+		banType[#banType+1] = 274
+		banType[#banType+1] = 406
+	end
 
 	if hardModeVar ~= 0 then -- 헬모드 썼으면
 		diffCheck = true
@@ -304,14 +309,8 @@ function RepairMod:HardModeStatue()
 		diffCheck = true
 	end
 
-	if violetaVar == true then
-		banType[#banType+1] = 274
-		banType[#banType+1] = 406
-	end
-
 	if diffCheck == true then
 		if Game():GetRoom():GetBossID() ~= 70 then
-			Isaac.ConsoleOutput(Game():GetRoom():GetBossID() .. "\n")
 			for i = 1, #entities do
 				if entities[i]:IsVulnerableEnemy() then
 					if entities[i]:GetData().changeVar == nil then
