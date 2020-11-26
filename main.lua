@@ -294,7 +294,7 @@ function RepairMod:HardModeStatue()
 	local entities = Isaac.GetRoomEntities();
 	local diffCheck = false
 	local ChampVar = 0
-	local banType = {407,212,293,62}
+	local banType = {407,212,293,62,74,75,76}
 
 	if violetaVar == true then
 		banType[#banType+1] = 274
