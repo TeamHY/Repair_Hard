@@ -287,23 +287,62 @@ function RepairMod:ChangeStat()
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.ChangeStat)
 
-function RepairMod:OnDamage(entity, damage, damageFlag, damageSource, DamageCountdownFrames)
+function RepairMod:onDamage(entity, damage, damageFlag, damageSource, DamageCountdownFrames)
 	local player = Isaac.GetPlayer(0)
+	local boomItem = {52,257,272,273,371,418,526} -- 폭발 면역 아이템 추가
 
 	if player:HasCollectible(socks_item) and damageFlag == DamageFlag.DAMAGE_CURSED_DOOR then
 		return false
 	end
 
+	for i=1, #boomItem do
+		if player:HasCollectible(boomItem[i]) then
+			if damageFlag == DamageFlag.DAMAGE_EXPLOSION then
+				return false
+			end
+		end
+	end
+
 	if player:HasCollectible(178) then
 		HolyWaterHit = HolyWaterHit + 1
-
 		if HolyWaterHit == 15 then
 			Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_ANGEL, true, player:GetCollectibleRNG(Isaac.GetItemIdByName("Holy Water")):GetSeed()), Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
 			HolyWaterHit = 0
 		end
 	end
+
+	if player:HasCollectible(148) then
+		--[[for i=1, 1 do
+			Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.BLUE_FLY, 0, player.Position, Vector(0, 0), player)
+		end]]
+		if inf1_Hit < 7 then
+			inf1_Hit = inf1_Hit + 1
+		end
+		if inf1_Hit == 7 then
+			player:AddCollectible(234,0,true)
+			inf1_Hit = inf1_Hit + 1
+		end
+	end
+
+	if player:HasCollectible(262) then
+		if inf1_Hit < 5 then
+			inf1_Hit = inf1_Hit + 1
+		end
+		if inf1_Hit == 5 then
+			player:AddCollectible(328,0,true)
+			inf1_Hit = inf1_Hit + 1
+		end
+	end
+
+	if player:HasCollectible(211) then
+		for i=1, 15 do
+			Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.BLUE_SPIDER, 0, player.Position, Vector(0, 0), player)
+		end
+	end
+	Save()
 end
-RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.OnDamage, EntityType.ENTITY_PLAYER)
+
+RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.onDamage, EntityType.ENTITY_PLAYER)
 
 function RepairMod:HitSpawn(dmg_target, dmg_amount, dmg_source, dmg_dealer)
     local player = Isaac.GetPlayer(0)
