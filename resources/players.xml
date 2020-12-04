@@ -2,17 +2,17 @@
          portraitroot="gfx/ui/boss/" 
          nameimageroot="gfx/ui/boss/" 
          bigportraitroot="gfx/ui/stage/">
-	<player id="0" name="Isaac" skin="Character_001_Isaac.png" black="1" hp="4" bombs="3" items="63,414,105" 
+	<player id="0" name="Isaac" skin="Character_001_Isaac.png" black="1" hp="4" bombs="3" card="18" items="63,414,105" 
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_01_Isaac.png" 
           bigportrait="PlayerPortraitBig_01_Isaac.png" skinColor="-1" />
 
-	<player id="1" name="Magdalene" skin="Character_002_Magdalene.png" costume="7" black="4" bombs="1" card="31" items="184,28,414,499,504,498"
+	<player id="1" name="Magdalene" skin="Character_002_Magdalene.png" costume="7" black="4" bombs="1" card="31" items="184,28,414,499,498"
           nameimage="PlayerName_02_Magdalene.png"
           portrait="PlayerPortrait_02_Magdalene.png" 
           bigportrait="PlayerPortraitBig_02_Magdalene.png" skinColor="-1" />
 
-	<player id="2" name="Cain" skin="Character_003_Cain.png" costume="8" hp="4" black="0" keys="1" bombs="3" items="414,610,611"
+	<player id="2" name="Cain" skin="Character_003_Cain.png" costume="8" hp="4" black="0" keys="1" bombs="3" items="45,390,414,610,611"
           nameimage="PlayerName_03_Cain.png" 
           portrait="PlayerPortrait_03_Cain.png" 
           bigportrait="PlayerPortraitBig_03_Cain.png" skinColor="-1" />

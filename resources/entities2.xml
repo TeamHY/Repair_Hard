@@ -1600,7 +1600,7 @@ bestiaryTransform="0,0,1" bestiaryAnim="Fly">
     <entity anm2path="083.000_Headless Horsemans Head.anm2" baseHP="100" boss="1" bossID="22" champion="1" collisionDamage="2" collisionMass="30" collisionRadius="16" friction="1" id="83" name="Headless Horsemans Head" numGridCollisionPoints="0" shadowSize="23" stageHP="0" variant="0" portrait="22" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Walk">
         <gibs amount="0" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-    <entity anm2path="084.000_Satan.anm2" baseHP="6000" boss="1" bossID="24" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="84" name="Satan" numGridCollisionPoints="0" shadowSize="33" stageHP="0" variant="0" portrait="55" bestiary="true" bestiaryTransform="0,15,.7" bestiaryAnim="Walk">
+    <entity anm2path="084.000_Satan.anm2" baseHP="8000" boss="1" bossID="24" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="30" friction="1" id="84" name="Satan" numGridCollisionPoints="0" shadowSize="33" stageHP="0" variant="0" portrait="55" bestiary="true" bestiaryTransform="0,15,.7" bestiaryAnim="Walk">
         <gibs amount="0" blood="1" bone="1" eye="0" gut="1" large="1" />
         <preload id="84" variant="10" />
         <preload-snd id="246" /> <!-- SOUND_SATAN_STOMP -->
@@ -1616,7 +1616,7 @@ bestiaryTransform="0,0,1" bestiaryAnim="Fly">
 		<preload id="1000" variant="50" subtype="1" />
 		<preload-snd id="211" /> <!-- SOUND_HAND_LASERS -->
     </entity>
-    <entity anm2path="084.010_Satan Stomp.anm2" baseHP="6000" boss="1" bossID="24" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="55" friction="1" id="84" name="Satan Stomp" numGridCollisionPoints="0" shadowSize="50" stageHP="0" variant="10" portrait="55">
+    <entity anm2path="084.010_Satan Stomp.anm2" baseHP="1" boss="1" bossID="24" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="55" friction="1" id="84" name="Satan Stomp" numGridCollisionPoints="0" shadowSize="50" stageHP="0" variant="10" portrait="55">
         <gibs amount="0" blood="1" bone="1" eye="0" gut="1" large="1" />
         <preload-snd id="52" /> <!-- SOUND_HELLBOSS_GROUNDPOUND -->
     </entity>
