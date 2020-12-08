@@ -303,6 +303,10 @@ function RepairMod:onDamage(entity, damage, damageFlag, damageSource, DamageCoun
 		end
 	end
 
+	if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Midas") then
+		player:AddCoins(rangeRandom(1,5)*-1)
+	end
+
 	if player:HasCollectible(178) then
 		HolyWaterHit = HolyWaterHit + 1
 		if HolyWaterHit == 15 then
