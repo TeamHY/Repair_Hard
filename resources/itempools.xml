@@ -104,7 +104,7 @@
       <Item Id="101" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="102" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="103" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="104" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="104" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="106" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="107" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="109" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -572,7 +572,7 @@
       <Item Name="Pachinko" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Rank-Up-Magic Launch of The Phantom Knights" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Oculus Rift" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
@@ -884,7 +884,7 @@
       <Item Id="82" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="83" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="88" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="104" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="104" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="109" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="114" Weight="0.71" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="118" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1009,7 +1009,7 @@
       <Item Name="Clepsydre" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Oculus Rift" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
@@ -1632,7 +1632,7 @@
       <Item Id="82" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="83" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="88" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="104" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="104" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="109" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="114" Weight="0.71" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="118" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1757,7 +1757,7 @@
       <Item Name="Clepsydre" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Oculus Rift" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
@@ -1781,7 +1781,7 @@
       <Item Id="82" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="83" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="88" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="104" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="104" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="109" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="114" Weight="0.71" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="118" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1906,7 +1906,7 @@
       <Item Name="Clepsydre" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Master Peace,True Dracoslaying King" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Name="Oculus Rift" Weight="1.5" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Oculus Rift" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
@@ -2111,7 +2111,7 @@
       <Item Id="101" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="102" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="103" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="104" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="104" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="106" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="107" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="109" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -2690,7 +2690,7 @@
       <Item Id="101" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="102" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="103" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="104" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="104" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="106" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="107" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="109" Weight="1" DecreaseBy="1" RemoveOn="0"/>

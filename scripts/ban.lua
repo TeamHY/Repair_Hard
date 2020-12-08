@@ -10,8 +10,11 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(54)
         Game():GetItemPool():RemoveCollectible(158)
         Game():GetItemPool():RemoveCollectible(215)
+        Game():GetItemPool():RemoveCollectible(287)
         Game():GetItemPool():RemoveCollectible(333)
         Game():GetItemPool():RemoveCollectible(vir_item)
+        Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_CAINS_EYE)
+        Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_LIBERTY_CAP)
     end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_CAIN then
         Game():GetItemPool():RemoveCollectible(23)
@@ -71,9 +74,13 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(54)
         Game():GetItemPool():RemoveCollectible(108)
         Game():GetItemPool():RemoveCollectible(158)
+        Game():GetItemPool():RemoveCollectible(287)
         Game():GetItemPool():RemoveCollectible(301)
         Game():GetItemPool():RemoveCollectible(333)
         Game():GetItemPool():RemoveCollectible(503)
+
+        Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_CAINS_EYE)
+        Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_LIBERTY_CAP)
     end
     --[[if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_EDEN then
         Game():GetItemPool():RemoveCollectible(375)
@@ -139,7 +146,13 @@ function RepairMod:BanItem(newstart)
 
     if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("The Delirious Spirit") then
         player:TryRemoveCollectibleCostume(20, false) --초월
-        Game():GetItemPool():RemoveCollectible(161)
+        Game():GetItemPool():RemoveCollectible(21)
+        Game():GetItemPool():RemoveCollectible(54)
+        Game():GetItemPool():RemoveCollectible(158)
+        Game():GetItemPool():RemoveCollectible(287)
+        Game():GetItemPool():RemoveCollectible(333)
+        Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_CAINS_EYE)
+        Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_LIBERTY_CAP)
     else
         Game():GetItemPool():RemoveCollectible(567)
         Game():GetItemPool():RemoveCollectible(568)

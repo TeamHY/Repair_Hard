@@ -171,10 +171,10 @@ end
 
 function RepairMod:onPillGrab(pilleff, pillrgb)
 	local player = Isaac.GetPlayer(0)
-	if pilleff == 28 or pilleff == 44 or pilleff == 33 or pilleff == 41 then
+	if pilleff == 28 or pilleff == 37 or pilleff == 44 or pilleff == 33 or pilleff == 41 then
 		repeat
 			pilleff = player:GetDropRNG():RandomInt(PillEffect.NUM_PILL_EFFECTS)
-		until (pilleff ~= 28 and pilleff ~= 44 and pilleff ~= 33 and pilleff ~= 41)
+		until (pilleff ~= 28 and pilleff ~= 37 and pilleff ~= 44 and pilleff ~= 33 and pilleff ~= 41)
 		return pilleff
 	end
 end
@@ -249,7 +249,7 @@ function RepairMod:HardModeStatue()
 	local entities = Isaac.GetRoomEntities();
 	local diffCheck = false
 	local ChampVar = 0
-	local banType = {407,212,293,62,74,75,76}
+	local banType = {407,212,293,62,74,75,76,81}
 
 	if violetaVar == true then
 		banType[#banType+1] = 274
