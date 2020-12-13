@@ -361,7 +361,7 @@ function RepairMod:uranusCrack(player)
 
       for i = 1, #entities do
 
-        if(entities[i]:IsVulnerableEnemy() and entities[i]:GetData().UrHit ~= nil) then
+        if(entities[i]:IsVulnerableEnemy() and entities[i]:GetData().UrHit ~= nil and (entities[i].Type ~= 212 and entities[i].Variant ~= 0)) then
           local UrEnt = Isaac.Spawn(1000, 980, 0, entities[i].Position, Vector(0, 0), player)
           UrEnt:GetSprite():Load(entities[i]:GetSprite():GetFilename(), true)
           UrEnt:GetSprite():SetFrame(entities[i]:GetSprite():GetDefaultAnimation(),entities[i]:GetSprite():GetFrame())
