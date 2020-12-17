@@ -361,16 +361,28 @@ function RepairMod:uranusCrack(player)
 
       for i = 1, #entities do
 
-        if(entities[i]:IsVulnerableEnemy() and entities[i]:GetData().UrHit ~= nil and (entities[i].Type ~= 212 and entities[i].Variant ~= 0)) then
-          local UrEnt = Isaac.Spawn(1000, 980, 0, entities[i].Position, Vector(0, 0), player)
-          UrEnt:GetSprite():Load(entities[i]:GetSprite():GetFilename(), true)
-          UrEnt:GetSprite():SetFrame(entities[i]:GetSprite():GetDefaultAnimation(),entities[i]:GetSprite():GetFrame())
-          UrEnt:GetSprite().Scale = entities[i]:GetSprite().Scale
-          UrEnt.Size = entities[i].Size
-          UrEnt:GetSprite().Color = Color(1,1,1,1,36,177,216)
-          sfxManager:Play(Isaac.GetSoundIdByName("urCrack"),1,0,false,1)
-
-          entities[i]:Remove()
+		if (entities[i]:IsVulnerableEnemy() and entities[i]:GetData().UrHit ~= nil) then
+			if entities[i].Type ~= 212 then
+			local UrEnt = Isaac.Spawn(1000, 980, 0, entities[i].Position, Vector(0, 0), player)
+			UrEnt:GetSprite():Load(entities[i]:GetSprite():GetFilename(), true)
+			UrEnt:GetSprite():SetFrame(entities[i]:GetSprite():GetDefaultAnimation(),entities[i]:GetSprite():GetFrame())
+			UrEnt:GetSprite().Scale = entities[i]:GetSprite().Scale
+			UrEnt.Size = entities[i].Size
+			UrEnt:GetSprite().Color = Color(1,1,1,1,36,177,216)
+			sfxManager:Play(Isaac.GetSoundIdByName("urCrack"),1,0,false,1)
+  
+			entities[i]:Remove()
+			elseif entities[i].Variant ~= 0 then
+				local UrEnt = Isaac.Spawn(1000, 980, 0, entities[i].Position, Vector(0, 0), player)
+				UrEnt:GetSprite():Load(entities[i]:GetSprite():GetFilename(), true)
+				UrEnt:GetSprite():SetFrame(entities[i]:GetSprite():GetDefaultAnimation(),entities[i]:GetSprite():GetFrame())
+				UrEnt:GetSprite().Scale = entities[i]:GetSprite().Scale
+				UrEnt.Size = entities[i].Size
+				UrEnt:GetSprite().Color = Color(1,1,1,1,36,177,216)
+				sfxManager:Play(Isaac.GetSoundIdByName("urCrack"),1,0,false,1)
+	  
+				entities[i]:Remove()
+			end
         end
 
         if(entities[i].Type == 1000 and entities[i].Variant == 980 and entities[i]:GetData().urVar == nil and (player.Position - entities[i].Position):Length() < player.Size + entities[i].Size ) then
