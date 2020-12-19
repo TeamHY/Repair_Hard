@@ -139,6 +139,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:GetData()._libraVar ~= nil then
 			player.TearHeight = player.TearHeight - player:GetData()._libraVar
 		end
+		if player:GetPlayerType() == 7 then
+			player.TearHeight = player.TearHeight - player.TearHeight * 0.35
+		end
 	end
 
 	if (cacheFlag == CacheFlag.CACHE_SHOTSPEED) then
@@ -180,6 +183,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		end
 		if player:HasCollectible(540) then
 			player.MaxFireDelay = player.MaxFireDelay - 1
+		end
+		if player:HasCollectible(531) then
+			player.MaxFireDelay = (player.MaxFireDelay - (player.MaxFireDelay % 2)) / 2
 		end
 		if player:HasCollectible(gal_item) then
 			player.MaxFireDelay = player.MaxFireDelay - 1
