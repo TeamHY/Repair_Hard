@@ -2,7 +2,7 @@
          portraitroot="gfx/ui/boss/" 
          nameimageroot="gfx/ui/boss/" 
          bigportraitroot="gfx/ui/stage/">
-	<player id="0" name="Isaac" skin="Character_001_Isaac.png" black="1" hp="4" bombs="3" card="18" items="63,414,105" 
+	<player id="0" name="Isaac" skin="Character_001_Isaac.png" black="1" hp="4" bombs="3" card="18" trinket="111" items="63,414,105" 
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_01_Isaac.png" 
           bigportrait="PlayerPortraitBig_01_Isaac.png" skinColor="-1" />
@@ -17,7 +17,7 @@
           portrait="PlayerPortrait_03_Cain.png" 
           bigportrait="PlayerPortraitBig_03_Cain.png" skinColor="-1" />
 
-	<player id="3" name="Judas" skin="Character_004_Judas.png" costume="9" hp="0" coins="3" black="1" bombs="1" items="7,34,414"
+	<player id="3" name="Judas" skin="Character_004_Judas.png" costume="9" hp="0" coins="3" black="1" bombs="1" items="7,34,311,414"
           nameimage="PlayerName_04_Judas.png" 
           portrait="PlayerPortrait_04_Judas.png" 
           bigportrait="PlayerPortraitBig_04_Judas.png" skinColor="-1" />
@@ -37,7 +37,7 @@
           portrait="PlayerPortrait_07_Samson.png" 
           bigportrait="PlayerPortraitBig_07_Samson.png" skinColor="-1" />
 
-	<player id="7" name="Azazel" skin="Character_008_Azazel.png" costume="11" hp="0" black="10" items="114,414,339,339" bombs="1" card="1"
+	<player id="7" name="Azazel" skin="Character_008_Azazel.png" costume="11" hp="0" black="10" trinket="66" items="151,414,339,339" bombs="1" card="1"
           nameimage="PlayerName_08_Azazel.png" 
           portrait="PlayerPortrait_08_Azazel.png" 
           bigportrait="PlayerPortraitBig_08_Azazel.png" skinColor="1" />
@@ -107,7 +107,7 @@
           portrait="PlayerPortrait_BlackJudas.png" 
           bigportrait="PlayerPortraitBig_BlackJudas.png" skinColor="1" />
 
-	<player id="13" name="Lilith" skin="Character_014_Lilith.png" hp="2" black="4" canShoot="false" bombs="1" trinket="109" items="118,414,139,357"
+	<player id="13" name="Lilith" skin="Character_014_Lilith.png" hp="2" black="4" canShoot="false" bombs="1" trinket="109" items="316,414,357"
           nameimage="PlayerName_13_Lilith.png" 
           portrait="PlayerPortrait_13_Lilith.png" 
           bigportrait="PlayerPortraitBig_Lilith.png" costume="34" skinColor="1" />

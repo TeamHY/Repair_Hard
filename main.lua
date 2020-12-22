@@ -421,12 +421,12 @@ function RepairMod:prePickUpColl(pickup,entity,low)
       if pickup.Type == 5 and entity.Type == 1 then
       local player = Isaac.GetPlayer(0)
          if pickup.Variant == 10 then
-            if pickup.SubType == 3 or pickup.SubType == 6  or pickup.SubType == 8 then
-               if player:GetSoulHearts() >= 8 then
+            if pickup.SubType == 3 or pickup.SubType == 6  or pickup.SubType == 6 then
+               if player:GetSoulHearts() >= 6 then
                   return false
                end
             elseif pickup.SubType == 10 then
-               if player:GetHearts() >= player:GetMaxHearts() and player:GetSoulHearts() >= 8 then
+               if player:GetHearts() >= player:GetMaxHearts() and player:GetSoulHearts() >= 6 then
                   return false
                end
 			elseif pickup.SubType == 11 then

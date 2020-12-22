@@ -112,7 +112,7 @@
 	<passive gfx="910.png" name="Rank-Up-Magic Cipher Ascension" />
 	<passive gfx="909.png" name="PLATINUM BULLETS" />
 
-	<passive gfx="908.png" name="Mars" />
+	<passive gfx="908.png" cache="speed" name="Mars" />
 
 	<!-- Custom Trinket #1 -->
 	<trinket cache="damageflag" gfx="Bloody Bandage.png" name="Bloody Bandage" />

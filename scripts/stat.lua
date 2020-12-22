@@ -63,6 +63,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(470) then
 			player.Damage = player.Damage * 1.1
 		end
+		if player:HasCollectible(randomAttack_item) then
+			player.Damage = player.Damage * 1.25
+		end
 		if player:HasCollectible(519) then
 			player.Damage = player.Damage * 1.1
 		end
@@ -87,9 +90,6 @@ function RepairMod:OnCache(player, cacheFlag)
 	    if hardModeVar == 1 then
         	player.Damage = player.Damage * HellDamage
         end
-        if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Lamb") then
-			player.Damage = player.Damage * 1.25
-		end
     	if player:GetData()._BCvar ~= nil then
 			player.Damage = player.Damage * player:GetData()._BCmult
 		end
@@ -127,6 +127,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(337) then
 			player.MoveSpeed = player.MoveSpeed + 0.3
 		end
+		if player:HasCollectible(mars_item) then
+			player.MoveSpeed = player.MoveSpeed + 0.3
+		end
 	end
 
 	if cacheFlag == CacheFlag.CACHE_RANGE then
@@ -152,7 +155,7 @@ function RepairMod:OnCache(player, cacheFlag)
 			player.MaxFireDelay = player.MaxFireDelay - 2
 		end
 		if player:HasCollectible(68) then
-			player.MaxFireDelay = player.MaxFireDelay - 1
+			player.MaxFireDelay = player.MaxFireDelay - 2
 		end
 		if player:HasCollectible(118) then -- 혈사포
 			player.MaxFireDelay = player.MaxFireDelay - 5
@@ -204,6 +207,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		end
 		if player:HasCollectible(cor_item) then
 			player.TearFlags = player.TearFlags|TearFlags.TEAR_PIERCING
+		end
+		if player:HasCollectible(68) then
+			player.TearFlags = player.TearFlags|TearFlags.TEAR_SPECTRAL
 		end
 	end
 end
