@@ -377,7 +377,7 @@
 	<passive description="Accuracy brings power!" gfx="Collectibles_373_DeadEye.png" id="373" name="Dead Eye" />
 	<passive description="Holy shot!" gfx="Collectibles_374_HolyLight.png" id="374" devilprice="2" name="Holy Light" />
 	<passive description="Nice hat!" gfx="Collectibles_375_HostHat.png" id="375" name="Host Hat" />
-	<passive description="Never ending stores!" gfx="Collectibles_376_Restock.png" id="376" name="Restock" />
+	<passive description="Never ending stores!" gfx="Collectibles_376_Restock.png" id="376" coins="10" name="Restock" />
 	<passive description="Spider love" gfx="Collectibles_377_BurstingSack.png" id="377" name="Bursting Sack" />
 	<passive description="Uh oh..." gfx="Collectibles_378_NumberTwo.png" id="378" name="No. 2" />
 	<passive description="Wide shot" gfx="Collectibles_379_PupulaDuplex.png" id="379" name="Pupula Duplex" cache="tearflag" />

@@ -9,7 +9,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
-	<entity id="287" variant="0" subtype="20" name="Conscivit" baseHP="50000" stageHP="0" boss="1" champion="1" bossID="501" collisionDamage="4" collisionMass="9999" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="42" portrait="134" anm2path="godmode_final_conscivit.anm2">
+	<entity id="287" variant="0" subtype="20" name="Conscivit" baseHP="20000" stageHP="0" boss="1" champion="1" bossID="501" collisionDamage="4" collisionMass="9999" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="42" portrait="134" anm2path="godmode_final_conscivit.anm2">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
