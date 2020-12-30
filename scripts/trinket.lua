@@ -1,6 +1,7 @@
 TRINKET_Bloody_Bandage = Isaac.GetTrinketIdByName("Bloody Bandage")
 sopenny_tri = Isaac.GetTrinketIdByName("Soul Penny")
 eye_of_god = Isaac.GetTrinketIdByName("Eye of God")
+scattering_cup = Isaac.GetTrinketIdByName("Scattering Cup")
 
 pennyVar = 0
 
@@ -155,3 +156,34 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_LEVEL, RepairMod.onNewLevel)
 RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, RepairMod.EnterRoom)
 RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.TrinketPostUpdate)
 RepairMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, RepairMod.ShootTear)
+
+function RepairMod:CupUpdate()
+	local player = Isaac.GetPlayer(0)
+	local entities = Isaac.GetRoomEntities()
+	local game = Game()
+
+	for i = 1, #entities do
+		if entities[i]:IsVulnerableEnemy() and entities[i]:GetData().CupV == true and Game().TimeCounter % 3 == 0
+		and TriRNG(scattering_cup, 25) then
+			local splashTear = player:FireTear(entities[i].Position, Vector(player.ShotSpeed*10,0):Rotated(math.random(360)), true,true,false)
+			splashTear:ToTear().FallingSpeed = player.TearHeight*.5*(math.random()*.75+.5)
+			splashTear:ToTear().FallingAcceleration = 1.3
+			splashTear:ToTear().TearFlags = splashTear:ToTear().TearFlags|TearFlags.TEAR_PIERCING
+		end
+	end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.CupUpdate);
+
+function RepairMod:CupHitted(dmg_target, dmg_amount, dmg_source, dmg_dealer)
+    local player = Isaac.GetPlayer(0)
+	local entities = Isaac.GetRoomEntities()
+
+	if player:HasTrinket(scattering_cup) and dmg_target:IsVulnerableEnemy() then
+		if dmg_dealer.Type == EntityType.ENTITY_TEAR or dmg_source & DamageFlag.DAMAGE_LASER == DamageFlag.DAMAGE_LASER or dmg_dealer.Type == EntityType.ENTITY_KNIFE then
+			dmg_target:GetData().CupV = true
+		end
+	end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, RepairMod.CupHitted)

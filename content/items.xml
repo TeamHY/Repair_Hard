@@ -119,6 +119,7 @@
 
 	<trinket gfx="Soul Penny.png" name="Soul Penny" />
 	<trinket gfx="Eye of God.png" cache="tearflag" name="Eye of God" />
+	<trinket gfx="Scattering Cup.png" name="Scattering Cup" />
 
 
 </items>
