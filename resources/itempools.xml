@@ -891,7 +891,6 @@
       <Item Id="114" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="118" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="122" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="127" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="132" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="133" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -918,9 +917,7 @@
       <Item Id="245" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="259" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="265" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="275" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="278" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="306" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="308" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1518,12 +1515,12 @@
       <Item Id="145" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="165" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="187" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="259" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="260" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="212" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="411" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="515" Weight="2" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="572" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="259" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="212" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="411" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="515" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="572" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
       <Item Name="Rank-Up-Magic Quick Chaos" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Rank-Up-Magic Death Double Force" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1642,7 +1639,6 @@
       <Item Id="114" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="118" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="122" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="127" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="132" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="133" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1669,9 +1665,7 @@
       <Item Id="245" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="259" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="265" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="275" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="278" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="306" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="308" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1795,7 +1789,6 @@
       <Item Id="114" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="118" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="122" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="127" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="132" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="133" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1822,9 +1815,7 @@
       <Item Id="245" Weight="0.199" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="259" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="265" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="275" Weight="1" DecreaseBy="1" RemoveOn="0"/>
-      <Item Id="278" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="306" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="307" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="308" Weight="1" DecreaseBy="1" RemoveOn="0"/>
