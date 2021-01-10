@@ -128,7 +128,7 @@ function RepairMod:OnCache(player, cacheFlag)
 			player.MoveSpeed = player.MoveSpeed + 0.3
 		end
 		if player:HasCollectible(mars_item) then
-			player.MoveSpeed = player.MoveSpeed + 0.3
+			player.MoveSpeed = player.MoveSpeed + 0.15
 		end
 	end
 
