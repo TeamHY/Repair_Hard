@@ -2,7 +2,7 @@
          portraitroot="gfx/ui/boss/" 
          nameimageroot="gfx/ui/boss/" 
          bigportraitroot="gfx/ui/stage/">
-	<player id="0" name="Isaac" skin="Character_001_Isaac.png" black="1" hp="4" bombs="3" card="18" trinket="111" items="63,414,105" 
+	<player id="0" name="Isaac" skin="Character_001_Isaac.png" black="1" hp="4" bombs="3" card="18" trinket="3" items="63,414,105" 
           nameimage="PlayerName_01_Isaac.png" 
           portrait="PlayerPortrait_01_Isaac.png" 
           bigportrait="PlayerPortraitBig_01_Isaac.png" skinColor="-1" />
@@ -27,7 +27,7 @@
           portrait="PlayerPortrait_06_BlueBaby.png" 
           bigportrait="PlayerPortraitBig_06_Bluebaby.png" skinColor="2" />
 
-	<player id="5" name="Eve" bombs="3" skin="Character_005_Eve.png" costume="10" hp="4" black="4" keys="2" trinket="88" items="534,414,122,117"
+	<player id="5" name="Eve" bombs="3" skin="Character_005_Eve.png" costume="10" hp="4" black="4" keys="2" items="534,414,122,117"
           nameimage="PlayerName_05_Eve.png" 
           portrait="PlayerPortrait_05_Eve.png" 
           bigportrait="PlayerPortraitBig_05_Eve.png" skinColor="-1" />
@@ -37,7 +37,7 @@
           portrait="PlayerPortrait_07_Samson.png" 
           bigportrait="PlayerPortraitBig_07_Samson.png" skinColor="-1" />
 
-	<player id="7" name="Azazel" skin="Character_008_Azazel.png" costume="11" hp="0" black="10" trinket="66" items="151,414,339,339" bombs="2" card="1"
+	<player id="7" name="Azazel" skin="Character_008_Azazel.png" costume="11" hp="0" black="10" trinket="66" items="114,151,414,339,339" bombs="2" card="1"
           nameimage="PlayerName_08_Azazel.png" 
           portrait="PlayerPortrait_08_Azazel.png" 
           bigportrait="PlayerPortraitBig_08_Azazel.png" skinColor="1" />

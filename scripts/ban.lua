@@ -4,9 +4,12 @@ function RepairMod:BanItem(newstart)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_PAY_TO_WIN)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_NO)
-    --[[if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_ISAAC then
-    end]]
+    if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_ISAAC then
+        player:AddTrinket(TrinketType.TRINKET_BLOODY_CROWN)
+        player:UseActiveItem(479, false, true, false, false)
+    end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_MAGDALENA then
+        Game():GetItemPool():RemoveCollectible(21)
         Game():GetItemPool():RemoveCollectible(54)
         Game():GetItemPool():RemoveCollectible(158)
         Game():GetItemPool():RemoveCollectible(215)
@@ -64,7 +67,9 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(375)
     end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_EVE then
-        Game():GetItemPool():RemoveCollectible(409)
+        Game():GetItemPool():RemoveCollectible(574)
+        player:AddTrinket(TrinketType.TRINKET_NO)
+        player:UseActiveItem(479, false, true, false, false)
     end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_SAMSON then
         Game():GetItemPool():RemoveCollectible(330)

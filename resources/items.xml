@@ -326,7 +326,7 @@
 	<active achievement="125" description="Undefined" gfx="collectibles_324_Undefined.png" id="324" maxcharges="4" name="Undefined" />
 	<active achievement="30" cache="familiars" description="Lose your head" gfx="collectibles_325_scissors.png" id="325" maxcharges="2" name="Scissors" />
 	<active cooldown="31" description="Invincibility at a cost" gfx="collectibles_326_breathoflife.png" id="326" maxcharges="2" name="Breath of Life" />
-	<passive achievement="57" cooldown="60" description="Fate chosen" gfx="collectibles_327_thepolaroid.png" id="327" name="The Polaroid" />
+	<passive achievement="57" cooldown="94.5" description="Fate chosen" gfx="collectibles_327_thepolaroid.png" id="327" name="The Polaroid" />
 	<passive achievement="78" description="Fate chosen" gfx="collectibles_328_thenegative.png" id="328" name="The Negative" />
 	<passive cache="all" description="Controlled tears" gfx="collectibles_329_theludovicotechnique.png" id="329" name="The Ludovico Technique" special="false" />
 	<passive cache="firedelay damage tearcolor" description="DMG down + tears way up" gfx="collectibles_330_soymilk.png" id="330" name="Soy Milk" />

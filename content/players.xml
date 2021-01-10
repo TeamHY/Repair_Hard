@@ -2,7 +2,7 @@
 
 	<player bigportrait="PlayerPortraitBig_Delirious_Spirit.png" keys="1" armor="16" items="277,414,510,20" bombs="2" name="The Delirious Spirit" nameimage="PlayerName_Delirious_Spirit.png" portrait="PlayerPortrait_Delirious_Spirit.png" skin="character_delirious_spirit.png" skinColor="-1"/>
 
-	<player armor="9" bigportrait="PlayerPortraitBig_Hush_Child.png" hp="0" items="308,414" bombs="2" name="Hush Child" nameimage="PlayerName_Hush_Child.png" portrait="PlayerPortrait_Hush_Child.png" skin="character_Hush_Child.png" skinColor="-1"/>
+	<player armor="9" bigportrait="PlayerPortraitBig_Hush_Child.png" hp="0" items="308,414" bombs="3" trinket="132" name="Hush Child" nameimage="PlayerName_Hush_Child.png" portrait="PlayerPortrait_Hush_Child.png" skin="character_Hush_Child.png" skinColor="-1"/>
 
 	<player bigportrait="PlayerPortraitBig_Lucifer.png" armor="4" bombs="2" hp="2" items="134,187,212,414" name="Lucifer" nameimage="PlayerName_Lucifer.png" portrait="PlayerPortrait_Lucifer.png" skin="character_Lucifer.png" skinColor="-1"/>
 

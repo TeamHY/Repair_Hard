@@ -2189,10 +2189,10 @@ bestiaryTransform="0,0,1" bestiaryAnim="Fly">
         <preload-snd id="245" /> <!-- SOUND_SATAN_SPIT -->
         <preload-snd id="52" /> <!-- SOUND_HELLBOSS_GROUNDPOUND -->
     </entity>
-    <entity id="274" variant="1" name="Mega Satan's Right Hand" baseHP="3500" boss="1" bossID="55" champion="1" collisionDamage="2" collisionMass="400" collisionRadius="45" gridCollision="walls" friction="1" numGridCollisionPoints="12" shadowSize="60" portrait="77" anm2path="274.001_MegaSatanHand.anm2">
+    <entity id="274" variant="1" name="Mega Satan's Right Hand" baseHP="1750" boss="1" bossID="55" champion="1" collisionDamage="2" collisionMass="400" collisionRadius="45" gridCollision="walls" friction="1" numGridCollisionPoints="12" shadowSize="60" portrait="77" anm2path="274.001_MegaSatanHand.anm2">
         <gibs amount="0" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
-    <entity id="274" variant="2" name="Mega Satan's Left Hand" baseHP="3500" boss="1" bossID="55" champion="1" collisionDamage="2" collisionMass="400" collisionRadius="45" gridCollision="walls" friction="1" numGridCollisionPoints="12" shadowSize="60" portrait="77" anm2path="274.001_MegaSatanHand.anm2">
+    <entity id="274" variant="2" name="Mega Satan's Left Hand" baseHP="1750" boss="1" bossID="55" champion="1" collisionDamage="2" collisionMass="400" collisionRadius="45" gridCollision="walls" friction="1" numGridCollisionPoints="12" shadowSize="60" portrait="77" anm2path="274.001_MegaSatanHand.anm2">
         <gibs amount="0" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
     <entity id="275" variant="0" name="Mega Satan 2" baseHP="20000" boss="1" bossID="55" champion="1" collisionDamage="2" collisionMass="400" collisionRadius="50" gridCollision="walls" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="78" anm2path="275.000_MegaSatan2Head.anm2" bestiary="true" bestiaryTransform="0,6,.5" bestiaryAnim="Idle1">
