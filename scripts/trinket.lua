@@ -7,6 +7,17 @@ pennyVar = 0
 
 function RepairMod:onNewLevel()
 	local player = Isaac.GetPlayer(0)
+
+	if (player:GetData()._reseeded ~= nil) then
+		if (player:GetData()._trinketnewlevel == nil) then
+			player:GetData()._trinketnewlevel = 0
+		end
+		if (player:GetData()._trinketnewlevel < player:GetData()._reseeded) then
+			player:GetData()._trinketnewlevel = player:GetData()._trinketnewlevel + 1
+			return
+		end
+	end
+
 	if player:HasTrinket(TrinketType.TRINKET_GOLDEN_HORSE_SHOE) then
 		Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_TREASURE, true, player:GetCollectibleRNG(Isaac.GetItemIdByName("Blessing")):GetSeed()), Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
 	end

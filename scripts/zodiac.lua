@@ -4,6 +4,16 @@ function RepairMod:OnPostNewLevel()
     local room = game:GetRoom()
     local level = game:GetLevel()
 
+	if (player:GetData()._reseeded ~= nil) then
+		if (player:GetData()._zodiacnewlevel == nil) then
+			player:GetData()._zodiacnewlevel = 0
+		end
+		if (player:GetData()._zodiacnewlevel < player:GetData()._reseeded) then
+			player:GetData()._zodiacnewlevel = player:GetData()._zodiacnewlevel + 1
+			return
+		end
+	end
+
     if player:HasCollectible(vir_item) then
         if Game().Difficulty < Difficulty.DIFFICULTY_GREED then -- 그리드 모드가 아니면
             Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_ANGEL, true, player:GetCollectibleRNG(vir_item):GetSeed()), Vector(120, 200), Vector(0, 0), player)
@@ -499,6 +509,7 @@ local Replace = false
 function RepairMod:MarsNewStage()
     local player = Isaac.GetPlayer(0)
 
+	Isaac.DebugString("Cursed!")
     if player:HasCollectible(mars_item) then
         Replace = true
     end
@@ -507,6 +518,7 @@ end
 RepairMod:AddCallback(ModCallbacks.MC_POST_CURSE_EVAL, RepairMod.MarsNewStage)
 
 function RepairMod:MarsStageUpdate()
+    local player = Isaac.GetPlayer(0)
     local room = Game():GetRoom()
     local level = Game():GetLevel()
     if Replace and level:GetStage() <= 10 then
@@ -534,9 +546,9 @@ function RepairMod:MarsStageUpdate()
             end
 
             if #EndRooms ~= 0 then
-                for i = 1, #EndRooms do
+                --[[for i = 1, #EndRooms do
                     Isaac.DebugString(tostring(EndRooms[i].SafeGridIndex))
-                end
+                end]]
                 local rngIndex = math.random(1, #EndRooms)
                 EndRooms[rngIndex].Data = baseCurseroomData
                 EndRooms[rngIndex].DisplayFlags = 7
@@ -546,6 +558,11 @@ function RepairMod:MarsStageUpdate()
 
         level:UpdateVisibility()
         if (reseed == true) then
+			if (player:GetData()._reseeded == nil) then
+				player:GetData()._reseeded = 1
+			else
+				player:GetData()._reseeded = player:GetData()._reseeded + 1
+			end
             Isaac.ExecuteCommand("reseed")
             return
         end

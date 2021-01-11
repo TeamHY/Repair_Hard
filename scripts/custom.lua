@@ -419,6 +419,16 @@ function RepairMod:SolNewLevel()
 	local player = Isaac.GetPlayer(0)
 	local level = Game():GetLevel()
 
+	if (player:GetData()._reseeded ~= nil) then
+		if (player:GetData()._solnewlevel == nil) then
+			player:GetData()._solnewlevel = 0
+		end
+		if (player:GetData()._solnewlevel < player:GetData()._reseeded) then
+			player:GetData()._solnewlevel = player:GetData()._solnewlevel + 1
+			return
+		end
+	end
+
 		rooms = level:GetRooms()
 
 	if player:HasCollectible(sol_item) then
@@ -495,6 +505,16 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_UPDATE, RepairMod.randomAtt)
 
 function RepairMod:onNewLevel()
 	local player = Isaac.GetPlayer(0)
+
+	if (player:GetData()._reseeded ~= nil) then
+		if (player:GetData()._customnewlevel == nil) then
+			player:GetData()._customnewlevel = 0
+		end
+		if (player:GetData()._customnewlevel < player:GetData()._reseeded) then
+			player:GetData()._customnewlevel = player:GetData()._customnewlevel + 1
+			return
+		end
+	end
 
 	if player:HasCollectible(randomAttack_item) then
 		player:RemoveCollectible(attackType[randomAttack])
