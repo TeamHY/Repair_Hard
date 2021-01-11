@@ -1,4 +1,5 @@
 ocul = require "scripts.customs.oculus"
+volt = require "scripts.customs.120volt"
 
 function RepairMod:GiveItem()
 	local player = Isaac.GetPlayer(0)

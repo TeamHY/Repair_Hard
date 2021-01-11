@@ -83,6 +83,7 @@ bel_item = Isaac.GetItemIdByName("Belial EX")
 amon_item = Isaac.GetItemIdByName("Amon EX")
 
 ocu_item = Isaac.GetItemIdByName("Oculus Rift")
+vlt_item = Isaac.GetItemIdByName("120 Volt")
 
 aricooldown = 0
 roomseedisold = 0
