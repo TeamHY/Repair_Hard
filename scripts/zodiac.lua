@@ -521,7 +521,7 @@ function RepairMod:MarsStageUpdate()
     local player = Isaac.GetPlayer(0)
     local room = Game():GetRoom()
     local level = Game():GetLevel()
-    if Replace and level:GetStage() <= 10 then
+    if Replace and level:GetStage() <= 8 then
         local CurRoom = level:GetCurrentRoomIndex()
         local rooms = level:GetRooms()
         local reseed = true;

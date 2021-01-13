@@ -575,6 +575,8 @@
       <Item Name="Oculus Rift" Weight="0.5" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="120 Volt" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+
 
 
 
@@ -1011,6 +1013,8 @@
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Oculus Rift" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="120 Volt" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+
 
 
 
@@ -1122,6 +1126,7 @@
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="120 Volt" Weight="1" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1759,6 +1764,7 @@
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Oculus Rift" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="120 Volt" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1909,6 +1915,7 @@
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Oculus Rift" Weight="0.35" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="120 Volt" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -2003,6 +2010,8 @@
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="No!" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="2" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="120 Volt" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+
 
 
 

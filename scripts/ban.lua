@@ -128,13 +128,15 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(292)
         Game():GetItemPool():RemoveCollectible(311)
         Game():GetItemPool():RemoveCollectible(332)
+        Game():GetItemPool():RemoveCollectible(429)
         Game():GetItemPool():RemoveCollectible(482)
         Game():GetItemPool():RemoveCollectible(498)
         Game():GetItemPool():RemoveCollectible(501)
         Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_SWALLOWED_PENNY)
     end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_APOLLYON then
-        Game():GetItemPool():RemoveCollectible(536)
+        player:AddTrinket(TrinketType.TRINKET_GOLDEN_HORSE_SHOE)
+        player:UseActiveItem(479, false, true, false, false)
     end
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_THEFORGOTTEN then
         Game():GetItemPool():RemoveCollectible(161)
@@ -207,7 +209,8 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveCollectible(643)
     end
     if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Hush Child") then
-        Game():GetItemPool():RemoveCollectible(161)
+        player:AddTrinket(TrinketType.TRINKET_LOST_CORK)
+        player:UseActiveItem(479, false, true, false, false)
     end
     if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Lucifer") then
         Game():GetItemPool():RemoveCollectible(52)
@@ -235,6 +238,7 @@ function RepairMod:BanItem(newstart)
         Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_SWALLOWED_PENNY)
         Game():GetItemPool():RemoveCollectible(64)
         Game():GetItemPool():RemoveCollectible(227)
+        Game():GetItemPool():RemoveCollectible(429)
     end
     if Isaac.GetPlayer(0):GetPlayerType() == Isaac.GetPlayerTypeByName("Lamb") then
         Game():GetItemPool():RemoveCollectible(161)

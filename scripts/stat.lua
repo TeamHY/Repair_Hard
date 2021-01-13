@@ -97,7 +97,7 @@ function RepairMod:OnCache(player, cacheFlag)
 
 	if cacheFlag == CacheFlag.CACHE_LUCK then
 		if player:HasCollectible(355) then
-			player.Luck = player.Luck - 3
+			player.Luck = player.Luck - 2
 			player.Luck = player.Luck + PearlLuck
 		end
 		if player:HasCollectible(46) then

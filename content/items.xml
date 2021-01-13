@@ -114,7 +114,7 @@
 
 	<passive gfx="908.png" cache="speed" name="Mars" />
 
-	<passive gfx="collectibles_006x_120Volt.png" name="120 Volt" />
+	<passive gfx="907.png" name="120 Volt" />
 
 	<!-- Custom Trinket #1 -->
 	<trinket cache="damageflag" gfx="Bloody Bandage.png" name="Bloody Bandage" />

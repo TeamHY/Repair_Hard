@@ -175,7 +175,7 @@ function RepairMod:CupUpdate()
 
 	for i = 1, #entities do
 		if entities[i]:IsVulnerableEnemy() and entities[i]:GetData().CupV == true and Game().TimeCounter % 3 == 0
-		and TriRNG(scattering_cup, 10) then
+		and TriRNG(scattering_cup, 12) then
 			local splashTear = player:FireTear(entities[i].Position, Vector(player.ShotSpeed*10,0):Rotated(math.random(360)), true,true,false)
 			splashTear:ToTear().FallingSpeed = player.TearHeight*.5*(math.random()*.75+.5)
 			splashTear:ToTear().FallingAcceleration = 1.3

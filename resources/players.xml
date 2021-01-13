@@ -117,7 +117,7 @@
           portrait="PlayerPortrait_14_Keeper.png" 
           bigportrait="PlayerPortraitBig_Keeper.png" card="43" trinket="56" skinColor="5" />
 
-	<player id="15" name="Apollyon" skin="Character_016_Apollyon.png" costume="36" hp="2" black="8" bombs="2" coins="5" keys="1" trinket="82" items="414,477" 
+	<player id="15" name="Apollyon" skin="Character_016_Apollyon.png" costume="36" hp="2" black="8" bombs="2" coins="5" keys="1" items="414,477" 
           nameimage="PlayerName_15_Apollyon.png" 
           portrait="PlayerPortrait_15_Apollyon.png" 
           bigportrait="PlayerPortraitBig_15_Apollyon.png" skinColor="5" />
