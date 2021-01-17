@@ -384,7 +384,7 @@ function RepairMod:uranusCrack(player)
         end
 
         if(entities[i].Type == 1000 and entities[i].Variant == 980 and entities[i]:GetData().urVar == nil and (player.Position - entities[i].Position):Length() < player.Size + entities[i].Size + 3 ) then
-            entities[i]:GetData().urVar = 0
+            entities[i]:GetData().urVar = 3
             entities[i]:GetData().plVec = (entities[i].Position - player.Position):Normalized()
 			entities[i].Velocity = entities[i]:GetData().plVec * 20
         end
@@ -392,10 +392,12 @@ function RepairMod:uranusCrack(player)
         if(entities[i]:GetData().urVar ~= nil) then
 
             entities[i]:GetData().urVar = entities[i]:GetData().urVar + 1
+			Isaac.DebugString(tostring(entities[i]:GetData().urVar))
 
-			if (entities[i]:GetData().urVar > 30) then
+			if (entities[i]:GetData().urVar > 3) then
 				local creep = Isaac.Spawn(1000, 54, 0, entities[i].Position, Vector(0,0), player)
 				creep:GetSprite().Color = Color(1, 1, 1, 1, 36, 177, 216)
+				entities[i]:GetData().urVar = 1
 			end
 
             for j = 1, #entities do
