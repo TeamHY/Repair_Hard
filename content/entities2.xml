@@ -18,7 +18,7 @@
     </entity>
 
 
-		<entity anm2path="1000.980_UrEntity.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="UrEntity" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="980" subtype="0">
+		<entity anm2path="1000.980_UrEntity.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="10" collisionRadius="10" friction="1" id="1000" name="UrEntity" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="980" subtype="0">
 	        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 	  </entity>
 		<entity anm2path="1000.981_Oculus.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="Oculus" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="981" subtype="0">

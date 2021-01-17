@@ -4,15 +4,15 @@ function RepairMod:OnPostNewLevel()
     local room = game:GetRoom()
     local level = game:GetLevel()
 
-	if (player:GetData()._reseeded ~= nil) then
-		if (player:GetData()._zodiacnewlevel == nil) then
-			player:GetData()._zodiacnewlevel = 0
-		end
-		if (player:GetData()._zodiacnewlevel < player:GetData()._reseeded) then
-			player:GetData()._zodiacnewlevel = player:GetData()._zodiacnewlevel + 1
-			return
-		end
-	end
+    if (player:GetData()._reseeded ~= nil) then
+        if (player:GetData()._zodiacnewlevel == nil) then
+            player:GetData()._zodiacnewlevel = 0
+        end
+        if (player:GetData()._zodiacnewlevel < player:GetData()._reseeded) then
+            player:GetData()._zodiacnewlevel = player:GetData()._zodiacnewlevel + 1
+            return
+        end
+    end
 
     if player:HasCollectible(vir_item) then
         if Game().Difficulty < Difficulty.DIFFICULTY_GREED then -- 그리드 모드가 아니면
@@ -383,16 +383,20 @@ function RepairMod:uranusCrack(player)
             entities[i]:Remove()
         end
 
-        if(entities[i].Type == 1000 and entities[i].Variant == 980 and entities[i]:GetData().urVar == nil and (player.Position - entities[i].Position):Length() < player.Size + entities[i].Size ) then
-            entities[i]:GetData().urVar = true
-            entities[i]:GetData().plVec = player:GetMovementInput()
+        if(entities[i].Type == 1000 and entities[i].Variant == 980 and entities[i]:GetData().urVar == nil and (player.Position - entities[i].Position):Length() < player.Size + entities[i].Size + 3 ) then
+            entities[i]:GetData().urVar = 0
+            entities[i]:GetData().plVec = (entities[i].Position - player.Position):Normalized()
+			entities[i].Velocity = entities[i]:GetData().plVec * 20
         end
 
         if(entities[i]:GetData().urVar ~= nil) then
 
-            if entities[i]:GetData().plVec:Length() < 1 then
-                entities[i]:GetData().plVec = Vector(1, 0):Rotated(math.random(360))
-            end
+            entities[i]:GetData().urVar = entities[i]:GetData().urVar + 1
+
+			if (entities[i]:GetData().urVar > 30) then
+				local creep = Isaac.Spawn(1000, 54, 0, entities[i].Position, Vector(0,0), player)
+				creep:GetSprite().Color = Color(1, 1, 1, 1, 36, 177, 216)
+			end
 
             for j = 1, #entities do
                 if ( ((entities[j].Position - entities[i].Position):Length() < entities[j].Size + entities[i].Size) and entities[j]:IsVulnerableEnemy()) then
@@ -404,38 +408,22 @@ function RepairMod:uranusCrack(player)
                 TearSeperate(entities[i])
             end
 
-            if (entities[i]:GetData().urTime == Game():GetFrameCount()) then
-
-                newPos = entities[i].Position + (entities[i]:GetData().plVec) * (15)
-
-                if(room:GetGridEntityFromPos(newPos) ~= nil) then
-                    if(room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCK or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCKB or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCKT or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCK_BOMB or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCK_ALT or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_LOCK or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_TNT or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_POOP or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_WALL or
-                        room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_STATUE or
-                    room:GetGridEntityFromPos(newPos):GetType() == GridEntityType.GRID_ROCK_SS) then
-                        TearSeperate(entities[i])
-                    end
+            if(room:GetGridEntityFromPos(entities[i].Position) ~= nil) then
+                if(room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_ROCK or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_ROCKB or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_ROCKT or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_ROCK_BOMB or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_ROCK_ALT or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_LOCK or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_TNT or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_POOP or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_WALL or
+                    room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_STATUE or
+                room:GetGridEntityFromPos(entities[i].Position):GetType() == GridEntityType.GRID_ROCK_SS) then
+                    TearSeperate(entities[i])
                 end
-
-                entities[i].Position = newPos
-                entities[i]:GetData().urVar = true
-            end
-
-            if entities[i]:GetData().urVar then
-                entities[i]:GetData().urTime = Game():GetFrameCount() + 1
-                entities[i]:GetData().urVar = false
             end
         end
-
-
-
 
     end
     --end
@@ -483,8 +471,9 @@ function TearSeperate(entity)
 
     entity:Remove()
     local ranRot = math.random(35)
+	local fPos = Isaac.GetFreeNearPosition(entity.Position, 2)
     for k = 1, 10 do
-        local splashTear = Isaac.Spawn(2, 0, 0, entity.Position, Vector(15, 0):Rotated(36 * k + ranRot), player)
+        local splashTear = Isaac.Spawn(2, 0, 0, fPos, Vector(15, 0):Rotated(36 * k + ranRot), player)
         local sprite = splashTear:GetSprite()
         if sprite:GetFilename() == "gfx/002.000_Tear.anm2" then
             sprite:ReplaceSpritesheet(0, "gfx/uranusTear.png")
@@ -493,7 +482,14 @@ function TearSeperate(entity)
             sprite.Rotation = 36 * k + ranRot
         end
     end
+	for l = 1, 4 do
+        local eff = Isaac.Spawn(1000, 4, 0, fPos, Vector(math.random(1,2), 0):Rotated(math.random(360)), player)
+		local effSprite = eff:GetSprite()
+		effSprite.Color = Color(1, 1, 1, 1, 36, 177, 216)
+    end
+
     sfxManager:Play(Isaac.GetSoundIdByName("urCrack"), 1, 0, false, 1)
+    sfxManager:Play(137, 1, 0, false, 1)
 end
 
 
@@ -509,7 +505,7 @@ local Replace = false
 function RepairMod:MarsNewStage()
     local player = Isaac.GetPlayer(0)
 
-	Isaac.DebugString("Cursed!")
+    Isaac.DebugString("Cursed!")
     if player:HasCollectible(mars_item) then
         Replace = true
     end
@@ -558,11 +554,11 @@ function RepairMod:MarsStageUpdate()
 
         level:UpdateVisibility()
         if (reseed == true) then
-			if (player:GetData()._reseeded == nil) then
-				player:GetData()._reseeded = 1
-			else
-				player:GetData()._reseeded = player:GetData()._reseeded + 1
-			end
+            if (player:GetData()._reseeded == nil) then
+                player:GetData()._reseeded = 1
+            else
+                player:GetData()._reseeded = player:GetData()._reseeded + 1
+            end
             Isaac.ExecuteCommand("reseed")
             return
         end
