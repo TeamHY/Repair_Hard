@@ -200,7 +200,7 @@ end
 function RepairMod:onEffectRender(effect,offset)
    local tmpcolor = effect:GetColor()
    if tmpcolor.A > 0.3 then
-      if effect.Type == 1000 and effect.Variant == 50 and effect.SubType == 2 then
+      if effect.Type == 1000 and effect.Variant == 50 and effect.SubType == 2 and effect.Parent ~= nil then
          if effect.Parent.Type == 7 then
             local tmpRO = math.floor(tmpcolor.RO*255)
             local tmpGO = math.floor(tmpcolor.GO*255)

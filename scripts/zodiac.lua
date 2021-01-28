@@ -506,8 +506,9 @@ local Replace = false
 
 function RepairMod:MarsNewStage()
     local player = Isaac.GetPlayer(0)
+    local level = Game():GetLevel()
 
-    Isaac.DebugString("Cursed!")
+    Isaac.DebugString("Cursed! on "..tostring(level:GetStage()))
     if player:HasCollectible(mars_item) then
         Replace = true
     end
@@ -519,7 +520,8 @@ function RepairMod:MarsStageUpdate()
     local player = Isaac.GetPlayer(0)
     local room = Game():GetRoom()
     local level = Game():GetLevel()
-    if Replace and (level:GetStage() <= 8 or level:GetStage() == 10) then
+	Isaac.DebugString("before mars check... on "..tostring(level:GetStage()))
+    if Replace == true and (level:GetStage() <= 8 or level:GetStage() == 10) then
         local CurRoom = level:GetCurrentRoomIndex()
         local rooms = level:GetRooms()
         local reseed = true;
@@ -554,6 +556,7 @@ function RepairMod:MarsStageUpdate()
             end
         end
 
+		Isaac.DebugString("we got this... on "..tostring(level:GetStage()).." with "..tostring(reseed))
         level:UpdateVisibility()
         if (reseed == true) then
             if (player:GetData()._reseeded == nil) then
@@ -561,11 +564,13 @@ function RepairMod:MarsStageUpdate()
             else
                 player:GetData()._reseeded = player:GetData()._reseeded + 1
             end
+			Isaac.DebugString("about to reseed... on "..tostring(level:GetStage()))
             Isaac.ExecuteCommand("reseed")
             return
         end
     end
 
+	Isaac.DebugString("the story ends... on "..tostring(level:GetStage()))
     Replace = nil
 
 end
