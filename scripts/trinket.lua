@@ -49,12 +49,12 @@ function RepairMod:onNewLevel()
 		end
 	end
 	if player:HasTrinket(110) then
-		if player:GetTrinketRNG(110):RandomInt(10) < (5 + player.Luck) then --0부터 9 / 1 + 럭 미만
+		if player:GetTrinketRNG(110):RandomInt(10) < (2 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			Isaac.Spawn(5, 300, 10, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
 		end
 	end
 	if player:HasTrinket(111) then
-		if player:GetTrinketRNG(111):RandomInt(10) < (5 + player.Luck) then --0부터 9 / 1 + 럭 미만
+		if player:GetTrinketRNG(111):RandomInt(10) < (2 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			Isaac.Spawn(5, 300, 18, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0, 0), player)
 		end
 	end
@@ -123,7 +123,7 @@ function RepairMod:ShootTear(tear)
 	end
 	if player:HasTrinket(eye_of_god) and player:HasCollectible(331) == false then
 		player.TearFlags = player.TearFlags&~TearFlags.TEAR_GLOW
-		if player:GetTrinketRNG(eye_of_god):RandomInt(20) < (1 + player.Luck) then --0부터 9 / 1 + 럭 미만
+		if player:GetTrinketRNG(eye_of_god):RandomInt(40) < (1 + player.Luck) then --0부터 9 / 1 + 럭 미만
 			player.TearFlags = player.TearFlags|TearFlags.TEAR_GLOW
 		end
 	end
