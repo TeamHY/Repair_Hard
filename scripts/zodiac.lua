@@ -502,7 +502,7 @@ end
 
 
 
-local Replace = false
+--local Replace = false
 
 function RepairMod:MarsNewStage()
     local player = Isaac.GetPlayer(0)
@@ -510,7 +510,7 @@ function RepairMod:MarsNewStage()
 
     Isaac.DebugString("Cursed! on "..tostring(level:GetStage()))
     if player:HasCollectible(mars_item) then
-        Replace = true
+        player:GetData()._Replace = true
     end
 end
 
@@ -521,7 +521,9 @@ function RepairMod:MarsStageUpdate()
     local room = Game():GetRoom()
     local level = Game():GetLevel()
 	Isaac.DebugString("before mars check... on "..tostring(level:GetStage()))
-    if Replace == true and (level:GetStage() <= 8 or level:GetStage() == 10) then
+	Isaac.DebugString("and operation... with "..tostring(player:GetData()._Replace).." and "..tostring((level:GetStage() <= 8 or level:GetStage() == 10)))
+    if player:GetData()._Replace ~= nil and (level:GetStage() <= 8 or level:GetStage() == 10) then
+		Isaac.DebugString("getting started... on "..tostring(level:GetStage()))
         local CurRoom = level:GetCurrentRoomIndex()
         local rooms = level:GetRooms()
         local reseed = true;
@@ -546,9 +548,9 @@ function RepairMod:MarsStageUpdate()
             end
 
             if #EndRooms ~= 0 then
-                --[[for i = 1, #EndRooms do
+                for i = 1, #EndRooms do
                     Isaac.DebugString(tostring(EndRooms[i].SafeGridIndex))
-                end]]
+                end
                 local rngIndex = math.random(1, #EndRooms)
                 EndRooms[rngIndex].Data = baseCurseroomData
                 EndRooms[rngIndex].DisplayFlags = 7
@@ -571,7 +573,7 @@ function RepairMod:MarsStageUpdate()
     end
 
 	Isaac.DebugString("the story ends... on "..tostring(level:GetStage()))
-    Replace = nil
+    player:GetData()._Replace = nil
 
 end
 
