@@ -14,7 +14,7 @@ function RepairMod:usePillOrigin(pills)
 			player:UseActiveItem(287,false,true,false,false)
 		end
 	elseif pills == PillEffect.PILLEFFECT_SEE_FOREVER then
-		if player:GetPillRNG(PillEffect.PILLEFFECT_SEE_FOREVER):RandomInt(20) < (14 + player.Luck) then --0부터 9 / 4 + 럭 미만
+		if player:GetPillRNG(PillEffect.PILLEFFECT_SEE_FOREVER):RandomInt(20) < (12 + player.Luck) then --0부터 9 / 4 + 럭 미만
 			player:UseActiveItem(287,false,true,false,false)
 		end
 	elseif pills == PillEffect.PILLEFFECT_PARALYSIS then
@@ -86,7 +86,7 @@ function RepairMod:usePillOrigin(pills)
 			player:UseActiveItem(324,false,true,false,false)
 		end
 	elseif pills == PillEffect.PILLEFFECT_IM_EXCITED then
-		if player:GetPillRNG(PillEffect.PILLEFFECT_IM_EXCITED):RandomInt(20) < (10 + player.Luck) then --0부터 9 / 4 + 럭 미만
+		if player:GetPillRNG(PillEffect.PILLEFFECT_IM_EXCITED):RandomInt(20) < (14 + player.Luck) then --0부터 9 / 4 + 럭 미만
 			player:UseActiveItem(516,false,true,false,false)
 		end
 	elseif pills == PillEffect.PILLEFFECT_RELAX then

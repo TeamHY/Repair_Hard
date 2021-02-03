@@ -79,7 +79,7 @@
 	<pilleffect id="20" name="48 Hour Energy!" />
 	<pilleffect id="21" name="Hematemesis (50% Sacrificial Altar)" />
 	<pilleffect id="22" name="Paralysis (50% Delirious x 2)" />
-	<pilleffect id="23" name="I can see forever! (75% Vision)" />
+	<pilleffect id="23" name="I can see forever! (60% Vision)" />
 	<pilleffect id="24" name="Pheromones (100% Delirious x 3)" />
 	<pilleffect id="25" name="Amnesia (50% Vision + Curse Off)" />
 	<pilleffect id="26" name="Lemon Party" />
@@ -98,7 +98,7 @@
 	<pilleffect id="39" name="X-Lax (50% Flush!)" />
 	<pilleffect id="40" name="Something's wrong... (75% Flush!)" />
 	<pilleffect id="41" greedmode="false" name="I'm Drowsy..." />
-	<pilleffect id="42" name="I'm Excited!!! (50% Sprinkler)" />
+	<pilleffect id="42" name="I'm Excited!!! (70% Sprinkler)" />
 	<pilleffect achievement="321" id="43" name="Gulp!" />
 	<pilleffect achievement="325" id="44" name="Horf!" />
 	<pilleffect achievement="324" id="45" name="Feels like I'm walking on sunshine!" />
