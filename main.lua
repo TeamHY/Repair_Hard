@@ -1,6 +1,7 @@
 RepairMod = RegisterMod("RepairMod",1)
 init = require "scripts.init"
 func = require "scripts.func"
+mars = require "scripts.customs.mars"
 ban = require "scripts.ban"
 setitem = require "scripts.set"
 zodiac = require "scripts.zodiac"
