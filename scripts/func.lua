@@ -30,3 +30,9 @@ function TriRNG(trinket, maxLuck)
       return false
     end
 end
+
+function WasteCard(CardID, index)
+	local player = Isaac.GetPlayer(0)
+	player:SetCard(index, 0)
+	player:UseCard(CardID)
+end

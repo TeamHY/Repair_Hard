@@ -262,3 +262,26 @@ function RepairMod:BanItem(newstart)
     player:TryRemoveCollectibleCostume(380, false) --페이투플레이
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, RepairMod.BanItem)
+
+function RepairMod:BanCard(player)
+	local entities = Isaac.GetRoomEntities()
+	for i = 1, #entities do
+		if player:GetPlayerType() == PlayerType.PLAYER_MAGDALENA then
+			if player:GetCard(0) == Card.RUNE_ANSUZ then
+				WasteCard(Card.RUNE_ANSUZ,0)
+			elseif player:GetCard(0) == Card.CARD_WORLD then
+				WasteCard(Card.CARD_WORLD,0)
+			elseif player:GetCard(0) == Card.CARD_SUN then
+				WasteCard(Card.CARD_SUN,0)
+			end
+		end
+		if player:GetPlayerType() == PlayerType.PLAYER_JUDAS then
+			if player:GetCard(0) == Card.RUNE_ALGIZ then
+				WasteCard(Card.RUNE_ALGIZ,0)
+			elseif player:GetCard(0) == Card.CARD_HIEROPHANT then
+				WasteCard(Card.CARD_HIEROPHANT,0)
+			end
+		end
+	end
+end
+RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.BanCard)
