@@ -1,6 +1,6 @@
 function RepairMod:BanItem(newstart)
     local player = Isaac.GetPlayer(0)
-    player:DropTrinket(Isaac.GetFreeNearPosition(player.Position, 50),false) --현재 들고있는 부적 드랍
+    player:DropTrinket(Isaac.GetFreeNearPosition(player.Position, 50), false) --현재 들고있는 부적 드랍
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_PAY_TO_WIN)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_NO)
@@ -264,24 +264,22 @@ end
 RepairMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, RepairMod.BanItem)
 
 function RepairMod:BanCard(player)
-	local entities = Isaac.GetRoomEntities()
-	for i = 1, #entities do
-		if player:GetPlayerType() == PlayerType.PLAYER_MAGDALENA then
-			if player:GetCard(0) == Card.RUNE_ANSUZ then
-				WasteCard(Card.RUNE_ANSUZ,0)
-			elseif player:GetCard(0) == Card.CARD_WORLD then
-				WasteCard(Card.CARD_WORLD,0)
-			elseif player:GetCard(0) == Card.CARD_SUN then
-				WasteCard(Card.CARD_SUN,0)
-			end
-		end
-		if player:GetPlayerType() == PlayerType.PLAYER_JUDAS then
-			if player:GetCard(0) == Card.RUNE_ALGIZ then
-				WasteCard(Card.RUNE_ALGIZ,0)
-			elseif player:GetCard(0) == Card.CARD_HIEROPHANT then
-				WasteCard(Card.CARD_HIEROPHANT,0)
-			end
-		end
+    if player:GetCard(0) == Card.RUNE_ANSUZ then
+        WasteCard(Card.RUNE_ANSUZ, 0)
 	end
+    if player:GetPlayerType() == PlayerType.PLAYER_MAGDALENA then
+        if player:GetCard(0) == Card.CARD_WORLD then
+            WasteCard(Card.CARD_WORLD, 0)
+        elseif player:GetCard(0) == Card.CARD_SUN then
+            WasteCard(Card.CARD_SUN, 0)
+        end
+    end
+    if player:GetPlayerType() == PlayerType.PLAYER_JUDAS then
+        if player:GetCard(0) == Card.RUNE_ALGIZ then
+            WasteCard(Card.RUNE_ALGIZ, 0)
+        elseif player:GetCard(0) == Card.CARD_HIEROPHANT then
+            WasteCard(Card.CARD_HIEROPHANT, 0)
+        end
+    end
 end
 RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.BanCard)
