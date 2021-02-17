@@ -82,7 +82,7 @@
 	<familiar description="9 lives" devilprice="2" gfx="Collectibles_081_DeadCat.png" id="81" name="Dead Cat" />
 	<passive cache="flying speed" description="Demon wings" devilprice="2" gfx="Collectibles_082_LordOfThePit.png" blackhearts="4" id="82" name="Lord of the Pit" />
 	<active achievement="9" cache="speed damage" description="Temporary demon form" devilprice="1" gfx="Collectibles_083_TheNail.png" id="83" maxcharges="6" name="The Nail" />
-	<active description="Reusable level skip" gfx="Collectibles_084_WeNeedToGoDeeper.png" id="84" maxcharges="4" name="We Need To Go Deeper!" />
+	<active description="Reusable level skip" gfx="Collectibles_084_WeNeedToGoDeeper.png" id="84" maxcharges="8" name="We Need To Go Deeper!" />
 	<active description="Reusable card generator " gfx="Collectibles_085_DeckOfCards.png" id="85" maxcharges="3" name="Deck of Cards" />
 	<active achievement="13" description="Summon Monstro" gfx="Collectibles_086_MonstrosTooth.png" id="86" maxcharges="1" name="Monstro's Tooth" />
 	<passive achievement="15" description="Cross tears" gfx="Collectibles_087_LokisHorns.png" id="87" name="Loki's Horns" />
@@ -480,7 +480,7 @@
 	<familiar description="Chub chub" gfx="Collectibles_473_BigChubby.png" id="473" name="Big Chubby" />
 	<familiar description="Gross..." gfx="Collectibles_474_Tonsil.png" id="474" name="Tonsil" />
 	<active achievement="305" description="Use with caution" gfx="Collectibles_475_PlanC.png" id="475" name="Plan C" maxcharges="0" />
-	<active achievement="296" description="What will it be?" gfx="Collectibles_476_D1.png" id="476" name="D1" maxcharges="4" />
+	<active achievement="296" description="What will it be?" gfx="Collectibles_476_D1.png" id="476" name="D1" maxcharges="6" />
 	<active achievement="295" description="Consume" gfx="Collectibles_477_Void.png" id="477" name="Void" devilprice="1" maxcharges="3" />
 	<active description="Stop!" gfx="Collectibles_478_Pause.png" id="478" name="Pause" maxcharges="1" />
 	<active achievement="318" description="Trinket melter!" gfx="Collectibles_479_Smelter.png" id="479" name="Smelter" maxcharges="3" />
