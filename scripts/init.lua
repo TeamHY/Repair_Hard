@@ -108,7 +108,6 @@ PowerBondTime = -1
 LimiterTime = -1
 DeathNoteVar = 0
 QuickChaosVar = 0
-LudoVar = 0
 Collectible455 = 0
 Collectible392 = 0
 Collectible212 = 0

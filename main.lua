@@ -53,7 +53,6 @@ function RepairMod:NewStart(save)
 		CollectibleSummang = 0
 		DeathNoteVar = 0
 		QuickChaosVar = 0
-		LudoVar = 0
 		PoopVar = false
 		violetaVar = false
 		prometheusVar = false

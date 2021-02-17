@@ -245,20 +245,6 @@ function RepairMod:ChangeStat()
 			Save()
 		end
 	end
-	if player:HasCollectible(329) then
-		LudoVar = 0
-		if player:HasCollectible(118) then
-			LudoVar = LudoVar + 1
-		end
-		if player:HasCollectible(114) then
-			LudoVar = LudoVar + 1
-		end
-		if player:HasCollectible(68) then
-			LudoVar = LudoVar + 1
-		end
-		player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
-		player:EvaluateItems()
-	end
 	if player:HasCollectible(46) then
 		if LuckyFootTime == 0 then
 			LuckyFootTime = Game():GetFrameCount()

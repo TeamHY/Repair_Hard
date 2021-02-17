@@ -49,7 +49,7 @@ function RepairMod:OnCache(player, cacheFlag)
 			player.Damage = player.Damage * 1.15
 		end
 		if player:HasCollectible(152) then
-			player.Damage = player.Damage * 1.54
+			player.Damage = player.Damage * 100 / 35
 		end
 		if player:HasCollectible(188) then
 			player.Damage = player.Damage * 1.2
@@ -84,8 +84,8 @@ function RepairMod:OnCache(player, cacheFlag)
 		if DeathNoteVar ~= 0 then
 			player.Damage = player.Damage * 1.35
 		end
-		if LudoVar > 0 then
-			player.Damage = player.Damage*(LudoVar*2.0)
+		if player:HasCollectible(329) then
+			player.Damage = player.Damage * 2 * (player:GetCollectibleNum(68) + player:GetCollectibleNum(114) + player:GetCollectibleNum(118))
 		end
 	    if hardModeVar == 1 then
         	player.Damage = player.Damage * HellDamage
