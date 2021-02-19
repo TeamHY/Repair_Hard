@@ -762,3 +762,79 @@ function RepairMod:UseItem(itemname,rng)
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_USE_ITEM, RepairMod.UseItem)
+
+function RepairMod:mysticStage()
+  player = Isaac.GetPlayer(0)
+  room = Game():GetRoom()
+  local game = Game()
+  local level = game:GetLevel()
+
+  if player:HasCollectible(mys_item) then
+	  rooms = {
+	    RoomType.ROOM_TREASURE,
+	    RoomType.ROOM_SHOP,
+	    RoomType.ROOM_BOSS,
+	    RoomType.ROOM_MINIBOSS,
+	    --RoomType.ROOM_SECRET,
+	    --RoomType.ROOM_SUPERSECRET,
+	    RoomType.ROOM_ARCADE,
+	    RoomType.ROOM_CURSE,
+	    RoomType.ROOM_CHALLENGE,
+	    RoomType.ROOM_LIBRARY,
+	    RoomType.ROOM_SACRIFICE,
+	    RoomType.ROOM_DUNGEON,
+	    RoomType.ROOM_ISAACS,
+	    RoomType.ROOM_BARREN,
+	    RoomType.ROOM_CHEST,
+	    RoomType.ROOM_DICE
+	  }
+	  for i=1,#rooms do
+	    local rRoomIndex = level:QueryRoomTypeIndex(rooms[i], false, RNG())
+	    local rRoom = level:GetRoomByIdx(rRoomIndex)
+	    rRoom.DisplayFlags = rRoom.DisplayFlags | 1
+	  end
+
+	  -- Since the mini-map is cached, changing display flags won't update it unless we explicitly call this function
+	  level:UpdateVisibility()
+  end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_LEVEL    , RepairMod.mysticStage)
+
+function RepairMod:mysticInit()
+  player = Isaac.GetPlayer(0)
+  room = Game():GetRoom()
+  local game = Game()
+  local level = game:GetLevel()
+
+  if HasPassive(mys_item) then
+	  rooms = {
+	    RoomType.ROOM_TREASURE,
+	    RoomType.ROOM_SHOP,
+	    RoomType.ROOM_BOSS,
+	    RoomType.ROOM_MINIBOSS,
+	    --RoomType.ROOM_SECRET,
+	    --RoomType.ROOM_SUPERSECRET,
+	    RoomType.ROOM_ARCADE,
+	    RoomType.ROOM_CURSE,
+	    RoomType.ROOM_CHALLENGE,
+	    RoomType.ROOM_LIBRARY,
+	    RoomType.ROOM_SACRIFICE,
+	    RoomType.ROOM_DUNGEON,
+	    RoomType.ROOM_ISAACS,
+	    RoomType.ROOM_BARREN,
+	    RoomType.ROOM_CHEST,
+	    RoomType.ROOM_DICE
+	  }
+	  for i=1,#rooms do
+	    local rRoomIndex = level:QueryRoomTypeIndex(rooms[i], false, RNG())
+	    local rRoom = level:GetRoomByIdx(rRoomIndex)
+	    rRoom.DisplayFlags = rRoom.DisplayFlags | 1
+	  end
+
+	  -- Since the mini-map is cached, changing display flags won't update it unless we explicitly call this function
+	  level:UpdateVisibility()
+  end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.mysticInit)
