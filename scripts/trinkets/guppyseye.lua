@@ -55,36 +55,17 @@ local function DoGuppysEye(m)
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, function()
+	local player = Isaac.GetPlayer(0)
 	local eye = false
 	local momsbox = false
-	if RepairMod.roomplayers then
-		for _, p in pairs(RepairMod.roomplayers) do
-			if p:HasTrinket(TrinketType.TRINKET_GUPPYS_EYE) then
-				eye = true
-				if p:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX) then
-					momsbox = true
-				end
-				break
-			end
+	if player:HasTrinket(TrinketType.TRINKET_GUPPYS_EYE) then
+		eye = true
+		if player:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX) then
+			momsbox = true
 		end
 	end
 
 	if eye then
 		DoGuppysEye(momsbox)
 	end
-end)
-
-RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, function(_, p)
-	local d = p:GetData()
-
-	if not d.HasGuppysEye and p:HasTrinket(TrinketType.TRINKET_GUPPYS_EYE) then
-		DoGuppysEye(p:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX))
-	end
-
-	if p:HasTrinket(TrinketType.TRINKET_GUPPYS_EYE) and not d.HasMomsBox and p:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX) then
-		DoGuppysEye(p:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX))
-	end
-
-	d.HasGuppysEye = p:HasTrinket(TrinketType.TRINKET_GUPPYS_EYE)
-	d.HasMomsBox = p:HasCollectible(CollectibleType.COLLECTIBLE_MOMS_BOX)
 end)
