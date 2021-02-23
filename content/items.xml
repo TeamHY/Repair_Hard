@@ -124,5 +124,8 @@
 	<trinket gfx="Eye of God.png" cache="tearflag" name="Eye of God" />
 	<trinket gfx="Scattering Cup.png" name="Scattering Cup" />
 
+	<trinket gfx="trinkets_guppyseye.png" name="Guppy's Eye" />
+	<trinket gfx="trinkets_popsiclestick.png" name="Popsicle Stick" />
+	<trinket gfx="trinkets_rainbowpenny.png" name="Rainbow Penny" />
 
 </items>
