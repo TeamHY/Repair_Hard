@@ -576,6 +576,8 @@
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="120 Volt" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Mystical Map" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+
 
 
 
@@ -609,6 +611,7 @@
       <Item Id="16" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="19" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="20" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="21" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="27" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="32" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -775,6 +778,7 @@
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Mystical Map" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
 
 
@@ -1338,6 +1342,7 @@
       <Item Id="16" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="19" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="20" Weight="1" DecreaseBy="1" RemoveOn="0"/>
+      <Item Id="21" Weight="0.15" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="27" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="28" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Id="32" Weight="1" DecreaseBy="1" RemoveOn="0"/>
@@ -1504,6 +1509,7 @@
       <Item Name="Artifact Sanctum" Weight="2" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="PLATINUM BULLETS" Weight="1" DecreaseBy="1" RemoveOn="0"/>
       <Item Name="Mars" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
+      <Item Name="Mystical Map" Weight="0.75" DecreaseBy="1" RemoveOn="0"/>
 
 
 

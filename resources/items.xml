@@ -142,7 +142,7 @@
 	<passive description="Ultimate grand supreme" gfx="Collectibles_141_PageantBoy.png" id="141" name="Pageant Boy" />
 	<passive description="You have been blessed" gfx="Collectibles_142_Scapular.png" id="142" name="Scapular" />
 	<passive cache="speed shotspeed" description="Speed + shot speed up" gfx="Collectibles_143_Speedball.png" id="143" name="Speed Ball" />
-	<familiar description="He's greedy" gfx="Collectibles_144_BumFriend.png" id="144" coins="15" name="Bum Friend" />
+	<familiar description="He's greedy" gfx="Collectibles_144_BumFriend.png" id="144" coins="30" name="Bum Friend" />
 	<active description="Reusable fly hive" gfx="Collectibles_145_GuppysHead.png" id="145" maxcharges="1" name="Guppy's Head" />
 	<active description="Reusable eternity " gfx="Collectibles_146_PrayerCard.png" id="146" maxcharges="12" name="Prayer Card" />
 	<active description="Rocks don't stand a chance" gfx="Collectibles_147_NotchedAxe.png" id="147" maxcharges="1" name="Notched Axe" />
@@ -381,7 +381,7 @@
 	<passive description="Spider love" gfx="Collectibles_377_BurstingSack.png" id="377" name="Bursting Sack" />
 	<passive description="Uh oh..." gfx="Collectibles_378_NumberTwo.png" id="378" name="No. 2" />
 	<passive description="Wide shot" gfx="Collectibles_379_PupulaDuplex.png" id="379" name="Pupula Duplex" cache="tearflag" />
-	<passive description="Money talks" gfx="Collectibles_380_PayToPlay.png" id="380" name="Pay To Play" coins="15" />
+	<passive description="Money talks" gfx="Collectibles_380_PayToPlay.png" id="380" name="Pay To Play" coins="10" />
 	<passive achievement="188" description="Your future shines brighter" gfx="Collectibles_381_EdensBlessing.png" id="381" name="Eden's Blessing" cache="firedelay" />
 	<active description="Gotta fetch 'em all!" gfx="Collectibles_382_FriendlyBall.png" id="382" name="Friendly Ball" maxcharges="1" />
 	<active description="Remote tear detonation" gfx="Collectibles_383_TearDetonator.png" id="383" name="Tear Detonator" maxcharges="1" />

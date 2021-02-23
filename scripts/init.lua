@@ -84,7 +84,7 @@ amon_item = Isaac.GetItemIdByName("Amon EX")
 
 ocu_item = Isaac.GetItemIdByName("Oculus Rift")
 vlt_item = Isaac.GetItemIdByName("120 Volt")
-mys_item = Isaac.GetItemIdByName("Mystic Map")
+mys_item = Isaac.GetItemIdByName("Mystical Map")
 
 aricooldown = 0
 roomseedisold = 0
