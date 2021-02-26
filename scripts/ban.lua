@@ -276,13 +276,10 @@ RepairMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, RepairMod.BanItem)
 function RepairMod:BanCard(player)
     if player:GetCard(0) == Card.RUNE_ANSUZ then
         WasteCard(Card.RUNE_ANSUZ, 0)
-	end
-    if player:GetPlayerType() == PlayerType.PLAYER_MAGDALENA then
-        if player:GetCard(0) == Card.CARD_WORLD then
-            WasteCard(Card.CARD_WORLD, 0)
-        elseif player:GetCard(0) == Card.CARD_SUN then
-            WasteCard(Card.CARD_SUN, 0)
-        end
+	elseif player:GetCard(0) == Card.CARD_WORLD then
+        WasteCard(Card.CARD_WORLD, 0)
+    elseif player:GetCard(0) == Card.CARD_SUN then
+        WasteCard(Card.CARD_SUN, 0)
     end
     if player:GetPlayerType() == PlayerType.PLAYER_JUDAS then
         if player:GetCard(0) == Card.RUNE_ALGIZ then

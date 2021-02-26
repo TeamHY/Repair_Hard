@@ -844,3 +844,31 @@ function RepairMod:mysticInit()
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.mysticInit)
+
+function RepairMod:OptionChoice(player)
+	if HasPassive(249) then
+		player:GetData()._OptionAnimation = 0
+	end
+
+	if player:GetData()._OptionAnimation ~= nil then
+		player:GetData()._OptionAnimation = player:GetData()._OptionAnimation + 1
+		if player:GetData()._OptionAnimation == 5 then
+			local item1 = Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_BOSS, true, player:GetCollectibleRNG(249):GetSeed()), Isaac.GetFreeNearPosition(Isaac.GetFreeNearPosition(player.Position, 0) + Vector(0, 28), 0), Vector(0, 0), player)
+			item1:ToPickup().TheresOptionsPickup = true
+			Isaac.Spawn(1000, 15, 0, item1.Position, Vector(0, 0), player)
+		end
+		if player:GetData()._OptionAnimation == 15 then
+			local item2 = Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_BOSS, true, player:GetCollectibleRNG(249):GetSeed()), Isaac.GetFreeNearPosition(Isaac.GetFreeNearPosition(player.Position, 0) + Vector(-56, 28), 0), Vector(0, 0), player)
+			item2:ToPickup().TheresOptionsPickup = true
+			Isaac.Spawn(1000, 15, 0, item2.Position, Vector(0, 0), player)
+		end
+		if player:GetData()._OptionAnimation == 25 then
+			local item3 = Isaac.Spawn(5, 100, Game():GetItemPool():GetCollectible(ItemPoolType.POOL_BOSS, true, player:GetCollectibleRNG(249):GetSeed()), Isaac.GetFreeNearPosition(Isaac.GetFreeNearPosition(player.Position, 0) + Vector(56, 28), 0), Vector(0, 0), player)
+			item3:ToPickup().TheresOptionsPickup = true
+			Isaac.Spawn(1000, 15, 0, item3.Position, Vector(0, 0), player)
+			player:GetData()._OptionAnimation = nil
+		end
+	end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.OptionChoice)
