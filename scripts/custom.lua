@@ -846,7 +846,7 @@ end
 RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.mysticInit)
 
 function RepairMod:OptionChoice(player)
-	if HasPassive(249) then
+	if HasPassive(249) and player:GetPlayerType() ~= PlayerType.PLAYER_LAZARUS then
 		player:GetData()._OptionAnimation = 0
 	end
 
