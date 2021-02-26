@@ -1,10 +1,10 @@
 <players bigportraitroot="gfx/ui/stage/" nameimageroot="gfx/ui/boss/" portraitroot="gfx/ui/boss/" root="gfx/characters/costumes/">
 
-	<player bigportrait="PlayerPortraitBig_Delirious_Spirit.png" keys="1" armor="16" items="277,414,510,20" bombs="2" name="The Delirious Spirit" nameimage="PlayerName_Delirious_Spirit.png" portrait="PlayerPortrait_Delirious_Spirit.png" skin="character_delirious_spirit.png" skinColor="-1"/>
+	<player bigportrait="PlayerPortraitBig_Delirious_Spirit.png" keys="1" armor="16" items="277,414,510,20" bombs="4" name="The Delirious Spirit" nameimage="PlayerName_Delirious_Spirit.png" portrait="PlayerPortrait_Delirious_Spirit.png" skin="character_delirious_spirit.png" skinColor="-1"/>
 
-	<player armor="9" bigportrait="PlayerPortraitBig_Hush_Child.png" hp="0" items="308,414" bombs="3" trinket="132" name="Hush Child" nameimage="PlayerName_Hush_Child.png" portrait="PlayerPortrait_Hush_Child.png" skin="character_Hush_Child.png" skinColor="-1"/>
+	<player armor="9" bigportrait="PlayerPortraitBig_Hush_Child.png" hp="0" items="414,556" bombs="3" trinket="132" name="Hush Child" nameimage="PlayerName_Hush_Child.png" portrait="PlayerPortrait_Hush_Child.png" skin="character_Hush_Child.png" skinColor="-1"/>
 
-	<player bigportrait="PlayerPortraitBig_Lucifer.png" armor="4" bombs="2" hp="2" items="134,187,212,414" name="Lucifer" nameimage="PlayerName_Lucifer.png" portrait="PlayerPortrait_Lucifer.png" skin="character_Lucifer.png" skinColor="-1"/>
+	<player bigportrait="PlayerPortraitBig_Lucifer.png" armor="4" bombs="3" hp="2" items="134,187,212,414" name="Lucifer" nameimage="PlayerName_Lucifer.png" portrait="PlayerPortrait_Lucifer.png" skin="character_Lucifer.png" skinColor="-1"/>
 
 	<player bigportrait="PlayerPortraitBig_Midas.png" items="94,94,109,376,380,414" trinket="6" hp="4" armor="3" bombs="2" name="Midas" card="10" nameimage="PlayerName_Midas.png" portrait="PlayerPortrait_Midas.png" skin="character_Midas.png" skinColor="-1"/>
 

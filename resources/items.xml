@@ -82,7 +82,7 @@
 	<familiar description="9 lives" devilprice="2" gfx="Collectibles_081_DeadCat.png" id="81" name="Dead Cat" />
 	<passive cache="flying speed" description="Demon wings" devilprice="2" gfx="Collectibles_082_LordOfThePit.png" blackhearts="4" id="82" name="Lord of the Pit" />
 	<active achievement="9" cache="speed damage" description="Temporary demon form" devilprice="1" gfx="Collectibles_083_TheNail.png" id="83" maxcharges="6" name="The Nail" />
-	<active description="Reusable level skip" gfx="Collectibles_084_WeNeedToGoDeeper.png" id="84" maxcharges="8" name="We Need To Go Deeper!" />
+	<active description="Reusable level skip" gfx="Collectibles_084_WeNeedToGoDeeper.png" id="84" maxcharges="12" name="We Need To Go Deeper!" />
 	<active description="Reusable card generator " gfx="Collectibles_085_DeckOfCards.png" id="85" maxcharges="3" name="Deck of Cards" />
 	<active achievement="13" description="Summon Monstro" gfx="Collectibles_086_MonstrosTooth.png" id="86" maxcharges="1" name="Monstro's Tooth" />
 	<passive achievement="15" description="Cross tears" gfx="Collectibles_087_LokisHorns.png" id="87" name="Loki's Horns" />

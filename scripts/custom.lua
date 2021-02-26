@@ -127,7 +127,7 @@ function RepairMod:GivePick()
         Save()
     end
     if player:GetData()._sancVar ~= nil then --아티팩트 신지
-        if (Game():GetFrameCount() - player:GetData()._sancTime)%(30 * 120) == 0 and Game():GetFrameCount() ~= player:GetData()._sancTime then --먹은직후 30초마다 서큐 소환
+        if (Game():GetFrameCount() - player:GetData()._sancTime)%(30 * 150) == 0 and Game():GetFrameCount() ~= player:GetData()._sancTime then --먹은직후 30초마다 서큐 소환
             player:AddCollectible(417, 0, true)
         end
     end

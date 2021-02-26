@@ -9,7 +9,7 @@
 	<passive gfx="994.png" name="Sagittarius EX" />
 	<passive gfx="993.png" name="Scorpio EX" />
 	<passive gfx="992.png" devilprice="2" name="Libra EX" />
-	<passive gfx="991.png" name="Virgo EX" />
+	<passive gfx="991.png" cache="damage" name="Virgo EX" />
 	<passive gfx="990.png" name="Leo EX" />
 	<passive gfx="989.png" devilprice="2" name="Cancer EX" />
 	<passive gfx="988.png" name="Gemini EX" />

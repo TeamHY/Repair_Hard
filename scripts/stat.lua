@@ -42,6 +42,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(ra_H_item) then
 			player.Damage = player.Damage * 0.65
 		end
+		if player:HasCollectible(vir_item) then
+			player.Damage = player.Damage * 0.7
+		end
 		if player:HasCollectible(chu35_item) then
 			player.Damage = player.Damage + 3.5
 		end
@@ -130,6 +133,9 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(mars_item) then
 			player.MoveSpeed = player.MoveSpeed + 0.15
 		end
+		if player:HasCollectible(240) then
+			player.MoveSpeed = player.MoveSpeed + 0.20
+		end
 	end
 
 	if cacheFlag == CacheFlag.CACHE_RANGE then
@@ -206,6 +212,9 @@ function RepairMod:OnCache(player, cacheFlag)
 			player.TearFlags = player.TearFlags|TearFlags.TEAR_EGG
 		end
 		if player:HasCollectible(329) then
+			player.TearFlags = player.TearFlags|TearFlags.TEAR_HOMING
+		end
+		if player:HasCollectible(222) then
 			player.TearFlags = player.TearFlags|TearFlags.TEAR_HOMING
 		end
 		if player:HasCollectible(68) then
