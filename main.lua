@@ -267,7 +267,7 @@ function RepairMod:HardModeStatue()
 	if diffCheck == true then
 		if Game():GetRoom():GetBossID() ~= 70 then
 			for i = 1, #entities do
-				if entities[i]:IsVulnerableEnemy() then
+				if entities[i]:IsVulnerableEnemy() and entities[i].Type ~= 412 then
 					if entities[i]:GetData().changeVar == nil then
 						for j = 1, #banType do
 							if entities[i].Type == banType[j] then
