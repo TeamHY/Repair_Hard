@@ -422,7 +422,7 @@
 	
 	<passive description="Rainbow effects!" gfx="Collectibles_418_FruitCake.png" id="418" name="Fruit Cake" />
 	<active description="I-Teleport!" gfx="Collectibles_419_Teleport20.png" id="419" name="Teleport 2.0" maxcharges="4" />
-	<passive description="Spin the black circle!" gfx="Collectibles_420_BlackPowder.png" id="420" name="Black Powder" />
+	<passive description="Spin the black circle!" gfx="Collectibles_420_BlackPowder.png" id="420" blackhearts="24" name="Black Powder" />
 	<active description="Love toots!" gfx="Collectibles_421_KidneyBean.png" id="421" name="Kidney Bean" maxcharges="1" />
 	<active description="Turn back time" gfx="Collectibles_422_GlowingHourGlass.png" id="422" name="Glowing Hour Glass" maxcharges="2" />
 	<passive description="Protect me from myself" gfx="Collectibles_423_CircleOfProtection.png" id="423" name="Circle of Protection" />

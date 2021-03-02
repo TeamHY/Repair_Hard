@@ -5,7 +5,7 @@ scattering_cup = Isaac.GetTrinketIdByName("Scattering Cup")
 
 guppyeye = require "scripts.trinkets.guppyseye"
 popsiclestick = require "scripts.trinkets.popsiclestick"
-rainbowpenny = require "scripts.trinkets.rainbowpenny"
+--rainbowpenny = require "scripts.trinkets.rainbowpenny"
 
 pennyVar = 0
 
