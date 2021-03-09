@@ -115,9 +115,6 @@ function RepairMod:OnCache(player, cacheFlag)
 		if player:HasCollectible(socks_item) then
 			player.MoveSpeed = player.MoveSpeed + 0.3
 		end
-		if player:HasCollectible(ura_item) then
-			player.MoveSpeed = player.MoveSpeed + 0.3
-		end
 		if player:HasCollectible(mer_item) then
 			player.MoveSpeed = player.MoveSpeed + 0.15
 		end

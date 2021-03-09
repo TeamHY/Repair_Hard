@@ -4,6 +4,8 @@ function RepairMod:BanItem(newstart)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_PAY_TO_WIN)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_BROKEN_REMOTE)
     Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_NO)
+    Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_CAINS_EYE)
+    Game():GetItemPool():RemoveTrinket(TrinketType.TRINKET_LIBERTY_CAP)
     if Isaac.GetPlayer(0):GetPlayerType() == PlayerType.PLAYER_ISAAC then
         player:AddTrinket(TrinketType.TRINKET_BLOODY_CROWN)
         player:UseActiveItem(479, false, true, false, false)
