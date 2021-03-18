@@ -2420,7 +2420,7 @@ bestiaryOverlay="Attack">
     <entity id="411" variant="2" name="Big Hole" baseHP="1" stageHP="240" boss="1" champion="1" collisionDamage="0" collisionMass="20" collisionRadius="80" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="90" anm2path="411.000_BigHorn.anm2">
 		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 	</entity>
-	<entity id="412" variant="0" name="Delirium" baseHP="30000" stageHP="0" boss="1" bossID="70" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="91" anm2path="412.000_Delirium.anm2" bestiary="true" bestiaryTransform="0,0,.4" bestiaryAnim="Idle">
+	<entity id="412" variant="0" name="Delirium" baseHP="35000" stageHP="0" boss="1" bossID="70" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="91" anm2path="412.000_Delirium.anm2" bestiary="true" bestiaryTransform="0,0,.4" bestiaryAnim="Idle">
 		<gibs amount="24" blood="1" bone="0" eye="0" gut="1" large="1" />
 	</entity>
 	<entity id="413" variant="0" name="The Matriarch" baseHP="1" stageHP="87.5" boss="1" bossID="72" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="60" portrait="94" anm2path="413.000_Matriarch.anm2" bestiary="true" bestiaryTransform="0,0,.8" bestiaryAnim="Idle">
