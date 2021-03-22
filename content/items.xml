@@ -117,6 +117,9 @@
 	<passive gfx="907.png" name="120 Volt" />
 	<passive gfx="906.png" name="Mystical Map" />
 
+
+	<passive gfx="906.png" name="oo" />
+
 	<!-- Custom Trinket #1 -->
 	<trinket cache="damageflag" gfx="Bloody Bandage.png" name="Bloody Bandage" />
 

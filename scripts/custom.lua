@@ -872,3 +872,12 @@ function RepairMod:OptionChoice(player)
 end
 
 RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.OptionChoice)
+
+
+function RepairMod:Idle(player)
+	if HasPassive(utils_item) then
+		Discover(534,416,139)
+	end
+end
+
+RepairMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, RepairMod.Idle)
